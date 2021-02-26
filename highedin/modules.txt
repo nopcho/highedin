@@ -1,2 +1,11 @@
 Higher Education Information System
 Program Management
+Quality Assurance
+Course Management
+Academic Research
+Facility Management
+Coop Education
+Student Affair
+Student Portal
+Student Service
+Academic Service

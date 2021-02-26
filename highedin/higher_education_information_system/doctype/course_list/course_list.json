@@ -1,27 +1,25 @@
 {
  "actions": [],
- "autoname": "field:initial",
- "creation": "2021-02-12 11:43:56.311537",
+ "creation": "2021-02-22 12:38:06.209164",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "initial"
+  "course_id"
  ],
  "fields": [
   {
-   "fieldname": "initial",
+   "fieldname": "course_id",
    "fieldtype": "Data",
-   "label": "Initial",
-   "unique": 1
+   "label": "course id"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-12 11:43:56.311537",
+ "modified": "2021-02-22 12:38:06.209164",
  "modified_by": "Administrator",
- "module": "Program Management",
- "name": "Initial",
+ "module": "Higher Education Information System",
+ "name": "Course List",
  "owner": "Administrator",
  "permissions": [
   {
