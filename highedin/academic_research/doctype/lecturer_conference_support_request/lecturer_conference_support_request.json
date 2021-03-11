@@ -1,0 +1,376 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-11 02:30:08.098988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_id",
+  "salutation",
+  "staff_name",
+  "staff_surname",
+  "staff_position",
+  "column_break_6",
+  "departture_date",
+  "arrival_date",
+  "section_break_9",
+  "paper_title",
+  "second_paper_title",
+  "conference_id",
+  "conference_name",
+  "remark",
+  "column_break_15",
+  "start_date",
+  "end_date",
+  "venue",
+  "country",
+  "submission_date",
+  "notification_date",
+  "section_break_21",
+  "scopus_database",
+  "wos_sjr_database",
+  "sponsored_conf",
+  "column_break_25",
+  "sjr",
+  "sjr_year",
+  "h_index",
+  "h_index_year",
+  "total_citation",
+  "quality_index_i",
+  "quality_index_ii",
+  "section_break_33",
+  "reg_fee_support_req",
+  "reg_fee_support_2nd_paper",
+  "second_request",
+  "total_registration_fee",
+  "column_break_38",
+  "domestic_travelling_cost",
+  "aboard_travelling_cost",
+  "international_travelling_cost",
+  "airport_tax",
+  "days_in_accommodation",
+  "accommodation_cost_per_day",
+  "total_accommodation_cost",
+  "day_on_duty",
+  "personal_expense_per_day",
+  "total_personal_expense",
+  "section_break_49",
+  "signature",
+  "column_break_52",
+  "attached_files",
+  "request_submission_date",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_id",
+   "fieldtype": "Link",
+   "label": "Staff ID",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "staff_id.salutation",
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "label": "Salutation"
+  },
+  {
+   "fetch_from": "staff_id.first_name",
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Staff Name"
+  },
+  {
+   "fetch_from": "staff_id.last_name",
+   "fieldname": "staff_surname",
+   "fieldtype": "Data",
+   "label": "Staff Surname"
+  },
+  {
+   "fieldname": "staff_position",
+   "fieldtype": "Data",
+   "label": "Staff Position"
+  },
+  {
+   "fieldname": "departture_date",
+   "fieldtype": "Date",
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "paper_title",
+   "fieldtype": "Data",
+   "label": "Paper Title"
+  },
+  {
+   "fieldname": "second_paper_title",
+   "fieldtype": "Data",
+   "label": "Second Paper Title"
+  },
+  {
+   "fieldname": "conference_id",
+   "fieldtype": "Link",
+   "label": "Conference ID",
+   "options": "Publication Source"
+  },
+  {
+   "fetch_from": "conference_id.title",
+   "fieldname": "conference_name",
+   "fieldtype": "Data",
+   "label": "Conference Name"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "submission_date",
+   "fieldtype": "Date",
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "notification_date",
+   "fieldtype": "Date",
+   "label": "Notification Date"
+  },
+  {
+   "fieldname": "scopus_database",
+   "fieldtype": "Select",
+   "label": "Scopus Database",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "wos_sjr_database",
+   "fieldtype": "Select",
+   "label": "WOS/SJR Q1-3 Database",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "sponsored_conf",
+   "fieldtype": "Select",
+   "label": "Sponsored Conference",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "sjr",
+   "fieldtype": "Data",
+   "label": "SJR"
+  },
+  {
+   "fieldname": "sjr_year",
+   "fieldtype": "Data",
+   "label": "SJR Year"
+  },
+  {
+   "fieldname": "h_index",
+   "fieldtype": "Data",
+   "label": "H-Index"
+  },
+  {
+   "fieldname": "h_index_year",
+   "fieldtype": "Data",
+   "label": "H-Index Year"
+  },
+  {
+   "fieldname": "total_citation",
+   "fieldtype": "Data",
+   "label": "Total Citation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_index_i",
+   "fieldtype": "Data",
+   "label": "Quality Index I (SJR x H-Index)"
+  },
+  {
+   "fieldname": "quality_index_ii",
+   "fieldtype": "Data",
+   "label": "Quality Index II (CIF)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reg_fee_support_req",
+   "fieldtype": "Select",
+   "label": "Registration Fee Support Request",
+   "options": "\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\n\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\u0e44\u0e21\u0e48\u0e40\u0e01\u0e34\u0e19 30,000 \u0e1a\u0e32\u0e17\u0e41\u0e25\u0e30\u0e44\u0e21\u0e48\u0e23\u0e27\u0e21\u0e43\u0e19\u0e27\u0e07\u0e40\u0e07\u0e34\u0e19 70,000 \u0e1a\u0e32\u0e17\n\u0e44\u0e21\u0e48\u0e21\u0e35\u0e04\u0e48\u0e32\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19 (\u0e04\u0e13\u0e30\u0e40\u0e1b\u0e47\u0e19\u0e40\u0e08\u0e49\u0e32\u0e20\u0e32\u0e1e\u0e2b\u0e25\u0e31\u0e01)"
+  },
+  {
+   "fieldname": "reg_fee_support_2nd_paper",
+   "fieldtype": "Select",
+   "label": "Registration Fee Support for 2nd Paper",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "second_request",
+   "fieldtype": "Select",
+   "label": "Second Request (with WOS Q1-2 paper)",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "total_registration_fee",
+   "fieldtype": "Data",
+   "label": "Total Registration Fee"
+  },
+  {
+   "fieldname": "domestic_travelling_cost",
+   "fieldtype": "Data",
+   "label": "Domestic Travelling Cost"
+  },
+  {
+   "fieldname": "aboard_travelling_cost",
+   "fieldtype": "Data",
+   "label": "Aboard Travelling Cost"
+  },
+  {
+   "fieldname": "international_travelling_cost",
+   "fieldtype": "Data",
+   "label": "International Travelling Cost"
+  },
+  {
+   "fieldname": "airport_tax",
+   "fieldtype": "Data",
+   "label": "Airport Tax"
+  },
+  {
+   "fieldname": "days_in_accommodation",
+   "fieldtype": "Data",
+   "label": "Days in Accommodation"
+  },
+  {
+   "fieldname": "accommodation_cost_per_day",
+   "fieldtype": "Data",
+   "label": "Accommodation Cost Per Day"
+  },
+  {
+   "fieldname": "total_accommodation_cost",
+   "fieldtype": "Data",
+   "label": "Total Accommodation Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "day_on_duty",
+   "fieldtype": "Int",
+   "label": "Day On Duty"
+  },
+  {
+   "fieldname": "personal_expense_per_day",
+   "fieldtype": "Data",
+   "label": "Personal Expense Per Day"
+  },
+  {
+   "fieldname": "total_personal_expense",
+   "fieldtype": "Data",
+   "label": "Total Personal Expense",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "attached_files",
+   "fieldtype": "Attach",
+   "label": "Attached Files"
+  },
+  {
+   "fieldname": "request_submission_date",
+   "fieldtype": "Date",
+   "label": "Request Submission Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HEI-LEC-.####"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-11 11:57:08.160992",
+ "modified_by": "Administrator",
+ "module": "Academic Research",
+ "name": "Lecturer Conference Support Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
