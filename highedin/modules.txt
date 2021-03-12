@@ -1,1 +1,14 @@
+<<<<<<< HEAD
 Highedin
+=======
+Higher Education Information System
+Program Management
+Quality Assurance
+Course Management
+Academic Research
+Facility Management
+Coop Education
+Student Affair
+Student Service
+Academic Service
+>>>>>>> 04973ea5e9ae9060a2d5f80e3186cb2934d2d23d

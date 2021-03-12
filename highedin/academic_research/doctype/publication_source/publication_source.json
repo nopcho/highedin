@@ -1,0 +1,300 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-04 10:18:47.261848",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "column_break_3",
+  "abbrev",
+  "url",
+  "publication_type",
+  "database_record_section",
+  "scopus",
+  "sjr",
+  "isi",
+  "column_break_11",
+  "sjr_impact_factor",
+  "isi_impact_factor",
+  "others",
+  "faculty_support_section",
+  "faculty_publishing_expense",
+  "faculty_reward",
+  "column_break_18",
+  "remark",
+  "student_support_section",
+  "ug_publishing_expense",
+  "ug_kmitl_support",
+  "ug_fit_support",
+  "column_break_24",
+  "pg_publishing_expense",
+  "pg_kmitl_support",
+  "pg_fit_support",
+  "use_for_postgraduate_study_section",
+  "phd_full_time_conversion",
+  "msc_graduation",
+  "phd_graduation",
+  "journal_paper_type",
+  "approval_section",
+  "school_committee_resolution",
+  "approval_year",
+  "additional_remark",
+  "status",
+  "route",
+  "hidden_note",
+  "publish",
+  "entry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HEI-PSO-.######"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "abbrev",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Abbrev"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "publication_type",
+   "fieldtype": "Select",
+   "label": "Publication Type",
+   "options": "Domestic Journal\nInternational Journal\nDomestic Conference\nInternational Conference"
+  },
+  {
+   "fieldname": "database_record_section",
+   "fieldtype": "Section Break",
+   "label": "Database Record"
+  },
+  {
+   "default": "0",
+   "fieldname": "scopus",
+   "fieldtype": "Check",
+   "label": "Scopus"
+  },
+  {
+   "default": "0",
+   "fieldname": "sjr",
+   "fieldtype": "Check",
+   "label": "SJR"
+  },
+  {
+   "default": "0",
+   "fieldname": "isi",
+   "fieldtype": "Check",
+   "label": "ISI"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sjr_impact_factor",
+   "fieldtype": "Data",
+   "label": "SJR Impact Factor"
+  },
+  {
+   "fieldname": "isi_impact_factor",
+   "fieldtype": "Data",
+   "label": "ISI Impact Factor"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Data",
+   "label": "Others"
+  },
+  {
+   "fieldname": "faculty_support_section",
+   "fieldtype": "Section Break",
+   "label": "Faculty Support"
+  },
+  {
+   "default": "0",
+   "fieldname": "faculty_publishing_expense",
+   "fieldtype": "Check",
+   "label": "Faculty Publishing Expense"
+  },
+  {
+   "default": "0",
+   "fieldname": "faculty_reward",
+   "fieldtype": "Check",
+   "label": "Faculty Reward"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "student_support_section",
+   "fieldtype": "Section Break",
+   "label": "Student Support"
+  },
+  {
+   "fieldname": "ug_publishing_expense",
+   "fieldtype": "Heading",
+   "label": "UG Publishing Expense"
+  },
+  {
+   "default": "0",
+   "fieldname": "ug_kmitl_support",
+   "fieldtype": "Check",
+   "label": "UG KMITL Support"
+  },
+  {
+   "default": "0",
+   "fieldname": "ug_fit_support",
+   "fieldtype": "Check",
+   "label": "UG FIT Support"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pg_publishing_expense",
+   "fieldtype": "Heading",
+   "label": "PG Publishing Expense"
+  },
+  {
+   "default": "0",
+   "fieldname": "pg_kmitl_support",
+   "fieldtype": "Check",
+   "label": "PG KMITL Support"
+  },
+  {
+   "default": "0",
+   "fieldname": "pg_fit_support",
+   "fieldtype": "Check",
+   "label": "PG FIT Support"
+  },
+  {
+   "fieldname": "use_for_postgraduate_study_section",
+   "fieldtype": "Section Break",
+   "label": "Use for Postgraduate Study"
+  },
+  {
+   "default": "0",
+   "fieldname": "phd_full_time_conversion",
+   "fieldtype": "Check",
+   "label": "PhD Full Time Conversion"
+  },
+  {
+   "default": "0",
+   "fieldname": "msc_graduation",
+   "fieldtype": "Check",
+   "label": "MSc Graduation"
+  },
+  {
+   "default": "0",
+   "fieldname": "phd_graduation",
+   "fieldtype": "Check",
+   "label": "PhD Graduation"
+  },
+  {
+   "fieldname": "journal_paper_type",
+   "fieldtype": "Select",
+   "label": "Journal Paper Type",
+   "options": "\nShort Journal Paper\nFull Journal Paper\nReview Journal Paper"
+  },
+  {
+   "fieldname": "approval_section",
+   "fieldtype": "Section Break",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "school_committee_resolution",
+   "fieldtype": "Small Text",
+   "label": "School Committee Resolution"
+  },
+  {
+   "fieldname": "approval_year",
+   "fieldtype": "Data",
+   "label": "Approval Year"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "hidden_note",
+   "fieldtype": "Data",
+   "label": "Hidden Note"
+  },
+  {
+   "default": "1",
+   "fieldname": "publish",
+   "fieldtype": "Check",
+   "label": "Publish on Web"
+  },
+  {
+   "fieldname": "entry_date",
+   "fieldtype": "Data",
+   "label": "Entry Date"
+  },
+  {
+   "fieldname": "additional_remark",
+   "fieldtype": "Small Text",
+   "label": "Additional Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-04 10:43:12.442414",
+ "modified_by": "Administrator",
+ "module": "Academic Research",
+ "name": "Publication Source",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
