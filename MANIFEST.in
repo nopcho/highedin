@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include highedin *.css
+recursive-include highedin *.csv
+recursive-include highedin *.html
+recursive-include highedin *.ico
+recursive-include highedin *.js
+recursive-include highedin *.json
+recursive-include highedin *.md
+recursive-include highedin *.png
+recursive-include highedin *.py
+recursive-include highedin *.svg
+recursive-include highedin *.txt
+recursive-exclude highedin *.pyc
