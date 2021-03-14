@@ -11,7 +11,7 @@ from frappe.utils import cstr, nowdate, cint
 
 class PublicationSource(WebsiteGenerator):
     website = frappe._dict(
-        template = "templates/generators/publication_source.html",
+        template = "academic_research/doctype/publication_source/templates/publication_source.html",
 #        condition_field = "publish",
         page_title_field = "title"
     )
