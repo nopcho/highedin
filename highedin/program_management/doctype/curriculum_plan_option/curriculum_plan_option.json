@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "creation": "2021-03-15 15:18:32.431103",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "major",
+  "plan_type",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "plan_name"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "major"
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Data",
+   "label": "plan_type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-15 15:18:32.431103",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Curriculum Plan Option",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

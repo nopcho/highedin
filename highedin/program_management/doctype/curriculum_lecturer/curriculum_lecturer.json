@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "creation": "2021-03-15 15:13:59.461259",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "instructor_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first_name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last_name"
+  },
+  {
+   "fieldname": "instructor_id",
+   "fieldtype": "Data",
+   "label": "instructor_id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-15 15:13:59.461259",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Curriculum Lecturer",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
