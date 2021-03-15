@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "autoname": "####",
+ "creation": "2021-03-15 22:02:01.014643",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "revision_remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "revision_remark",
+   "fieldtype": "Data",
+   "label": "revision_remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-15 22:52:25.932976",
+ "modified_by": "Administrator",
+ "module": "Academic Service",
+ "name": "Gadget Product Revision",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

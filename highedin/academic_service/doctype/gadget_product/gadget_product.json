@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "autoname": "HEI.GPR.######",
+ "creation": "2021-03-15 21:28:16.960721",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "model",
+  "product_type",
+  "product_category",
+  "product_subcategory",
+  "company",
+  "month_launched",
+  "year_launched",
+  "launch_detail",
+  "product_description",
+  "opinion",
+  "image",
+  "media",
+  "reference",
+  "date_submitted",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Link",
+   "label": "Product Type",
+   "options": "Gadget Type"
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Gadget Category"
+  },
+  {
+   "fieldname": "product_subcategory",
+   "fieldtype": "Link",
+   "label": "Product Subcategory",
+   "options": "Gadget Subcategory"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Gadget Company"
+  },
+  {
+   "fieldname": "month_launched",
+   "fieldtype": "Data",
+   "label": "Month Launched"
+  },
+  {
+   "fieldname": "year_launched",
+   "fieldtype": "Data",
+   "label": "Year Launched"
+  },
+  {
+   "fieldname": "launch_detail",
+   "fieldtype": "Data",
+   "label": "Launch Detail"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Data",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Table",
+   "label": "Opinion",
+   "options": "Gadget Product Opinion"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Media",
+   "options": "Gadget Product Media"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Table",
+   "label": "Reference",
+   "options": "Gadget Product Reference"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Data",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Table",
+   "label": "Revision",
+   "options": "Gadget Product Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-15 22:53:47.462068",
+ "modified_by": "Administrator",
+ "module": "Academic Service",
+ "name": "Gadget Product",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "autoname": "HEIGCO.####",
+ "creation": "2021-03-15 21:41:29.883938",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "collection_id",
+  "product_id",
+  "product_name",
+  "model",
+  "product_type",
+  "product_category",
+  "product_subcategory",
+  "company",
+  "year_purchased",
+  "date_registered",
+  "functional_condition",
+  "general_condition",
+  "condition_remark",
+  "image",
+  "media",
+  "source",
+  "donor_id",
+  "date_submitted",
+  "revision"
+ ],
+ "fields": [
+  {
+   "fieldname": "collection_id",
+   "fieldtype": "Data",
+   "label": "Collection ID"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "label": "Product ID",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "product_name.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Link",
+   "label": "Product Name",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "model.model",
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "product_type.product_type",
+   "fieldname": "product_type",
+   "fieldtype": "Link",
+   "label": "Product Type",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "product_category.product_category",
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "product_subcategory.product_subcategory",
+   "fieldname": "product_subcategory",
+   "fieldtype": "Link",
+   "label": "Product Subcategory",
+   "options": "Gadget Product"
+  },
+  {
+   "fetch_from": "company.company",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Gadget Product"
+  },
+  {
+   "fieldname": "year_purchased",
+   "fieldtype": "Data",
+   "label": "Year purchased"
+  },
+  {
+   "fieldname": "date_registered",
+   "fieldtype": "Data",
+   "label": "Date Registered"
+  },
+  {
+   "fieldname": "functional_condition",
+   "fieldtype": "Data",
+   "label": "Functional Condition"
+  },
+  {
+   "fieldname": "general_condition",
+   "fieldtype": "Data",
+   "label": "General Condition"
+  },
+  {
+   "fieldname": "condition_remark",
+   "fieldtype": "Data",
+   "label": "Condition Remark"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Media",
+   "options": "Gadget Product Media"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "donor_id",
+   "fieldtype": "Table",
+   "label": "Donor ID",
+   "options": "Gadget Donation"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Data",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Table",
+   "label": "Revision",
+   "options": "Gadget Product Revision"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-15 23:15:39.695258",
+ "modified_by": "Administrator",
+ "module": "Academic Service",
+ "name": "Gadget Collection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
