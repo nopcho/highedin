@@ -38,12 +38,13 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series"
+   "label": "Series",
+   "options": "HEI-ADT-.####"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-11 03:00:35.780688",
+ "modified": "2021-03-19 03:46:48.762731",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Admission Type",

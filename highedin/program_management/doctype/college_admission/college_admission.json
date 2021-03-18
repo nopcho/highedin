@@ -54,7 +54,7 @@
    "fieldname": "type_id",
    "fieldtype": "Link",
    "label": "Admission Type",
-   "options": "Admission Type2"
+   "options": "Admission Type"
   },
   {
    "fetch_from": "type_id.type_name",
@@ -86,17 +86,18 @@
    "fieldname": "schedule",
    "fieldtype": "Table",
    "label": "Admission Schedule",
-   "options": "Admission Schedule2"
+   "options": "Admission Schedule"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series"
+   "label": "Series",
+   "options": "HEI-CAD-YYYY-.##"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-11 03:01:20.377435",
+ "modified": "2021-03-19 03:41:02.407836",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "College Admission",

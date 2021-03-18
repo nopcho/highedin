@@ -5,18 +5,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "title",
   "description",
   "start_date",
   "end_date"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "name"
-  },
   {
    "fieldname": "title",
    "fieldtype": "Data",
@@ -41,7 +35,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-11 03:09:08.571570",
+ "modified": "2021-03-19 03:45:34.975114",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Admission Schedule",
