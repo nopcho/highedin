@@ -88,6 +88,7 @@
    "label": "Staff Surname"
   },
   {
+   "fetch_from": "staff_id.designation",
    "fieldname": "staff_position",
    "fieldtype": "Data",
    "label": "Staff Position"
@@ -161,22 +162,22 @@
    "label": "Notification Date"
   },
   {
+   "default": "conference_id.scopus",
    "fieldname": "scopus_database",
-   "fieldtype": "Select",
-   "label": "Scopus Database",
-   "options": "Yes\nNo"
+   "fieldtype": "Check",
+   "label": "Scopus Database"
   },
   {
+   "default": "0",
    "fieldname": "wos_sjr_database",
-   "fieldtype": "Select",
-   "label": "WOS/SJR Q1-3 Database",
-   "options": "Yes\nNo"
+   "fieldtype": "Check",
+   "label": "WOS/SJR Q1-3 Database"
   },
   {
+   "default": "0",
    "fieldname": "sponsored_conf",
-   "fieldtype": "Select",
-   "label": "Sponsored Conference",
-   "options": "Yes\nNo"
+   "fieldtype": "Check",
+   "label": "Sponsored Conference"
   },
   {
    "fieldname": "sjr",
@@ -222,16 +223,16 @@
    "options": "\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\n\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\u0e44\u0e21\u0e48\u0e40\u0e01\u0e34\u0e19 30,000 \u0e1a\u0e32\u0e17\u0e41\u0e25\u0e30\u0e44\u0e21\u0e48\u0e23\u0e27\u0e21\u0e43\u0e19\u0e27\u0e07\u0e40\u0e07\u0e34\u0e19 70,000 \u0e1a\u0e32\u0e17\n\u0e44\u0e21\u0e48\u0e21\u0e35\u0e04\u0e48\u0e32\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19 (\u0e04\u0e13\u0e30\u0e40\u0e1b\u0e47\u0e19\u0e40\u0e08\u0e49\u0e32\u0e20\u0e32\u0e1e\u0e2b\u0e25\u0e31\u0e01)"
   },
   {
+   "default": "0",
    "fieldname": "reg_fee_support_2nd_paper",
-   "fieldtype": "Select",
-   "label": "Registration Fee Support for 2nd Paper",
-   "options": "Yes\nNo"
+   "fieldtype": "Check",
+   "label": "Registration Fee Support for 2nd Paper"
   },
   {
+   "default": "0",
    "fieldname": "second_request",
-   "fieldtype": "Select",
-   "label": "Second Request (with WOS Q1-2 paper)",
-   "options": "Yes\nNo"
+   "fieldtype": "Check",
+   "label": "Second Request (with WOS Q1-2 paper)"
   },
   {
    "fieldname": "total_registration_fee",
@@ -310,7 +311,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Series",
-   "options": "HEI-LEC-.####"
+   "options": "HEI-LCR-.######"
   },
   {
    "fieldname": "column_break_6",
@@ -351,7 +352,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-11 11:57:08.160992",
+ "modified": "2021-03-19 00:30:13.935747",
  "modified_by": "Administrator",
  "module": "Academic Research",
  "name": "Lecturer Conference Support Request",
