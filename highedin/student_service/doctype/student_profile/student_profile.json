@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:student_id",
  "creation": "2021-03-12 14:51:22.676489",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -14,7 +15,8 @@
   {
    "fieldname": "student_id",
    "fieldtype": "Data",
-   "label": "Student ID"
+   "label": "Student ID",
+   "unique": 1
   },
   {
    "fieldname": "salutation",
@@ -34,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-12 14:51:22.676489",
+ "modified": "2021-03-18 15:48:49.097079",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Profile",

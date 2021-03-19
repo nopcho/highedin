@@ -30,7 +30,8 @@
   {
    "fieldname": "request_id",
    "fieldtype": "Data",
-   "label": "Request ID"
+   "label": "Request ID",
+   "read_only": 1
   },
   {
    "fieldname": "title",
@@ -45,11 +46,13 @@
    "options": "Authority"
   },
   {
+   "fetch_from": "to.authority_name",
    "fieldname": "authority_name",
    "fieldtype": "Data",
    "label": "Authority Name"
   },
   {
+   "fetch_from": "student_profile.student_id",
    "fieldname": "student_id",
    "fieldtype": "Link",
    "label": "Student ID",
@@ -95,12 +98,12 @@
   },
   {
    "fieldname": "request_detail",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Request Detail"
   },
   {
    "fieldname": "date_submited",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Submited"
   },
   {
@@ -110,7 +113,7 @@
   },
   {
    "fieldname": "opinion",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Opinion",
    "options": "Student General Request Opinion"
   },
@@ -127,13 +130,15 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Namimg Series",
-   "options": "HEI-SGR-.YYYY.-.######"
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HEI-SGR-.YYYY.-.######",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-12 15:07:08.867624",
+ "modified": "2021-03-19 13:35:25.553530",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request",

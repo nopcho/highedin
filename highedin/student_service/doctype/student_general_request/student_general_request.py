@@ -3,8 +3,10 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 class StudentGeneralRequest(Document):
-	pass
+	def before_save(self):
+                self.request_id = self.name
+        # pass

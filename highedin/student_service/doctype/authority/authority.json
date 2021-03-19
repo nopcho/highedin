@@ -5,17 +5,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "authority_title",
+  "authority_name",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fieldname": "authority_title",
+   "fieldtype": "Data",
+   "label": "Authority Title"
+  },
+  {
+   "fieldname": "authority_name",
+   "fieldtype": "Data",
+   "label": "Authority Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-12 14:48:44.640746",
+ "modified": "2021-03-18 14:58:14.023376",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Authority",

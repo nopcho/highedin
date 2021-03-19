@@ -5,17 +5,24 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "request_type_name",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fieldname": "request_type_name",
+   "fieldtype": "Data",
+   "label": "Request Type Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-12 14:47:22.347709",
+ "modified": "2021-03-18 15:51:15.006038",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Request Type",

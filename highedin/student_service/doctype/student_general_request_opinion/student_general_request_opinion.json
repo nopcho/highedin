@@ -1,22 +1,38 @@
 {
  "actions": [],
+ "autoname": ".######",
  "creation": "2021-03-12 14:48:13.913271",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "authority_name",
+  "opinion",
+  "date"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fetch_from": "authority_name.authority_name",
+   "fieldname": "authority_name",
+   "fieldtype": "Link",
+   "label": "Authority Name",
+   "options": "Authority"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Data",
+   "label": "Opinion"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-12 14:48:13.913271",
+ "modified": "2021-03-18 16:01:21.414441",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request Opinion",
