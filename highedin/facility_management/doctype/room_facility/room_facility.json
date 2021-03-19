@@ -18,7 +18,7 @@
   },
   {
    "fieldname": "quantity",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Quantity"
   },
   {
@@ -30,7 +30,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-11 18:26:34.294565",
+ "modified": "2021-03-19 15:55:58.473303",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Room Facility",

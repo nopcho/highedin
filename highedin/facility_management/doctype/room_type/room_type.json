@@ -1,11 +1,13 @@
 {
  "actions": [],
+ "autoname": "field:room_type_name",
  "creation": "2021-03-11 18:12:09.812244",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "room_type_name",
+  "room_type_name_en",
   "description"
  ],
  "fields": [
@@ -14,17 +16,24 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Room Type Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "fieldname": "room_type_name_en",
+   "fieldtype": "Data",
+   "label": "Room Type Name EN",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-11 18:12:09.812244",
+ "modified": "2021-03-19 18:03:55.199992",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Room Type",

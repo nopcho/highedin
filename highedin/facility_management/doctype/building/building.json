@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:building_id",
  "creation": "2021-03-11 18:11:31.142610",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,7 +16,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Building ID",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "building_name",
@@ -30,7 +32,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-11 18:11:31.142610",
+ "modified": "2021-03-19 18:06:00.443971",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Building",
