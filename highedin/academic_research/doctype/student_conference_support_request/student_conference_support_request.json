@@ -1,0 +1,387 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-19 01:31:05.136645",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "salutation",
+  "student_name",
+  "student_surname",
+  "student_address",
+  "district",
+  "province",
+  "postal_code",
+  "column_break_9",
+  "program_id",
+  "program_name",
+  "major",
+  "advisor_name",
+  "section_break_9",
+  "paper_title",
+  "conference_id",
+  "conference_name",
+  "remark",
+  "start_date",
+  "end_date",
+  "column_break_21",
+  "venue",
+  "country",
+  "conference_type",
+  "scopus_database",
+  "sponsored_conf",
+  "section_break_27",
+  "sjr",
+  "sjr_year",
+  "h_index",
+  "h_index_year",
+  "total_citation",
+  "column_break_33",
+  "quality_index_i",
+  "quality_index_ii",
+  "submission_paper_type",
+  "section_break_37",
+  "number_granted_request",
+  "total_grant_amount",
+  "full_grant_received",
+  "section_break_41",
+  "departure_date",
+  "arrival_date",
+  "column_break_44",
+  "reg_fee_support_req",
+  "reg_fee_support_2nd_paper",
+  "second_request",
+  "amount_support_request",
+  "section_break_49",
+  "student_signature_heading",
+  "student_signature",
+  "attached_flies",
+  "column_break_52",
+  "advisor_signature_heading",
+  "advisor_signature",
+  "req_submission_date",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "label": "Student ID"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "label": "Salutation"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "student_surname",
+   "fieldtype": "Data",
+   "label": "Student Surname"
+  },
+  {
+   "fieldname": "student_address",
+   "fieldtype": "Data",
+   "label": "Student Address"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "program_id",
+   "fieldtype": "Data",
+   "label": "Program ID"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "Major"
+  },
+  {
+   "fieldname": "advisor_name",
+   "fieldtype": "Link",
+   "label": "Advisor Name",
+   "options": "Lecturer"
+  },
+  {
+   "fieldname": "paper_title",
+   "fieldtype": "Data",
+   "label": "Paper Title"
+  },
+  {
+   "fieldname": "conference_id",
+   "fieldtype": "Link",
+   "label": "Conference ID",
+   "options": "Publication Source"
+  },
+  {
+   "fieldname": "conference_name",
+   "fieldtype": "Data",
+   "label": "Conference Name"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "conference_type",
+   "fieldtype": "Select",
+   "label": "Conference Type",
+   "options": "\u0e43\u0e19\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e0a\u0e32\u0e15\u0e34\n\u0e43\u0e19\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e19\u0e32\u0e19\u0e32\u0e0a\u0e32\u0e15\u0e34\n\u0e15\u0e48\u0e32\u0e07\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e19\u0e32\u0e19\u0e32\u0e0a\u0e32\u0e15\u0e34"
+  },
+  {
+   "default": "conference_id.scopus",
+   "fieldname": "scopus_database",
+   "fieldtype": "Check",
+   "label": "Scopus Database"
+  },
+  {
+   "fieldname": "sjr",
+   "fieldtype": "Data",
+   "label": "SJR"
+  },
+  {
+   "fieldname": "sjr_year",
+   "fieldtype": "Data",
+   "label": "SJR Year"
+  },
+  {
+   "fieldname": "h_index",
+   "fieldtype": "Data",
+   "label": "H-Index"
+  },
+  {
+   "fieldname": "h_index_year",
+   "fieldtype": "Data",
+   "label": "H-Index Year"
+  },
+  {
+   "fieldname": "total_citation",
+   "fieldtype": "Data",
+   "label": "Total Citation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_index_i",
+   "fieldtype": "Data",
+   "label": "Quality Index I (SJR x H-Index)"
+  },
+  {
+   "fieldname": "quality_index_ii",
+   "fieldtype": "Data",
+   "label": "Quality Index II (CIF)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "submission_paper_type",
+   "fieldtype": "Select",
+   "label": "Submission Paper Type",
+   "options": "\u0e1a\u0e17\u0e04\u0e27\u0e32\u0e21\u0e09\u0e1a\u0e31\u0e1a\u0e40\u0e15\u0e47\u0e21\n\u0e1a\u0e17\u0e04\u0e27\u0e32\u0e21\u0e09\u0e1a\u0e31\u0e1a\u0e1a\u0e17\u0e04\u0e31\u0e14\u0e22\u0e48\u0e2d\u0e2b\u0e23\u0e37\u0e2d\u0e1a\u0e17\u0e2a\u0e23\u0e38\u0e1b\u0e02\u0e2d\u0e07\u0e1a\u0e17\u0e04\u0e27\u0e32\u0e21\u0e09\u0e1a\u0e31\u0e1a\u0e40\u0e15\u0e47\u0e21"
+  },
+  {
+   "fieldname": "number_granted_request",
+   "fieldtype": "Data",
+   "label": "Number of Granted Request",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_grant_amount",
+   "fieldtype": "Data",
+   "label": "Total Grant Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "full_grant_received",
+   "fieldtype": "Check",
+   "label": "Have received full grants before"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "label": "Departure Date"
+  },
+  {
+   "fieldname": "arrival_date",
+   "fieldtype": "Date",
+   "label": "Arrival Date"
+  },
+  {
+   "fieldname": "reg_fee_support_req",
+   "fieldtype": "Select",
+   "label": "Registration Fee Support Request",
+   "options": "\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\n\u0e40\u0e1a\u0e34\u0e01\u0e08\u0e48\u0e32\u0e22\u0e15\u0e32\u0e21\u0e08\u0e23\u0e34\u0e07\u0e44\u0e21\u0e48\u0e40\u0e01\u0e34\u0e19 30,000 \u0e1a\u0e32\u0e17\u0e41\u0e25\u0e30\u0e44\u0e21\u0e48\u0e23\u0e27\u0e21\u0e43\u0e19\u0e27\u0e07\u0e40\u0e07\u0e34\u0e19 70,000 \u0e1a\u0e32\u0e17\n\u0e44\u0e21\u0e48\u0e21\u0e35\u0e04\u0e48\u0e32\u0e25\u0e07\u0e17\u0e30\u0e40\u0e1a\u0e35\u0e22\u0e19 (\u0e04\u0e13\u0e30\u0e40\u0e1b\u0e47\u0e19\u0e40\u0e08\u0e49\u0e32\u0e20\u0e32\u0e1e\u0e2b\u0e25\u0e31\u0e01)"
+  },
+  {
+   "default": "0",
+   "fieldname": "reg_fee_support_2nd_paper",
+   "fieldtype": "Check",
+   "label": "Registration Fee Support for 2nd Paper"
+  },
+  {
+   "default": "0",
+   "fieldname": "second_request",
+   "fieldtype": "Check",
+   "label": "Second Request (with WOS Q-12 paper)"
+  },
+  {
+   "fieldname": "amount_support_request",
+   "fieldtype": "Data",
+   "label": "Amount of Support Request"
+  },
+  {
+   "fieldname": "student_signature",
+   "fieldtype": "Signature",
+   "label": "Student Signature"
+  },
+  {
+   "fieldname": "advisor_signature",
+   "fieldtype": "Signature",
+   "label": "Advisor Signature"
+  },
+  {
+   "fieldname": "attached_flies",
+   "fieldtype": "Attach",
+   "label": "Attached Flies"
+  },
+  {
+   "fieldname": "req_submission_date",
+   "fieldtype": "Date",
+   "label": "Request Submission Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "sponsored_conf",
+   "fieldtype": "Check",
+   "label": "Sponsored Conference"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HEI-SCR-.######"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_49",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_signature_heading",
+   "fieldtype": "Heading",
+   "label": "Student Signature",
+   "options": "Student Signature"
+  },
+  {
+   "fieldname": "advisor_signature_heading",
+   "fieldtype": "Heading",
+   "label": "Advisor Signature",
+   "options": "Advisor Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-19 02:48:43.105635",
+ "modified_by": "Administrator",
+ "module": "Academic Research",
+ "name": "Student Conference Support Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
