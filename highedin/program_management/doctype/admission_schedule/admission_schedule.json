@@ -14,28 +14,28 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "title"
+   "label": "Title"
   },
   {
    "fieldname": "description",
    "fieldtype": "Text",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "start_date"
+   "label": "Start Date"
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "end_date"
+   "label": "End Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-19 03:45:34.975114",
+ "modified": "2021-03-19 16:37:43.444190",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Admission Schedule",

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "creation": "2021-03-19 04:17:52.085573",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "form_id",
+  "salutation",
+  "first_name",
+  "last_name",
+  "name_en",
+  "email",
+  "phone",
+  "application_date",
+  "admission_id",
+  "admission_title"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Application ID"
+  },
+  {
+   "fieldname": "form_id",
+   "fieldtype": "Data",
+   "label": "Application Form ID"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last_name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "admission_id",
+   "fieldtype": "Link",
+   "label": "Admission ID",
+   "options": "College Admission"
+  },
+  {
+   "fetch_from": "admission_id.title",
+   "fieldname": "admission_title",
+   "fieldtype": "Data",
+   "label": "Admission Title"
+  },
+  {
+   "fieldname": "name_en",
+   "fieldtype": "Data",
+   "label": "Name (en)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-19 16:15:13.528306",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Student Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
