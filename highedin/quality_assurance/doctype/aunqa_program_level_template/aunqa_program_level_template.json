@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-15 17:10:40.936817",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "aunqa_code",
+  "aunqa_no",
+  "aunqa_name",
+  "criterion",
+  "criterion_checklist",
+  "overall_opinion",
+  "explanation",
+  "diagnostic_question",
+  "sources_of_evidence",
+  "list_of_table",
+  "figure",
+  "reference",
+  "version",
+  "year_published",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "aunqa_code",
+   "fieldtype": "Data",
+   "label": "AUNQA Code"
+  },
+  {
+   "fieldname": "aunqa_no",
+   "fieldtype": "Int",
+   "label": "AUNQA No"
+  },
+  {
+   "fieldname": "aunqa_name",
+   "fieldtype": "Text",
+   "label": "AUNQA name"
+  },
+  {
+   "fieldname": "criterion",
+   "fieldtype": "Link",
+   "label": "Criterion",
+   "options": "AUNQA Program Level Criteria"
+  },
+  {
+   "fieldname": "criterion_checklist",
+   "fieldtype": "Link",
+   "label": "Criterion Checklist",
+   "options": "AUNQA Program Level Critertia Checklist"
+  },
+  {
+   "fieldname": "overall_opinion",
+   "fieldtype": "Data",
+   "label": "Overall Opinion"
+  },
+  {
+   "fieldname": "explanation",
+   "fieldtype": "Text",
+   "label": "Explanation"
+  },
+  {
+   "fieldname": "diagnostic_question",
+   "fieldtype": "Link",
+   "label": "Diagnostic Question",
+   "options": "AUNQA Program Diagnostic  Question"
+  },
+  {
+   "fieldname": "sources_of_evidence",
+   "fieldtype": "Text",
+   "label": "Sources of Evidence"
+  },
+  {
+   "fieldname": "list_of_table",
+   "fieldtype": "Link",
+   "label": "List of Table",
+   "options": "AUNQA Program Level Table"
+  },
+  {
+   "fieldname": "figure",
+   "fieldtype": "Link",
+   "label": "FIgure",
+   "options": "AUNQA Program Level Figure"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Link",
+   "label": "Reference",
+   "options": "AUNQA Program Level Reference"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Version",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year_published",
+   "fieldtype": "Data",
+   "label": "Year Published"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HEI-APT-.####"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-15 17:41:04.137752",
+ "modified_by": "Administrator",
+ "module": "Quality Assurance",
+ "name": "AUNQA Program Level Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
