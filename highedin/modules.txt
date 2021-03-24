@@ -1,1 +1,10 @@
-Highedin
+Higher Education Information System
+Program Management
+Quality Assurance
+Course Management
+Academic Research
+Facility Management
+Coop Education
+Student Affair
+Student Service
+Academic Service

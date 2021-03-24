@@ -3,12 +3,12 @@ from __future__ import unicode_literals
 from . import __version__ as app_version
 
 app_name = "highedin"
-app_title = "Highedin"
-app_publisher = "highedin"
-app_description = "highedin"
+app_title = "Higher Education Information System"
+app_publisher = "Nopporn Chotikakamthorn"
+app_description = "An information system for management of teaching, research, and academic services in higdepartments or schools of higher education institutes."
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "highedin"
+app_email = "noppcho@gmail.com"
 app_license = "MIT"
 
 # Includes in <head>

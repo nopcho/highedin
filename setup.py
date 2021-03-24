@@ -10,9 +10,9 @@ from highedin import __version__ as version
 setup(
 	name='highedin',
 	version=version,
-	description='highedin',
-	author='highedin',
-	author_email='highedin',
+	description='An information system for management of teaching, research, and academic services in higdepartments or schools of higher education institutes.',
+	author='Nopporn Chotikakamthorn',
+	author_email='noppcho@gmail.com',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

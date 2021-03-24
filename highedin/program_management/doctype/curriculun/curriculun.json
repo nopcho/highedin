@@ -1,0 +1,217 @@
+{
+ "actions": [],
+ "creation": "2021-03-15 14:47:47.408289",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "program_name",
+  "program_name_en",
+  "department",
+  "department_en",
+  "institute_name",
+  "institute_name_en",
+  "program_code",
+  "version",
+  "updated_date",
+  "year",
+  "published",
+  "degree_name",
+  "degree_name_en",
+  "degree_name_abbr",
+  "degree_name_en_abbr",
+  "major",
+  "total_credit",
+  "program_status",
+  "status_detail",
+  "readiness",
+  "career_opportunity",
+  "committee",
+  "lecturer",
+  "structure",
+  "philosophy",
+  "objective",
+  "learning_outcome",
+  "plan_type",
+  "plan_option"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name  "
+  },
+  {
+   "fieldname": "program_name_en",
+   "fieldtype": "Data",
+   "label": "Program Name (en)"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "department_en",
+   "fieldtype": "Data",
+   "label": "Department (en)"
+  },
+  {
+   "fieldname": "institute_name",
+   "fieldtype": "Data",
+   "label": "Institute Name "
+  },
+  {
+   "fieldname": "institute_name_en",
+   "fieldtype": "Data",
+   "label": "Institute Name (en)"
+  },
+  {
+   "fieldname": "program_code",
+   "fieldtype": "Data",
+   "label": "Program Code"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Data",
+   "label": "Version"
+  },
+  {
+   "fieldname": "updated_date",
+   "fieldtype": "Data",
+   "label": "Updated Date"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Data",
+   "label": "Published"
+  },
+  {
+   "fieldname": "degree_name",
+   "fieldtype": "Data",
+   "label": "Degree Name"
+  },
+  {
+   "fieldname": "degree_name_en",
+   "fieldtype": "Data",
+   "label": "Degree Name (en)"
+  },
+  {
+   "fieldname": "degree_name_abbr",
+   "fieldtype": "Data",
+   "label": "Degree Name (abbr)"
+  },
+  {
+   "fieldname": "degree_name_en_abbr",
+   "fieldtype": "Data",
+   "label": "Degree Name (en abbr)"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Table",
+   "label": "Major",
+   "options": "Curriculum Major"
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Data",
+   "label": "Total Credit"
+  },
+  {
+   "fieldname": "program_status",
+   "fieldtype": "Data",
+   "label": "Program Status"
+  },
+  {
+   "fieldname": "status_detail",
+   "fieldtype": "Data",
+   "label": "Status Detail"
+  },
+  {
+   "fieldname": "readiness",
+   "fieldtype": "Data",
+   "label": "Readiness"
+  },
+  {
+   "fieldname": "career_opportunity",
+   "fieldtype": "Data",
+   "label": "Carreer Opportunity"
+  },
+  {
+   "fieldname": "committee",
+   "fieldtype": "Table",
+   "label": "Program Committee",
+   "options": "Curriculum Committee"
+  },
+  {
+   "fieldname": "lecturer",
+   "fieldtype": "Table",
+   "label": "Program Lecturer",
+   "options": "Curriculum Lecturer"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Table",
+   "label": "Program Structure",
+   "options": "Curriculum Structure"
+  },
+  {
+   "fieldname": "philosophy",
+   "fieldtype": "Data",
+   "label": "Philosophy"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Data",
+   "label": "Objective"
+  },
+  {
+   "fieldname": "learning_outcome",
+   "fieldtype": "Table",
+   "label": "Program Learning outcome",
+   "options": "Curriculum PLO"
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Table",
+   "label": "Study Plan Type",
+   "options": "Curriculum Plan Type"
+  },
+  {
+   "fieldname": "plan_option",
+   "fieldtype": "Table",
+   "label": "Study Plan Option",
+   "options": "Curriculum Plan Option"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-15 15:51:38.828375",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Curriculun",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

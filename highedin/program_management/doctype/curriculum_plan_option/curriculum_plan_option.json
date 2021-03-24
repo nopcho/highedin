@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-15 15:18:32.431103",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "major",
+  "plan_type",
+  "description",
+  "plan_option_code",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "plan_name"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "major"
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Data",
+   "label": "plan_type"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "plan_option_code",
+   "fieldtype": "Data",
+   "label": "plan_option_code"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-24 16:40:10.819528",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Curriculum Plan Option",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
