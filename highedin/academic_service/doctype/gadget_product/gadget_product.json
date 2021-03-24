@@ -1,5 +1,5 @@
 {
- "autoname": "naming_series: ",
+ "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -135,12 +135,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "naming_series.product_id",
    "fieldname": "product_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Product ID",
-   "options": "Gadget Product"
+   "label": "Product ID"
   },
   {
    "fieldname": "naming_series",
@@ -150,7 +148,7 @@
    "options": "HEI-GPR-.######"
   }
  ],
- "modified": "2021-03-24 15:04:38.247113",
+ "modified": "2021-03-24 15:59:41.186043",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
