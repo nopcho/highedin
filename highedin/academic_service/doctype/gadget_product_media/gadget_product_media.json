@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2021-03-24 19:13:30.526517",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attached_file",
+  "title",
+  "description",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "attached_file",
+   "fieldtype": "Data",
+   "label": "Attached_file"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-24 19:13:30.526517",
+ "modified_by": "Administrator",
+ "module": "Academic Service",
+ "name": "Gadget Product Media",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
@@ -25,8 +26,10 @@
   "date_submitted",
   "section_break_16",
   "reference",
+  "media",
   "section_break_9",
   "opinion",
+  "revision",
   "naming_series"
  ],
  "fields": [
@@ -146,9 +149,22 @@
    "hidden": 1,
    "label": "Series",
    "options": "HEI-GPR-.######"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Media",
+   "options": "Gadget Product Media"
+  },
+  {
+   "fieldname": "revision",
+   "fieldtype": "Table",
+   "label": "Revision",
+   "options": "Gadget Product Revision"
   }
  ],
- "modified": "2021-03-24 15:59:41.186043",
+ "links": [],
+ "modified": "2021-03-24 19:22:33.762661",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",

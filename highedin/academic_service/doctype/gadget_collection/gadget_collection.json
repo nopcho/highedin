@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:41:29.883938",
  "doctype": "DocType",
@@ -32,7 +33,7 @@
   "donor_id",
   "media",
   "column_break_26",
-  "revision",
+  "prevision",
   "naming_series"
  ],
  "fields": [
@@ -123,7 +124,7 @@
    "fieldname": "media",
    "fieldtype": "Table",
    "label": "Media",
-   "options": "Gadget Product Media"
+   "options": "Gadget Collection Media"
   },
   {
    "fieldname": "source",
@@ -140,12 +141,6 @@
    "fieldname": "date_submitted",
    "fieldtype": "Data",
    "label": "Date Submitted"
-  },
-  {
-   "fieldname": "revision",
-   "fieldtype": "Table",
-   "label": "Revision",
-   "options": "Gadget Product Revision"
   },
   {
    "fieldname": "column_break_3",
@@ -189,9 +184,16 @@
    "hidden": 1,
    "label": "Series",
    "options": "HEI-GCO-.####"
+  },
+  {
+   "fieldname": "prevision",
+   "fieldtype": "Table",
+   "label": "Prevision",
+   "options": "Gadget Collection Prevision"
   }
  ],
- "modified": "2021-03-24 18:46:57.915352",
+ "links": [],
+ "modified": "2021-03-24 19:16:54.940700",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
