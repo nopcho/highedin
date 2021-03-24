@@ -1,30 +1,39 @@
 {
- "actions": [],
- "autoname": "HEIGCO.####",
+ "autoname": "naming_series:",
  "creation": "2021-03-15 21:41:29.883938",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "image",
+  "column_break_3",
   "collection_id",
   "product_id",
   "product_name",
+  "section_break_6",
   "model",
   "product_type",
+  "company",
+  "column_break_10",
   "product_category",
   "product_subcategory",
-  "company",
-  "year_purchased",
+  "section_break_13",
+  "date_submitted",
   "date_registered",
+  "column_break_15",
+  "year_purchased",
+  "column_break_17",
   "functional_condition",
   "general_condition",
+  "column_break_20",
   "condition_remark",
-  "image",
-  "media",
   "source",
+  "section_break_23",
   "donor_id",
-  "date_submitted",
-  "revision"
+  "media",
+  "column_break_26",
+  "revision",
+  "naming_series"
  ],
  "fields": [
   {
@@ -107,7 +116,7 @@
   },
   {
    "fieldname": "image",
-   "fieldtype": "Data",
+   "fieldtype": "Image",
    "label": "Image"
   },
   {
@@ -137,14 +146,55 @@
    "fieldtype": "Table",
    "label": "Revision",
    "options": "Gadget Product Revision"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HEI-GCO-.####"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-03-15 23:15:39.695258",
+ "modified": "2021-03-24 14:57:45.940450",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
+ "name_case": "UPPER CASE",
  "owner": "Administrator",
  "permissions": [
   {
@@ -156,6 +206,28 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
    "share": 1,
    "write": 1
   }

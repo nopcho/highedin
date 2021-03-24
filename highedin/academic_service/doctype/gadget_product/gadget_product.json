@@ -1,35 +1,35 @@
 {
- "actions": [],
- "autoname": "HEI.GPR.######",
+ "autoname": "naming_series: ",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "image",
+  "column_break_3",
   "product_id",
   "product_name",
+  "section_break_5",
   "model",
   "product_type",
+  "company",
+  "column_break_9",
   "product_category",
   "product_subcategory",
-  "company",
-  "month_launched",
-  "year_launched",
-  "launch_detail",
   "product_description",
-  "opinion",
-  "image",
-  "media",
-  "reference",
+  "section_break_12",
+  "month_launched",
+  "launch_detail",
+  "column_break_14",
+  "year_launched",
   "date_submitted",
-  "revision"
+  "section_break_16",
+  "reference",
+  "section_break_9",
+  "opinion",
+  "naming_series"
  ],
  "fields": [
-  {
-   "fieldname": "product_id",
-   "fieldtype": "Data",
-   "label": "Product ID"
-  },
   {
    "fieldname": "product_name",
    "fieldtype": "Data",
@@ -92,14 +92,8 @@
   },
   {
    "fieldname": "image",
-   "fieldtype": "Data",
+   "fieldtype": "Image",
    "label": "Image"
-  },
-  {
-   "fieldname": "media",
-   "fieldtype": "Table",
-   "label": "Media",
-   "options": "Gadget Product Media"
   },
   {
    "fieldname": "reference",
@@ -113,18 +107,54 @@
    "label": "Date Submitted"
   },
   {
-   "fieldname": "revision",
-   "fieldtype": "Table",
-   "label": "Revision",
-   "options": "Gadget Product Revision"
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "naming_series.product_id",
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product ID",
+   "options": "Gadget Product"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HEI-GPR-.######"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-03-15 22:53:47.462068",
+ "modified": "2021-03-24 15:04:38.247113",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
+ "name_case": "UPPER CASE",
  "owner": "Administrator",
  "permissions": [
   {
@@ -136,6 +166,28 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
    "share": 1,
    "write": 1
   }
