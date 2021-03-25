@@ -67,20 +67,24 @@
  "fields": [
   {
    "fieldname": "student_id",
-   "fieldtype": "Data",
-   "label": "Student ID"
+   "fieldtype": "Link",
+   "label": "Student ID",
+   "options": "Student Profile"
   },
   {
+   "fetch_from": "student_id.salutation",
    "fieldname": "salutation",
    "fieldtype": "Data",
    "label": "Salutation"
   },
   {
+   "fetch_from": "student_id.first_name",
    "fieldname": "student_name",
    "fieldtype": "Data",
    "label": "Student Name"
   },
   {
+   "fetch_from": "student_id.last_name",
    "fieldname": "student_surname",
    "fieldtype": "Data",
    "label": "Student Surname"
@@ -111,15 +115,18 @@
   },
   {
    "fieldname": "program_id",
-   "fieldtype": "Data",
-   "label": "Program ID"
+   "fieldtype": "Link",
+   "label": "Program ID",
+   "options": "Program Registration"
   },
   {
+   "fetch_from": "program_id.program_id",
    "fieldname": "program_name",
    "fieldtype": "Data",
    "label": "Program Name"
   },
   {
+   "fetch_from": "program_id.status",
    "fieldname": "major",
    "fieldtype": "Data",
    "label": "Major"
@@ -362,7 +369,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 02:48:43.105635",
+ "modified": "2021-03-25 21:14:13.486819",
  "modified_by": "Administrator",
  "module": "Academic Research",
  "name": "Student Conference Support Request",
