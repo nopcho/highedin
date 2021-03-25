@@ -17,23 +17,22 @@
    "fieldname": "type_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "type_id",
-   "reqd": 1
+   "label": "Type ID"
   },
   {
    "fieldname": "type_name",
    "fieldtype": "Data",
-   "label": "type_name"
+   "label": "Type Name"
   },
   {
    "fieldname": "type_name_en",
    "fieldtype": "Data",
-   "label": "type_name_en"
+   "label": "Type Name EN"
   },
   {
    "fieldname": "description",
    "fieldtype": "Text",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "naming_series",
@@ -44,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 03:46:48.762731",
+ "modified": "2021-03-25 17:11:51.263128",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Admission Type",
