@@ -7,9 +7,11 @@
  "field_order": [
   "student_id",
   "personal_id",
+  "passport_id",
+  "salutation",
   "first_name",
-  "last_name",
-  "salutation"
+  "middle_name",
+  "last_name"
  ],
  "fields": [
   {
@@ -34,13 +36,24 @@
   },
   {
    "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "passport_id",
    "fieldtype": "Data",
-   "label": "Salutation"
+   "label": "Passport ID"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 16:25:05.604104",
+ "modified": "2021-03-25 16:34:37.650928",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Student Profile",
