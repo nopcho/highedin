@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-25 23:42:27.335445",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "leave_request_id",
+  "title",
+  "student_id",
+  "first_name",
+  "last_name",
+  "semester",
+  "year",
+  "program",
+  "major",
+  "study_year",
+  "degree",
+  "request_detail",
+  "document",
+  "date_start",
+  "date_end",
+  "day",
+  "parent_name",
+  "date_parent_sign",
+  "teacher_name",
+  "date_teacher_sign",
+  "opinion",
+  "date_submitted",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HEI-SLR-.YYYY.-.######"
+  },
+  {
+   "fieldname": "leave_request_id",
+   "fieldtype": "Data",
+   "label": "Leave Request ID"
+  },
+  {
+   "fetch_from": "title.request_type_name",
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "label": "Title",
+   "options": "Leave Request Type"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "label": "Student ID",
+   "options": "Student Profile"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Int",
+   "label": "Semester"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "Major"
+  },
+  {
+   "fieldname": "study_year",
+   "fieldtype": "Int",
+   "label": "Study Year"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "label": "Degree"
+  },
+  {
+   "fieldname": "request_detail",
+   "fieldtype": "Text",
+   "label": "Request Detail"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Table",
+   "label": "Document",
+   "options": "Leave Document"
+  },
+  {
+   "fieldname": "date_start",
+   "fieldtype": "Date",
+   "label": "Date Start"
+  },
+  {
+   "fieldname": "date_end",
+   "fieldtype": "Date",
+   "label": "Date End"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Int",
+   "label": "Day"
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "label": "Parent Name"
+  },
+  {
+   "fieldname": "date_parent_sign",
+   "fieldtype": "Data",
+   "label": "Date Parent Sign"
+  },
+  {
+   "fieldname": "teacher_name",
+   "fieldtype": "Data",
+   "label": "Teacher Name"
+  },
+  {
+   "fieldname": "date_teacher_sign",
+   "fieldtype": "Data",
+   "label": "Date Teacher Sign"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Table",
+   "label": "Opinion",
+   "options": "Student Leave Subject Opinion"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-25 23:50:29.903455",
+ "modified_by": "Administrator",
+ "module": "Student Service",
+ "name": "Student Leave Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
