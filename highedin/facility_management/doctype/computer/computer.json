@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "creation": "2021-03-29 01:31:58.564017",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_id",
+  "computer_type",
+  "computer_name",
+  "description",
+  "data_registered",
+  "date_purchased",
+  "location",
+  "building_zone",
+  "building",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Equipment ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "computer_type",
+   "fieldtype": "Link",
+   "label": "Computer Type",
+   "options": "Computer Type"
+  },
+  {
+   "fieldname": "computer_name",
+   "fieldtype": "Data",
+   "label": "Computer Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "data_registered",
+   "fieldtype": "Data",
+   "label": "Date Registered"
+  },
+  {
+   "fieldname": "date_purchased",
+   "fieldtype": "Data",
+   "label": "Data Purchased"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Rooms"
+  },
+  {
+   "fetch_from": "room_id:building_zone",
+   "fieldname": "building_zone",
+   "fieldtype": "Link",
+   "label": "Building Zone",
+   "options": "Building Zone"
+  },
+  {
+   "fetch_from": "room_id:building_id",
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nUnder repair\nRemoved\nUnknown"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-29 01:31:58.564017",
+ "modified_by": "Administrator",
+ "module": "Facility Management",
+ "name": "Computer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
