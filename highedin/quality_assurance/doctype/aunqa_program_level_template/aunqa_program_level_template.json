@@ -35,18 +35,18 @@
   },
   {
    "fieldname": "aunqa_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "AUNQA name"
   },
   {
    "fieldname": "criterion",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Criterion",
    "options": "AUNQA Program Level Criteria"
   },
   {
    "fieldname": "criterion_checklist",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Criterion Checklist",
    "options": "AUNQA Program Level Critertia Checklist"
   },
@@ -57,35 +57,35 @@
   },
   {
    "fieldname": "explanation",
-   "fieldtype": "Text",
+   "fieldtype": "Text Editor",
    "label": "Explanation"
   },
   {
    "fieldname": "diagnostic_question",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Diagnostic Question",
    "options": "AUNQA Program Diagnostic  Question"
   },
   {
    "fieldname": "sources_of_evidence",
-   "fieldtype": "Text",
+   "fieldtype": "Text Editor",
    "label": "Sources of Evidence"
   },
   {
    "fieldname": "list_of_table",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "List of Table",
    "options": "AUNQA Program Level Table"
   },
   {
    "fieldname": "figure",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "FIgure",
    "options": "AUNQA Program Level Figure"
   },
   {
    "fieldname": "reference",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Reference",
    "options": "AUNQA Program Level Reference"
   },
@@ -110,7 +110,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-15 17:41:04.137752",
+ "modified": "2021-03-28 17:41:02.918645",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",

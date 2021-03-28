@@ -8,3 +8,6 @@ from frappe.model.document import Document
 
 class AUNQAProgramLevelTemplate(Document):
 	pass
+
+def validate(self):
+	set self.aunqa_code = self.name
