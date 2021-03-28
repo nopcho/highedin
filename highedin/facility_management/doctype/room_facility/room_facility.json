@@ -13,6 +13,7 @@
   {
    "fieldname": "facility_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "facility_name",
    "options": "Facility"
   },
@@ -30,7 +31,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-19 15:55:58.473303",
+ "modified": "2021-03-26 16:22:28.602355",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Room Facility",

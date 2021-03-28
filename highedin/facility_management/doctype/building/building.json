@@ -26,13 +26,13 @@
   },
   {
    "fieldname": "location",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 18:06:00.443971",
+ "modified": "2021-03-26 16:49:33.553305",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Building",

@@ -70,7 +70,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Available, Under renovation, Removed"
+   "options": "Available\nUnder renovation\nRemoved"
   },
   {
    "fieldname": "date_updated",
@@ -89,7 +89,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 17:56:45.414320",
+ "modified": "2021-03-26 16:19:33.629791",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Rooms",
