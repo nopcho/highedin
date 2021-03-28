@@ -3,11 +3,12 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 class AUNQAProgramLevelTemplate(Document):
-	pass
+	def validate(self):
+		self.aunqa_code = self.name
+		
 
-def validate(self):
-	set self.aunqa_code = self.name
+
