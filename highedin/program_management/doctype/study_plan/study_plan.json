@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "creation": "2021-03-19 16:34:11.488677",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_type",
+  "subject_id",
+  "subject",
+  "credits",
+  "prerequisite"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Select",
+   "label": "Plan Type",
+   "options": "without cooperative education\nwith cooperative education"
+  },
+  {
+   "fieldname": "subject_id",
+   "fieldtype": "Data",
+   "label": "Subject ID"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Data",
+   "label": "Credits"
+  },
+  {
+   "fieldname": "prerequisite",
+   "fieldtype": "Data",
+   "label": "Prerequisite"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-03-19 16:34:11.488677",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Study Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
