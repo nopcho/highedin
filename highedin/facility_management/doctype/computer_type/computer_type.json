@@ -1,20 +1,19 @@
 {
  "actions": [],
- "autoname": "field:facility_name",
- "creation": "2021-03-11 18:13:25.724749",
+ "autoname": "field:computer_type",
+ "creation": "2021-03-29 01:21:04.461939",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "facility_name",
+  "computer_type",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "facility_name",
+   "fieldname": "computer_type",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Facility Name",
+   "label": "Computer Type",
    "unique": 1
   },
   {
@@ -25,10 +24,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-29 01:13:06.593428",
+ "modified": "2021-03-29 01:21:04.461939",
  "modified_by": "Administrator",
  "module": "Facility Management",
- "name": "Facility",
+ "name": "Computer Type",
  "owner": "Administrator",
  "permissions": [
   {
