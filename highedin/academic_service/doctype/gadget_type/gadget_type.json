@@ -1,21 +1,44 @@
 {
- "autoname": "field:gadget_type",
+ "autoname": "field:product_type",
  "creation": "2021-03-15 22:43:13.335400",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "gadget_type"
+  "product_type",
+  "category",
+  "main_category",
+  "sub_category"
  ],
  "fields": [
   {
-   "fieldname": "gadget_type",
+   "fieldname": "product_type",
    "fieldtype": "Data",
-   "label": "Gadget Type",
+   "label": "Product Type",
    "unique": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category ",
+   "options": "Gadget Subcategory"
+  },
+  {
+   "fetch_from": "category.main_category",
+   "fieldname": "main_category",
+   "fieldtype": "Data",
+   "label": "Main Category",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "category.sub_category",
+   "fieldname": "sub_category",
+   "fieldtype": "Data",
+   "label": "Sub Category",
+   "read_only": 1
   }
  ],
- "modified": "2021-03-24 14:47:25.953094",
+ "modified": "2021-03-31 16:37:58.987722",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Type",
@@ -35,23 +58,25 @@
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor",
+   "role": "Non Profit Manager",
    "share": 1,
    "write": 1
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Student",
+   "role": "Non Profit Member",
    "share": 1,
    "write": 1
   }

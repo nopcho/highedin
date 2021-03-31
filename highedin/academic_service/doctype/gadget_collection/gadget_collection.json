@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:41:29.883938",
  "doctype": "DocType",
@@ -7,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "image",
+  "upload",
   "column_break_3",
   "collection_id",
   "product_id",
@@ -33,14 +33,16 @@
   "donor_id",
   "media",
   "column_break_26",
-  "prevision",
+  "revision",
   "naming_series"
  ],
  "fields": [
   {
    "fieldname": "collection_id",
    "fieldtype": "Data",
-   "label": "Collection ID"
+   "in_list_view": 1,
+   "label": "Collection ID",
+   "read_only": 1
   },
   {
    "fieldname": "product_id",
@@ -49,46 +51,40 @@
    "options": "Gadget Product"
   },
   {
-   "fetch_from": "product_name.product_name",
+   "fetch_from": "product_id.product_name",
    "fieldname": "product_name",
-   "fieldtype": "Link",
-   "label": "Product Name",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Product Name"
   },
   {
-   "fetch_from": "model.model",
+   "fetch_from": "product_id.model",
    "fieldname": "model",
-   "fieldtype": "Link",
-   "label": "Model",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Model"
   },
   {
-   "fetch_from": "product_type.product_type",
+   "fetch_from": "product_id.product_type",
    "fieldname": "product_type",
-   "fieldtype": "Link",
-   "label": "Product Type",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Product Type"
   },
   {
-   "fetch_from": "product_category.product_category",
+   "fetch_from": "product_id.product_category",
    "fieldname": "product_category",
-   "fieldtype": "Link",
-   "label": "Product Category",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Product Category"
   },
   {
-   "fetch_from": "product_subcategory.product_subcategory",
+   "fetch_from": "product_id.product_subcategory",
    "fieldname": "product_subcategory",
-   "fieldtype": "Link",
-   "label": "Product Subcategory",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Product Subcategory"
   },
   {
-   "fetch_from": "company.company",
+   "fetch_from": "product_id.company",
    "fieldname": "company",
-   "fieldtype": "Link",
-   "label": "Company",
-   "options": "Gadget Product"
+   "fieldtype": "Data",
+   "label": "Company"
   },
   {
    "fieldname": "year_purchased",
@@ -102,13 +98,15 @@
   },
   {
    "fieldname": "functional_condition",
-   "fieldtype": "Data",
-   "label": "Functional Condition"
+   "fieldtype": "Select",
+   "label": "Functional Condition",
+   "options": "100%\n75%+\n50%+\n25%+\nless than 25%"
   },
   {
    "fieldname": "general_condition",
-   "fieldtype": "Data",
-   "label": "General Condition"
+   "fieldtype": "Select",
+   "label": "General Condition",
+   "options": "Very Good\nGood\nAcceptable\nDamaged\nHighly Damaged"
   },
   {
    "fieldname": "condition_remark",
@@ -118,7 +116,8 @@
   {
    "fieldname": "image",
    "fieldtype": "Image",
-   "label": "Image"
+   "label": "Image",
+   "options": "upload"
   },
   {
    "fieldname": "media",
@@ -128,8 +127,9 @@
   },
   {
    "fieldname": "source",
-   "fieldtype": "Data",
-   "label": "Source"
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "ITKMITL\ndonor\nunknown"
   },
   {
    "fieldname": "donor_id",
@@ -183,17 +183,21 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Series",
-   "options": "HEI-GCO-.####"
+   "options": "HEI-GCO-.######"
   },
   {
-   "fieldname": "prevision",
+   "fieldname": "upload",
+   "fieldtype": "Attach Image",
+   "label": "Upload"
+  },
+  {
+   "fieldname": "revision",
    "fieldtype": "Table",
-   "label": "Prevision",
-   "options": "Gadget Collection Prevision"
+   "label": "Revision",
+   "options": "Gadget Collection Revision"
   }
  ],
- "links": [],
- "modified": "2021-03-24 19:16:54.940700",
+ "modified": "2021-03-31 17:31:29.653699",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
@@ -213,24 +217,44 @@
    "write": 1
   },
   {
-   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Instructor",
-   "share": 1,
-   "write": 1
+   "share": 1
   },
   {
-   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Member",
    "share": 1,
    "write": 1
   }

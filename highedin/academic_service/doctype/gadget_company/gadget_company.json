@@ -1,24 +1,40 @@
 {
- "actions": [],
- "autoname": "field:gadget_company",
+ "autoname": "field:company_name",
  "creation": "2021-03-15 22:46:41.728412",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "gadget_company"
+  "category_name",
+  "company_name",
+  "country",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "gadget_company",
+   "fieldname": "category_name",
    "fieldtype": "Data",
-   "label": "Gadget Company",
+   "label": "Category Name ",
    "unique": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
   }
  ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-03-15 22:46:41.728412",
+ "modified": "2021-03-31 16:42:38.942512",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Company",
@@ -44,7 +60,19 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "All",
+   "role": "Non Profit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Member",
    "share": 1,
    "write": 1
   }

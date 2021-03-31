@@ -1,21 +1,21 @@
 {
- "autoname": "field:gadget_category",
+ "autoname": "field:category_name",
  "creation": "2021-03-15 22:44:28.487938",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "gadget_category"
+  "category_name"
  ],
  "fields": [
   {
-   "fieldname": "gadget_category",
+   "fieldname": "category_name",
    "fieldtype": "Data",
-   "label": "Gadget Category",
+   "label": "Category Name",
    "unique": 1
   }
  ],
- "modified": "2021-03-24 14:48:09.233252",
+ "modified": "2021-03-31 16:23:48.978489",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Category",
@@ -35,23 +35,25 @@
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor",
+   "role": "Non Profit Manager",
    "share": 1,
    "write": 1
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Student",
+   "role": "Non Profit Member",
    "share": 1,
    "write": 1
   }

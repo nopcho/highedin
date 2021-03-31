@@ -1,5 +1,4 @@
 {
- "actions": [],
  "creation": "2021-03-24 19:14:57.075176",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,13 +10,12 @@
   {
    "fieldname": "revison_remark",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Revison Remark"
   }
  ],
- "index_web_pages_for_search": 1,
  "istable": 1,
- "links": [],
- "modified": "2021-03-24 19:14:57.075176",
+ "modified": "2021-03-31 17:33:02.109327",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product Revision",

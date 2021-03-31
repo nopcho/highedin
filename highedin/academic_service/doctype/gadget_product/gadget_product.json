@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
@@ -7,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "image",
+  "upload",
   "column_break_3",
   "product_id",
   "product_name",
@@ -94,9 +94,11 @@
    "options": "Gadget Product Opinion"
   },
   {
+   "fetch_from": "upload",
    "fieldname": "image",
    "fieldtype": "Image",
-   "label": "Image"
+   "label": "Image",
+   "options": "upload"
   },
   {
    "fieldname": "reference",
@@ -141,7 +143,8 @@
    "fieldname": "product_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Product ID"
+   "label": "Product ID",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -161,10 +164,14 @@
    "fieldtype": "Table",
    "label": "Revision",
    "options": "Gadget Product Revision"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Attach Image",
+   "label": "Upload"
   }
  ],
- "links": [],
- "modified": "2021-03-24 19:22:33.762661",
+ "modified": "2021-03-31 17:25:42.014215",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
@@ -184,24 +191,44 @@
    "write": 1
   },
   {
-   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Instructor",
-   "share": 1,
-   "write": 1
+   "share": 1
   },
   {
-   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Member",
    "share": 1,
    "write": 1
   }

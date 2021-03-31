@@ -1,6 +1,4 @@
 {
- "actions": [],
- "autoname": "####",
  "creation": "2021-03-15 22:03:48.534101",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,28 +13,30 @@
   {
    "fieldname": "donation_id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "donation_id"
   },
   {
    "fieldname": "dornor_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "dornor_name"
   },
   {
    "fieldname": "donor_date",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "donor_date"
   },
   {
    "fieldname": "remark",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "remark"
   }
  ],
- "index_web_pages_for_search": 1,
  "istable": 1,
- "links": [],
- "modified": "2021-03-15 22:03:48.534101",
+ "modified": "2021-03-31 17:35:22.122529",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Donation",
