@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "creation": "2021-04-01 17:23:46.700642",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_name",
+  "duration",
+  "start_date",
+  "end_date",
+  "status",
+  "requested_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Select",
+   "label": "Requested By",
+   "options": "Student\nStaff"
+  },
+  {
+   "fetch_from": "room_id.room_name",
+   "fieldname": "room_name",
+   "fieldtype": "Data",
+   "label": "Room Name"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nCancelled"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-01 18:16:47.767263",
+ "modified_by": "Administrator",
+ "module": "Facility Management",
+ "name": "Room Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

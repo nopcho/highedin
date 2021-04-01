@@ -57,14 +57,14 @@
    "options": "Rooms"
   },
   {
-   "fetch_from": "room_id:building_zone",
+   "fetch_from": "room_id.building_zone",
    "fieldname": "building_zone",
    "fieldtype": "Link",
    "label": "Building Zone",
    "options": "Building Zone"
   },
   {
-   "fetch_from": "room_id:building_id",
+   "fetch_from": "room_id.building_id",
    "fieldname": "building",
    "fieldtype": "Link",
    "label": "Building",
@@ -79,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-29 01:31:58.564017",
+ "modified": "2021-04-01 16:12:41.329086",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Computer",
