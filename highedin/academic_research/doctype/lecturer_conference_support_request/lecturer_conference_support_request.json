@@ -11,9 +11,6 @@
   "staff_name",
   "staff_surname",
   "staff_position",
-  "column_break_6",
-  "departture_date",
-  "arrival_date",
   "section_break_9",
   "paper_title",
   "second_paper_title",
@@ -21,6 +18,8 @@
   "conference_name",
   "remark",
   "column_break_15",
+  "departture_date",
+  "arrival_date",
   "start_date",
   "end_date",
   "venue",
@@ -43,8 +42,8 @@
   "reg_fee_support_req",
   "reg_fee_support_2nd_paper",
   "second_request",
-  "total_registration_fee",
   "column_break_38",
+  "total_registration_fee",
   "domestic_travelling_cost",
   "aboard_travelling_cost",
   "international_travelling_cost",
@@ -127,7 +126,7 @@
   },
   {
    "fieldname": "remark",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Remark"
   },
   {
@@ -314,16 +313,14 @@
    "options": "HEI-LCR-.######"
   },
   {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "section_break_9",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Paper Details"
   },
   {
    "fieldname": "section_break_21",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Database Record"
   },
   {
    "fieldname": "column_break_25",
@@ -331,7 +328,8 @@
   },
   {
    "fieldname": "section_break_33",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Fee support request"
   },
   {
    "fieldname": "column_break_38",
@@ -339,7 +337,8 @@
   },
   {
    "fieldname": "section_break_49",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Signature"
   },
   {
    "fieldname": "column_break_15",
@@ -352,7 +351,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 00:30:13.935747",
+ "modified": "2021-04-01 19:02:40.983997",
  "modified_by": "Administrator",
  "module": "Academic Research",
  "name": "Lecturer Conference Support Request",
