@@ -12,8 +12,8 @@
   "criterion",
   "criterion_checklist",
   "overall_opinion",
-  "diagnostic_question",
   "explanation",
+  "diagnostic_question",
   "sources_of_evidence",
   "list_of_table",
   "figure",
@@ -34,27 +34,26 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "AUNQA No",
-   "options": "Version",
    "reqd": 1
   },
   {
    "fieldname": "aunqa_name",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "in_list_view": 1,
    "label": "AUNQA name",
    "reqd": 1
   },
   {
    "fieldname": "criterion",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Criterion",
-   "options": "AUNQA Program Level Criteria"
+   "options": "AUNQA Program Criterion"
   },
   {
    "fieldname": "criterion_checklist",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Criterion Checklist",
-   "options": "AUNQA Program Level Critertia Checklist"
+   "options": "AUNQA Program Level Criterion Checklist"
   },
   {
    "fieldname": "overall_opinion",
@@ -63,35 +62,35 @@
   },
   {
    "fieldname": "explanation",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Text",
    "label": "Explanation"
   },
   {
    "fieldname": "diagnostic_question",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Diagnostic Question",
    "options": "AUNQA Program Diagnostic  Question"
   },
   {
    "fieldname": "sources_of_evidence",
-   "fieldtype": "Text Editor",
+   "fieldtype": "Text",
    "label": "Sources of Evidence"
   },
   {
    "fieldname": "list_of_table",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "List of Table",
    "options": "AUNQA Program Level Table"
   },
   {
    "fieldname": "figure",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "FIgure",
    "options": "AUNQA Program Level Figure"
   },
   {
    "fieldname": "reference",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Reference",
    "options": "AUNQA Program Level Reference"
   },
@@ -116,7 +115,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-31 18:10:01.536320",
+ "modified": "2021-04-01 20:38:15.407116",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",

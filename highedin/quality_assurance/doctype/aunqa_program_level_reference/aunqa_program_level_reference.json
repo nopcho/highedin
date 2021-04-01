@@ -14,21 +14,25 @@
   {
    "fieldname": "ref_no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ref_no"
   },
   {
    "fieldname": "ref_title",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ref_title"
   },
   {
    "fieldname": "link_to_file",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "link_to_file"
   },
   {
    "fieldname": "attached_file_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "attached file status",
    "options": "not available\ndraft\nfinal"
   }
@@ -36,7 +40,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-15 17:26:57.158876",
+ "modified": "2021-04-01 20:36:55.932356",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Reference",
