@@ -1,0 +1,105 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Genarel Request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: 'Merriweather', serif;
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: rgb(9, 9, 78);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 27px;
+  
+}
+.good{
+  margin-top : 25px ;
+    font-family: 'Sarabun', sans-serif;
+   
+      }
+      .good1{
+          margin-top : 20px ;
+      }
+      p{
+        font-size: 18px;
+      }
+      
+
+</style>
+<body>
+  <div class="topnav" style="color: white;">
+    <a>STUDENT GENARAL REQUEST</a>
+  </div>
+  <div class="container good">
+    <form action="" id="myForm" onsubmit="validateForm()" method="post" >
+        <h1><center> ใบคำร้องทั่วไป </center></h1>
+        <h3 style=" text-align: right; font-size: 25px;">วันที่ {{date_submitted}}</h3>
+     
+        
+    
+        <div  style="margin-top: 50px;" >
+          <p ><strong>เรื่อง:</strong> {{topic}}</p>
+           </div>
+
+        <div  style="margin-top: 15px;" >
+          <p ><strong>เรียน:</strong> {{authority_name}}</p>
+           </div>  
+            
+               
+           <div  style="margin-top: 50px;" >
+           <center> <p ><strong>ชื่อ:&nbsp;&nbsp;&nbsp;</strong> {{first_name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>นามสกุล:&nbsp;&nbsp;&nbsp;</strong> {{last_name}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>รหัศนักศึกษา:&nbsp;&nbsp;&nbsp;</strong> {{student_id}}</p></center>
+           <center> <p ><strong>สาขาวิชา:&nbsp;&nbsp;&nbsp;</strong> {{major}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>แขนงวิชา:&nbsp;&nbsp;&nbsp;</strong> {{program}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>นักศึกษาชั้นปีที่:&nbsp;&nbsp;&nbsp;</strong> {{study_year}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>รุ่นที่:&nbsp;&nbsp;&nbsp;</strong> {{badge}}</p></center>
+       
+             </div>     
+                
+                
+        <div class="row ">
+          <div class="col-md-12 ">
+            <center><p style="margin-top: 25px;"><strong>มีความประสงค์ &nbsp;</strong> {{request_detail}} </p></center>
+            
+            
+          </div>
+      </div>
+
+
+        <h3 style="font-size: 18px; margin-top: 50px;">จึงเรียนมาเพื่อโปรดพิจารณาและดำเนินการต่อไปด้วย {{final_decision}}</h3>
+        <h3 style=" text-align: right; font-size: 18px;  margin-top: 50px;">ขอแสดงความนับถือ</h3>
+        <h3 style=" text-align: right; font-size: 18px;  margin-top: 20px;">{{signature}}</h3>
+      
+      
+      
+        
+    </form>
+      
+      
+  
+      
+  </div>
+
+  
+</body>
+</html>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

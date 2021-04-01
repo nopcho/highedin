@@ -13,23 +13,26 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Title"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-25 23:47:29.237200",
+ "modified": "2021-03-26 14:05:22.275207",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Leave Document",

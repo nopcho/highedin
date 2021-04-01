@@ -35,13 +35,15 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "options": "HEI-SLR-.YYYY.-.######"
   },
   {
    "fieldname": "leave_request_id",
    "fieldtype": "Data",
-   "label": "Leave Request ID"
+   "label": "Leave Request ID",
+   "read_only": 1
   },
   {
    "fetch_from": "title.request_type_name",
@@ -57,11 +59,13 @@
    "options": "Student Profile"
   },
   {
+   "fetch_from": "student_id.first_name",
    "fieldname": "first_name",
    "fieldtype": "Data",
    "label": "First Name"
   },
   {
+   "fetch_from": "student_id.last_name",
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "Last Name"
@@ -129,7 +133,7 @@
   },
   {
    "fieldname": "date_parent_sign",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Parent Sign"
   },
   {
@@ -139,7 +143,7 @@
   },
   {
    "fieldname": "date_teacher_sign",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Teacher Sign"
   },
   {
@@ -156,12 +160,13 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Status"
+   "label": "Status",
+   "options": "Incomplete\nComplete"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-25 23:50:29.903455",
+ "modified": "2021-03-26 14:38:37.911467",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Leave Request",

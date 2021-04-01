@@ -12,7 +12,8 @@
   {
    "fieldname": "request_type_name",
    "fieldtype": "Data",
-   "label": "Request Type Name"
+   "label": "Request Type Name",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -22,7 +23,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-18 15:51:15.006038",
+ "modified": "2021-03-31 17:15:12.424413",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Request Type",

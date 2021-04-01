@@ -4,9 +4,15 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
-class StudentGeneralRequest(Document):
-	def before_save(self):
+class StudentGeneralRequest(WebsiteGenerator):
+        def before_save(self):
                 self.request_id = self.name
-        # pass
+                self.status = "Edit"
+        
+        def before_submit(self):
+                self.status = "Submit"
+
+        def before_cancel(self):
+                self.status = "Cancel"

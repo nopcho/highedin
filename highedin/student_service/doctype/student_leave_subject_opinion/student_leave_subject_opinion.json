@@ -16,34 +16,39 @@
   {
    "fieldname": "subject_id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Subject ID"
   },
   {
    "fieldname": "subject_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Subject Name"
   },
   {
    "fieldname": "teacher_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Teacher Name"
   },
   {
    "default": "0",
    "fieldname": "allow",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "label": "Allow"
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-25 23:47:10.965149",
+ "modified": "2021-03-26 14:06:12.674666",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Leave Subject Opinion",

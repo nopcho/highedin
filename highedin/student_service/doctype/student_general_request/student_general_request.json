@@ -8,7 +8,7 @@
  "field_order": [
   "naming_series",
   "request_id",
-  "title",
+  "topic",
   "to",
   "authority_name",
   "student_id",
@@ -20,11 +20,13 @@
   "study_year",
   "badge",
   "request_detail",
-  "date_submited",
+  "date_submitted",
   "signature",
   "opinion",
   "final_decision",
-  "status"
+  "status",
+  "amended_from",
+  "route"
  ],
  "fields": [
   {
@@ -34,81 +36,83 @@
    "read_only": 1
   },
   {
-   "fieldname": "title",
-   "fieldtype": "Link",
-   "label": "Title",
-   "options": "Request Type"
-  },
-  {
    "fieldname": "to",
    "fieldtype": "Link",
    "label": "To",
-   "options": "Authority"
+   "options": "Authority",
+   "reqd": 1
   },
   {
    "fetch_from": "to.authority_name",
    "fieldname": "authority_name",
    "fieldtype": "Data",
-   "label": "Authority Name"
+   "in_list_view": 1,
+   "label": "Authority Name",
+   "read_only": 1
   },
   {
    "fetch_from": "student_profile.student_id",
    "fieldname": "student_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Student ID",
-   "options": "Student Profile"
+   "options": "Student Profile",
+   "reqd": 1
   },
   {
    "fetch_from": "student_id.salutation",
    "fieldname": "salutation",
    "fieldtype": "Data",
-   "label": "Salutation"
+   "label": "Salutation",
+   "read_only": 1
   },
   {
    "fetch_from": "student_id.first_name",
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First Name"
+   "label": "First Name",
+   "read_only": 1
   },
   {
    "fetch_from": "student_id.last_name",
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name"
+   "label": "Last Name",
+   "read_only": 1
   },
   {
    "fieldname": "program",
    "fieldtype": "Data",
-   "label": "Program"
+   "label": "Program",
+   "reqd": 1
   },
   {
    "fieldname": "major",
    "fieldtype": "Data",
-   "label": "Major"
+   "label": "Major",
+   "reqd": 1
   },
   {
    "fieldname": "study_year",
-   "fieldtype": "Data",
-   "label": "Study Year"
+   "fieldtype": "Int",
+   "label": "Study Year",
+   "reqd": 1
   },
   {
    "fieldname": "badge",
-   "fieldtype": "Data",
-   "label": "Badge"
+   "fieldtype": "Int",
+   "label": "Badge",
+   "reqd": 1
   },
   {
    "fieldname": "request_detail",
    "fieldtype": "Text",
-   "label": "Request Detail"
-  },
-  {
-   "fieldname": "date_submited",
-   "fieldtype": "Date",
-   "label": "Date Submited"
+   "label": "Request Detail",
+   "reqd": 1
   },
   {
    "fieldname": "signature",
-   "fieldtype": "Data",
+   "fieldtype": "Signature",
    "label": "Signature"
   },
   {
@@ -124,8 +128,28 @@
   },
   {
    "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Edit\nSubmit\nPass\nIssue\nNot Pass\nCancel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student General Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Status"
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -134,11 +158,28 @@
    "label": "Naming Series",
    "options": "HEI-SGR-.YYYY.-.######",
    "read_only": 1
+  },
+  {
+   "fetch_from": "topic.request_type_name",
+   "fieldname": "topic",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Topic",
+   "options": "Request Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted",
+   "reqd": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-03-19 13:35:25.553530",
+ "modified": "2021-04-01 15:45:41.743847",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request",
@@ -157,7 +198,7 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
+ "route": "student-general-request",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
