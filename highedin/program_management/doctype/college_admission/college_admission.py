@@ -3,8 +3,11 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 class CollegeAdmission(Document):
-	pass
+	def autoname(self):
+		from frappe.model.naming import make_autoname
+		self.name = make_autoname(self.naming_series)
+		self.admission_code = self.name

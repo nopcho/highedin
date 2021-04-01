@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "creation": "2021-04-01 18:44:03.783770",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "first_name",
+  "last_name",
+  "semester",
+  "year",
+  "credits",
+  "semester_grade",
+  "pre_semester_grade",
+  "cumulation"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "label": "Student ID",
+   "options": "Student Profile"
+  },
+  {
+   "fetch_from": "student_id.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "student_id.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Semester",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year"
+  },
+  {
+   "fieldname": "credits",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Credits"
+  },
+  {
+   "fieldname": "semester_grade",
+   "fieldtype": "Float",
+   "label": "Semester Grade"
+  },
+  {
+   "fieldname": "pre_semester_grade",
+   "fieldtype": "Float",
+   "label": "Pre Semester Grade"
+  },
+  {
+   "fieldname": "cumulation",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cumulation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-04-01 18:46:47.589046",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Education Record",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -9,7 +9,6 @@
   "id",
   "form_id",
   "application_date",
-  "registration_no",
   "salutation",
   "first_name",
   "last_name",
@@ -104,11 +103,6 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "HEI-SAP-YYYY-.####"
-  },
-  {
-   "fieldname": "registration_no",
-   "fieldtype": "Data",
-   "label": "Registration No."
   },
   {
    "fieldname": "project",
@@ -213,7 +207,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-25 16:52:34.366701",
+ "modified": "2021-04-01 17:47:19.951753",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Student Application",

@@ -7,4 +7,7 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class StudentApplication(Document):
-	pass
+	def autoname(self):
+		from frappe.model.naming import make_autoname
+		self.name = make_autoname(self.naming_series)
+		self.id = self.name

@@ -40,7 +40,7 @@
   {
    "fieldname": "date_registered",
    "fieldtype": "Date",
-   "label": "Data Registered"
+   "label": "Date Registered"
   },
   {
    "fieldname": "date_ended",
@@ -61,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-19 16:35:06.538864",
+ "modified": "2021-04-01 18:48:38.353691",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Program Registration",

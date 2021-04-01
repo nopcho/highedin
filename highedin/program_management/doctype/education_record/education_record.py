@@ -6,8 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class AdmissionType(Document):
-	def autoname(self):
-		from frappe.model.naming import make_autoname
-		self.name = make_autoname(self.naming_series)
-		self.type_id = self.name
+class EducationRecord(Document):
+	pass
