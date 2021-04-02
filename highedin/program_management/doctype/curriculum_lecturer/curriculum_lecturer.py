@@ -7,5 +7,5 @@ import frappe
 from frappe.model.document import Document
 
 class CurriculumLecturer(Document):
-	def before_save(self):
-		self.request_id = self.name
+        def before_save(self):
+                self.request_id = self.name

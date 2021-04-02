@@ -8,29 +8,38 @@
  "field_order": [
   "major_name",
   "major_code",
+  "major_name_abbr",
   "naming_series"
  ],
  "fields": [
   {
    "fieldname": "major_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "major_name"
   },
   {
    "fieldname": "major_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "major_code"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
    "label": "Naming Series"
+  },
+  {
+   "fieldname": "major_name_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "major_name_abbr"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-24 16:40:49.067981",
+ "modified": "2021-03-31 17:59:32.323356",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Major",
