@@ -8,6 +8,8 @@
   "program_registration_id",
   "student_id",
   "program_id",
+  "program_name",
+  "major",
   "status",
   "date_registered",
   "date_ended",
@@ -57,11 +59,21 @@
    "fieldtype": "Table",
    "label": "Study Plan",
    "options": "Study Plan"
+  },
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "Major"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-01 18:48:38.353691",
+ "modified": "2021-04-01 19:15:32.607490",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Program Registration",

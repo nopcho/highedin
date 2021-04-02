@@ -13,10 +13,12 @@
   "end_date",
   "type_id",
   "type_name",
+  "column_break_8",
   "program_code",
   "expected_student_number",
   "title",
   "description",
+  "section_break_13",
   "schedule",
   "naming_series"
  ],
@@ -62,6 +64,7 @@
    "label": "Admission Type Name"
   },
   {
+   "description": "need to link with curriculum doctype",
    "fieldname": "program_code",
    "fieldtype": "Data",
    "label": "Program"
@@ -92,11 +95,19 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "HEI-CAD-YYYY-.##"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-25 17:06:35.527801",
+ "modified": "2021-04-02 17:09:47.372758",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "College Admission",
@@ -117,5 +128,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "admission_code",
  "track_changes": 1
 }

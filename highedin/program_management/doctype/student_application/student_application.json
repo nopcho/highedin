@@ -9,20 +9,26 @@
   "id",
   "form_id",
   "application_date",
+  "acadamic_term",
+  "column_break_5",
+  "admission_type",
+  "admission_title",
+  "rank_1",
+  "rank_2",
+  "rank_3",
+  "section_break_8",
   "salutation",
   "first_name",
   "last_name",
   "name_en",
-  "project",
-  "round",
-  "no",
-  "faculty",
-  "curriculum",
+  "column_break_11",
   "nation",
   "email",
   "birthday",
   "phone",
+  "section_break_20",
   "address",
+  "section_break_",
   "educational_status",
   "study_type",
   "school",
@@ -30,13 +36,13 @@
   "number_of_gpa_terms",
   "gpa",
   "reasons_for_admission_to_the_kmitl",
+  "column_break_30",
   "english_language_proficiency_skill",
   "special_qualifications",
   "scholarships_that_have_been_received",
   "sports_competition",
   "training_competition__academic_olympiads_camp",
   "admission_id",
-  "admission_title",
   "naming_series"
  ],
  "fields": [
@@ -103,31 +109,6 @@
    "fieldtype": "Select",
    "label": "Series",
    "options": "HEI-SAP-YYYY-.####"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Data",
-   "label": "Project"
-  },
-  {
-   "fieldname": "round",
-   "fieldtype": "Data",
-   "label": "Round"
-  },
-  {
-   "fieldname": "no",
-   "fieldtype": "Data",
-   "label": "No."
-  },
-  {
-   "fieldname": "faculty",
-   "fieldtype": "Data",
-   "label": "Faculty"
-  },
-  {
-   "fieldname": "curriculum",
-   "fieldtype": "Data",
-   "label": "Curriculum"
   },
   {
    "fieldname": "nation",
@@ -203,11 +184,65 @@
    "fieldname": "training_competition__academic_olympiads_camp",
    "fieldtype": "Data",
    "label": "Training / Competition / Academic Olympiads Camp"
+  },
+  {
+   "fetch_from": "admission_id.academic_term",
+   "fieldname": "acadamic_term",
+   "fieldtype": "Data",
+   "label": "Acadamic Term"
+  },
+  {
+   "fetch_from": "admission_id.type_name",
+   "fieldname": "admission_type",
+   "fieldtype": "Data",
+   "label": "Admission Type"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "need to link with curriculum doctype",
+   "fieldname": "rank_1",
+   "fieldtype": "Data",
+   "label": "Program Rank 1 "
+  },
+  {
+   "description": "need to link with curriculum doctype",
+   "fieldname": "rank_2",
+   "fieldtype": "Data",
+   "label": "Program Rank 2"
+  },
+  {
+   "description": "need to link with curriculum doctype",
+   "fieldname": "rank_3",
+   "fieldtype": "Data",
+   "label": "Program Rank 3"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-01 17:47:19.951753",
+ "modified": "2021-04-02 17:09:11.464204",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Student Application",

@@ -13,7 +13,11 @@
   "middle_name",
   "last_name",
   "gender",
-  "education_record"
+  "education_record",
+  "address",
+  "district",
+  "province",
+  "postal_code"
  ],
  "fields": [
   {
@@ -63,11 +67,31 @@
    "fieldtype": "Table",
    "label": "Education Record",
    "options": "Education Record"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "Province"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-01 18:47:26.356968",
+ "modified": "2021-04-01 19:14:24.852160",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Student Profile",
