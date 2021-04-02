@@ -6,7 +6,6 @@
  "engine": "InnoDB",
  "field_order": [
   "room_name",
-  "duration",
   "start_date",
   "end_date",
   "status",
@@ -24,11 +23,6 @@
    "fieldname": "room_name",
    "fieldtype": "Data",
    "label": "Room Name"
-  },
-  {
-   "fieldname": "duration",
-   "fieldtype": "Int",
-   "label": "Duration"
   },
   {
    "default": "Pending",
@@ -51,7 +45,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-01 19:05:20.393947",
+ "modified": "2021-04-02 16:13:08.525540",
  "modified_by": "Administrator",
  "module": "Facility Management",
  "name": "Room Booking",
