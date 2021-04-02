@@ -3,6 +3,5 @@
 
 frappe.ui.form.on('Lecturer Conference Support Request', {
 	// refresh: function(frm) {
-
 	// }
 });
