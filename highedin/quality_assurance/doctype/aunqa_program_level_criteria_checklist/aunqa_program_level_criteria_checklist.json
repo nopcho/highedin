@@ -1,16 +1,18 @@
 {
  "actions": [],
- "creation": "2021-03-15 17:12:57.827423",
+ "creation": "2021-03-15 17:14:23.226635",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "criterion_no",
-  "description"
+  "checklist_no",
+  "description",
+  "ref_criterion",
+  "opinion"
  ],
  "fields": [
   {
-   "fieldname": "criterion_no",
+   "fieldname": "checklist_no",
    "fieldtype": "Int",
    "label": "No.",
    "read_only": 1
@@ -18,16 +20,27 @@
   {
    "fieldname": "description",
    "fieldtype": "Text",
-   "label": "Description"
+   "label": "Expected Learning Outcomes"
+  },
+  {
+   "fieldname": "ref_criterion",
+   "fieldtype": "Text",
+   "label": "Related Criteria"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Select",
+   "label": "Opinion",
+   "options": "1\n2\n3\n4\n5\n7"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-02 16:18:57.364252",
+ "modified": "2021-04-02 16:46:03.297230",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
- "name": "AUNQA Program Level Criteria",
+ "name": "AUNQA Program Level Criteria Checklist",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

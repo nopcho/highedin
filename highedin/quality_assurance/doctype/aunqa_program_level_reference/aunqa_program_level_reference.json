@@ -7,40 +7,47 @@
  "field_order": [
   "ref_no",
   "ref_title",
-  "link_to_file",
-  "attached_file_status"
+  "url",
+  "ref_doc",
+  "status"
  ],
  "fields": [
   {
    "fieldname": "ref_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "ref_no"
+   "label": "Ref. No."
   },
   {
    "fieldname": "ref_title",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "ref_title"
+   "label": "Title"
   },
   {
-   "fieldname": "link_to_file",
+   "fieldname": "url",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "link_to_file"
+   "label": "URL Link"
   },
   {
-   "fieldname": "attached_file_status",
+   "fieldname": "ref_doc",
+   "fieldtype": "Link",
+   "label": "Reference Doc",
+   "options": "Reference Document"
+  },
+  {
+   "fieldname": "status",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "attached file status",
+   "label": "Status",
    "options": "not available\ndraft\nfinal"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-01 20:36:55.932356",
+ "modified": "2021-04-02 16:41:53.078078",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Reference",

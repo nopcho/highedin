@@ -5,18 +5,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "question"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fieldname": "question",
+   "fieldtype": "Text",
+   "label": "Question"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-15 17:16:02.304677",
+ "modified": "2021-04-02 16:23:49.033810",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Diagnostic  Question",

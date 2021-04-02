@@ -20,6 +20,9 @@
   "reference",
   "version",
   "year_published",
+  "academic_year",
+  "program_code",
+  "is_template",
   "naming_series"
  ],
  "fields": [
@@ -47,13 +50,13 @@
    "fieldname": "criterion",
    "fieldtype": "Link",
    "label": "Criterion",
-   "options": "AUNQA Program Criterion"
+   "options": "AUNQA Program Level Criteria"
   },
   {
    "fieldname": "criterion_checklist",
    "fieldtype": "Link",
    "label": "Criterion Checklist",
-   "options": "AUNQA Program Level Criterion Checklist"
+   "options": "AUNQA Program Level Criteria Checklist"
   },
   {
    "fieldname": "overall_opinion",
@@ -61,6 +64,7 @@
    "label": "Overall Opinion"
   },
   {
+   "bold": 1,
    "fieldname": "explanation",
    "fieldtype": "Text",
    "label": "Explanation"
@@ -72,6 +76,7 @@
    "options": "AUNQA Program Diagnostic  Question"
   },
   {
+   "bold": 1,
    "fieldname": "sources_of_evidence",
    "fieldtype": "Text",
    "label": "Sources of Evidence"
@@ -111,11 +116,29 @@
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "HEI-APT-.####"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Years"
+  },
+  {
+   "fieldname": "program_code",
+   "fieldtype": "Link",
+   "label": "Program Code",
+   "options": "Curriculum"
+  },
+  {
+   "fieldname": "is_template",
+   "fieldtype": "Select",
+   "label": "Is Template",
+   "options": "true\nfalse"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-01 20:38:15.407116",
+ "modified": "2021-04-02 16:43:50.330846",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",
