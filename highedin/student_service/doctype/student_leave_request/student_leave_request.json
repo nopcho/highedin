@@ -9,27 +9,40 @@
   "naming_series",
   "leave_request_id",
   "title",
-  "student_id",
-  "first_name",
-  "last_name",
+  "column_break_4",
   "semester",
   "year",
-  "program",
+  "section_break_7",
+  "student_id",
+  "first_name",
   "major",
   "study_year",
+  "column_break_12",
   "degree",
+  "last_name",
+  "program",
+  "section_break_16",
   "request_detail",
   "document",
+  "section_break_19",
   "date_start",
+  "column_break_21",
   "date_end",
+  "column_break_23",
   "day",
+  "section_break_25",
   "parent_name",
+  "parent_signature",
   "date_parent_sign",
+  "column_break_29",
   "teacher_name",
+  "teacher_signature",
   "date_teacher_sign",
+  "section_break_33",
   "opinion",
   "date_submitted",
-  "status"
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -62,13 +75,15 @@
    "fetch_from": "student_id.first_name",
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First Name"
+   "label": "First Name",
+   "read_only": 1
   },
   {
    "fetch_from": "student_id.last_name",
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name"
+   "label": "Last Name",
+   "read_only": 1
   },
   {
    "fieldname": "semester",
@@ -162,11 +177,72 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Incomplete\nComplete"
+  },
+  {
+   "fieldname": "parent_signature",
+   "fieldtype": "Signature",
+   "label": "Parent Signature"
+  },
+  {
+   "fieldname": "teacher_signature",
+   "fieldtype": "Signature",
+   "label": "Teacher Signature"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Leave Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_33",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-03-26 14:38:37.911467",
+ "modified": "2021-04-07 23:32:26.478098",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Leave Request",

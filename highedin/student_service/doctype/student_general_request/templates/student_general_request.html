@@ -21,7 +21,7 @@
   }
   .topnav {
   overflow: hidden;
-  background-color: rgb(9, 9, 78);
+  background-color: rgb(245, 160, 110);
 }
 
 .topnav a {
@@ -47,53 +47,52 @@
       
 
 </style>
-<body>
-  <div class="topnav" style="color: white;">
+<body style="background-color: rgb(197, 182, 252);">
+   <div class="topnav" style="color: white;">
     <a>STUDENT GENARAL REQUEST</a>
-  </div>
+   </div>
+
+  
   <div class="container good">
-    <form action="" id="myForm" onsubmit="validateForm()" method="post" >
+    
         <h1><center> ใบคำร้องทั่วไป </center></h1>
-        <h3 style=" text-align: right; font-size: 25px;">วันที่ {{date_submitted}}</h3>
+       
      
-        
+        <p style="text-align: right;"><strong>สถานะของคำร้องขอ:</strong> {{status}}</p>
+   
     
         <div  style="margin-top: 50px;" >
-          <p ><strong>เรื่อง:</strong> {{topic}}</p>
-           </div>
+          <p ><strong>ร้องขอเรื่อง:&nbsp;&nbsp;&nbsp;</strong>{{title}}</p>
+        </div>
 
         <div  style="margin-top: 15px;" >
-          <p ><strong>เรียน:</strong> {{authority_name}}</p>
-           </div>  
+          <p ><strong>ถึงอาจารย์:&nbsp;&nbsp;&nbsp;</strong>{{authority_name}}</p>
+        </div>  
             
                
-           <div  style="margin-top: 50px;" >
-           <center> <p ><strong>ชื่อ:&nbsp;&nbsp;&nbsp;</strong> {{first_name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>นามสกุล:&nbsp;&nbsp;&nbsp;</strong> {{last_name}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>รหัศนักศึกษา:&nbsp;&nbsp;&nbsp;</strong> {{student_id}}</p></center>
-           <center> <p ><strong>สาขาวิชา:&nbsp;&nbsp;&nbsp;</strong> {{major}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>แขนงวิชา:&nbsp;&nbsp;&nbsp;</strong> {{program}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>นักศึกษาชั้นปีที่:&nbsp;&nbsp;&nbsp;</strong> {{study_year}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>รุ่นที่:&nbsp;&nbsp;&nbsp;</strong> {{badge}}</p></center>
-       
-             </div>     
+           <div>
+            <p><strong>ชื่อ-นามสกุล:&nbsp;&nbsp;&nbsp;</strong>{{first_name}} {{last_name}}</p>
+            <p><strong>รหัสนักศึกษา:&nbsp;&nbsp;&nbsp;</strong>{{student_id}}</p>
+            <p><strong>ปี:&nbsp;&nbsp;&nbsp;</strong>{{study_year}}</p>
+            <p><strong>รุ่น:&nbsp;&nbsp;&nbsp;</strong>{{badge}}</p>
+            <p><strong>สาขา:&nbsp;&nbsp;&nbsp;</strong>{{major}}</p>
+            <p><strong>แขนง:&nbsp;&nbsp;&nbsp;</strong>{{program}}</p>
+
+           </div>     
                 
                 
         <div class="row ">
           <div class="col-md-12 ">
-            <center><p style="margin-top: 25px;"><strong>มีความประสงค์ &nbsp;</strong> {{request_detail}} </p></center>
-            
-            
+           <p><strong>ต้องการร้องขอเรื่อง: &nbsp;</strong>{{request_detail}}</p>
           </div>
-      </div>
+        </div>
 
 
-        <h3 style="font-size: 18px; margin-top: 50px;">จึงเรียนมาเพื่อโปรดพิจารณาและดำเนินการต่อไปด้วย {{final_decision}}</h3>
-        <h3 style=" text-align: right; font-size: 18px;  margin-top: 50px;">ขอแสดงความนับถือ</h3>
-        <h3 style=" text-align: right; font-size: 18px;  margin-top: 20px;">{{signature}}</h3>
-      
-      
-      
         
-    </form>
-      
-      
-  
+        <p style="margin-top: 50px;"><strong>ลายเซ็นยืนยันเพื่อยืนยันการร้องขอ</strong></p>
+        <img src="{{signature}}">
+        <p style="text-align: right;"><strong>วันที่ทำการร้องขอ</strong></p>
+        <p style="text-align: right;">{{date_submitted}}</p>
       
   </div>
 

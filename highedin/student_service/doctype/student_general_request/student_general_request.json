@@ -8,20 +8,26 @@
  "field_order": [
   "naming_series",
   "request_id",
-  "topic",
+  "title",
+  "column_break_4",
   "to",
   "authority_name",
+  "section_break_6",
   "student_id",
-  "salutation",
   "first_name",
+  "major",
+  "badge",
+  "column_break_9",
+  "salutation",
   "last_name",
   "program",
-  "major",
   "study_year",
-  "badge",
+  "section_break_16",
   "request_detail",
-  "date_submitted",
+  "column_break_18",
   "signature",
+  "date_submitted",
+  "section_break_20",
   "opinion",
   "final_decision",
   "status",
@@ -113,7 +119,8 @@
   {
    "fieldname": "signature",
    "fieldtype": "Signature",
-   "label": "Signature"
+   "label": "Signature",
+   "reqd": 1
   },
   {
    "fieldname": "opinion",
@@ -147,7 +154,6 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Route",
    "read_only": 1
   },
@@ -160,26 +166,50 @@
    "read_only": 1
   },
   {
-   "fetch_from": "topic.request_type_name",
-   "fieldname": "topic",
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "title.request_type_name",
+   "fieldname": "title",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Topic",
+   "label": "Title",
    "options": "Request Type",
    "reqd": 1
   },
   {
-   "fieldname": "date_submitted",
-   "fieldtype": "Date",
-   "label": "Date Submitted",
-   "reqd": 1
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-01 15:45:41.743847",
+ "modified": "2021-04-07 23:07:34.219271",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request",
@@ -201,5 +231,6 @@
  "route": "student-general-request",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "request_id",
  "track_changes": 1
 }
