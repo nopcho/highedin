@@ -4,10 +4,10 @@
 
 from __future__ import unicode_literals
 # import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
 from frappe.model.naming import getseries
 
-class GadgetProduct(Document):
+class GadgetProduct(WebsiteGenerator):
 	pass
 		

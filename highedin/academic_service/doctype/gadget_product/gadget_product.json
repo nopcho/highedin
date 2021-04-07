@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
@@ -30,7 +31,8 @@
   "section_break_9",
   "opinion",
   "revision",
-  "naming_series"
+  "naming_series",
+  "route"
  ],
  "fields": [
   {
@@ -169,9 +171,16 @@
    "fieldname": "upload",
    "fieldtype": "Attach Image",
    "label": "Upload"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
- "modified": "2021-03-31 17:25:42.014215",
+ "has_web_view": 1,
+ "links": [],
+ "modified": "2021-04-07 22:32:28.558466",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
@@ -233,6 +242,7 @@
    "write": 1
   }
  ],
+ "route": "gadget_product",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
