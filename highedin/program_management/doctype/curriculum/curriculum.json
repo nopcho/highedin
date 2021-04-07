@@ -7,33 +7,51 @@
  "field_order": [
   "program_name",
   "program_name_en",
+  "column_break_3",
   "department",
   "department_en",
+  "column_break_6",
+  "major",
+  "section_break_7",
   "institute_name",
   "institute_name_en",
+  "section_break_11",
   "program_code",
-  "version",
+  "section_break_13",
   "updated_date",
+  "version",
+  "column_break_16",
   "year",
   "published",
+  "section_break_19",
   "degree_name",
   "degree_name_en",
+  "column_break_22",
   "degree_name_abbr",
   "degree_name_en_abbr",
-  "major",
+  "section_break_24",
   "total_credit",
-  "program_status",
   "status_detail",
+  "column_break_28",
+  "program_status",
   "readiness",
-  "career_opportunity",
-  "committee",
-  "lecturer",
-  "structure",
+  "section_break_29",
   "philosophy",
+  "column_break_37",
   "objective",
+  "section_break_39",
+  "career_opportunity",
+  "section_break_31",
+  "committee",
+  "section_break_35",
+  "lecturer",
+  "section_break_37",
+  "structure",
+  "section_break_41",
   "learning_outcome",
   "plan_type",
   "plan_option",
+  "section_break_47",
   "route"
  ],
  "fields": [
@@ -195,12 +213,84 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_39",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_41",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_37",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_47",
+   "fieldtype": "Section Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-02 15:46:05.987190",
+ "modified": "2021-04-07 23:30:53.965547",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
