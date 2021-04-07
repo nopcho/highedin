@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "naming_series:",
  "creation": "2021-03-15 17:10:40.936817",
  "doctype": "DocType",
@@ -23,7 +24,8 @@
   "academic_year",
   "program_code",
   "is_template",
-  "naming_series"
+  "naming_series",
+  "route"
  ],
  "fields": [
   {
@@ -134,11 +136,21 @@
    "fieldtype": "Select",
    "label": "Is Template",
    "options": "true\nfalse"
+  },
+  {
+   "default": "Program_Level_Template",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1,
+   "reqd": 1
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-02 16:43:50.330846",
+ "modified": "2021-04-08 02:30:27.363541",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",
@@ -157,8 +169,9 @@
    "write": 1
   }
  ],
+ "route": "Program_Level_Template",
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "title_field": "aunqa_code",
  "track_changes": 1
 }
