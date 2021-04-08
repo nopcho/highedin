@@ -20,8 +20,11 @@
   "reference",
   "version",
   "year_published",
+  "academic_year",
+  "program_code",
+  "is_template",
   "naming_series",
-  "is_template"
+  "route"
  ],
  "fields": [
   {
@@ -62,6 +65,7 @@
    "label": "Overall Opinion"
   },
   {
+   "bold": 1,
    "fieldname": "explanation",
    "fieldtype": "Text",
    "label": "Explanation"
@@ -119,11 +123,33 @@
    "fieldtype": "Read Only",
    "label": "Is Template",
    "options": "true,\nfalse"
+  },
+  {
+   "default": "aunqa-program-level-template\n",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Years"
+  },
+  {
+   "fieldname": "program_code",
+   "fieldtype": "Link",
+   "label": "Program Code",
+   "options": "Curriculum"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 19:23:19.103861",
+ "modified": "2021-04-08 22:40:13.905789",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",
@@ -142,6 +168,7 @@
    "write": 1
   }
  ],
+ "route": "aunqa-program-level-template",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "aunqa_code",
