@@ -1,0 +1,141 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-04-08 15:10:28.193552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_offer_id",
+  "course_code",
+  "program_code",
+  "column_break_4",
+  "academic_term",
+  "section_id",
+  "schedule_information_section",
+  "start_date",
+  "end_date",
+  "room",
+  "location",
+  "column_break_11",
+  "day",
+  "start_time",
+  "end_time",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_offer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Course Offer ID",
+   "options": "Course Offer"
+  },
+  {
+   "fetch_from": "course_offer_id.course_code",
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Code"
+  },
+  {
+   "fieldname": "section_id",
+   "fieldtype": "Data",
+   "label": "Section ID"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HEI-CSC-.YYYY.-.####"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fetch_from": "course_offer_id.academic_term",
+   "fieldname": "academic_term",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Academic Term"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fetch_from": "academic_term.end_date",
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "Mon\nTue\nWed\nThu\nFri\nSat\nSun"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fetch_from": "course_offer_id.program_code",
+   "fieldname": "program_code",
+   "fieldtype": "Data",
+   "label": "Program"
+  },
+  {
+   "fieldname": "schedule_information_section",
+   "fieldtype": "Section Break",
+   "label": "Schedule Information"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Rooms"
+  }
+ ],
+ "modified": "2021-04-08 16:50:03.846544",
+ "modified_by": "Administrator",
+ "module": "Program Management",
+ "name": "Class Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "course_offer_id",
+ "track_changes": 1
+}
