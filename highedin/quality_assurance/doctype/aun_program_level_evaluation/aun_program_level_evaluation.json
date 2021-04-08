@@ -1,7 +1,7 @@
 {
  "actions": [],
- "autoname": "naming_series:",
- "creation": "2021-03-15 17:10:40.936817",
+ "autoname": "HEI-APE-.####",
+ "creation": "2021-04-08 19:22:46.064906",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -20,8 +20,8 @@
   "reference",
   "version",
   "year_published",
-  "naming_series",
-  "is_template"
+  "is_template",
+  "amended_from"
  ],
  "fields": [
   {
@@ -108,25 +108,29 @@
    "label": "Year Published"
   },
   {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Naming Series",
-   "options": "HEI-APT-.####"
-  },
-  {
-   "default": "true",
+   "default": "false",
    "fieldname": "is_template",
    "fieldtype": "Read Only",
    "label": "Is Template",
    "options": "true,\nfalse"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AUN Program Level Evaluation",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-04-08 19:23:19.103861",
+ "modified": "2021-04-08 19:22:46.064906",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
- "name": "AUNQA Program Level Template",
+ "name": "AUN Program Level Evaluation",
  "owner": "Administrator",
  "permissions": [
   {
@@ -142,8 +146,8 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "aunqa_code",
  "track_changes": 1
 }

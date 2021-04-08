@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "autoname": "HEI-QAE-.####",
+ "creation": "2021-04-08 18:11:07.473618",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "affiliation",
+  "contact",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Text",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Text",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "affiliation",
+   "fieldtype": "Data",
+   "label": "Afiliation"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-08 18:57:56.166337",
+ "modified_by": "Administrator",
+ "module": "Quality Assurance",
+ "name": "QA Expert",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

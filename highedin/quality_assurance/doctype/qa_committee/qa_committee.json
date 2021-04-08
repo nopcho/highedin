@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "HEI-QAC-.####",
+ "creation": "2021-04-08 18:17:44.496040",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "academic_year",
+  "program_code",
+  "program_level"
+ ],
+ "fields": [
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Data",
+   "label": "Academic Year"
+  },
+  {
+   "fieldname": "program_code",
+   "fieldtype": "Data",
+   "label": "Program Code"
+  },
+  {
+   "fieldname": "program_level",
+   "fieldtype": "Select",
+   "label": "Program Level",
+   "options": "yes\nno"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-08 18:59:01.534708",
+ "modified_by": "Administrator",
+ "module": "Quality Assurance",
+ "name": "QA Committee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

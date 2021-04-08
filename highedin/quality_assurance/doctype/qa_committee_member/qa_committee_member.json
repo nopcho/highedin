@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "creation": "2021-04-08 19:01:10.366545",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qa_expert_id",
+  "first_name",
+  "last_name",
+  "affiliation",
+  "contact",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "qa_expert_id",
+   "fieldtype": "Link",
+   "label": "QA Expert ID",
+   "options": "QA Expert"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "affiliation",
+   "fieldtype": "Data",
+   "label": "Affiliation"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-04-08 19:01:10.366545",
+ "modified_by": "Administrator",
+ "module": "Quality Assurance",
+ "name": "QA Committee Member",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

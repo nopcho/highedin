@@ -1,21 +1,60 @@
 {
  "actions": [],
- "creation": "2021-04-02 16:41:06.017675",
+ "autoname": "HEI-RED-.######",
+ "creation": "2021-04-08 18:55:52.012817",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "title",
+  "author",
+  "description",
+  "subcategory",
+  "year",
+  "academic_year",
+  "upload_file"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "subcategory",
+   "fieldtype": "Data",
+   "label": "Subcategory"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Years"
+  },
+  {
+   "fieldname": "upload_file",
+   "fieldtype": "Attach Image",
+   "label": "Upload File"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-02 16:41:06.017675",
+ "modified": "2021-04-08 18:55:52.012817",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "Reference Document",
@@ -34,6 +73,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
