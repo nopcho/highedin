@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
@@ -12,19 +11,19 @@
   "product_id",
   "product_name",
   "section_break_5",
-  "model",
   "product_type",
-  "company",
-  "column_break_9",
   "product_category",
   "product_subcategory",
-  "product_description",
+  "column_break_9",
+  "model",
+  "company",
+  "date_submitted",
   "section_break_12",
+  "year_launched",
+  "product_description",
+  "column_break_14",
   "month_launched",
   "launch_detail",
-  "column_break_14",
-  "year_launched",
-  "date_submitted",
   "section_break_16",
   "reference",
   "media",
@@ -38,34 +37,40 @@
   {
    "fieldname": "product_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Name"
   },
   {
    "fieldname": "model",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Model"
   },
   {
    "fieldname": "product_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Product Type",
    "options": "Gadget Type"
   },
   {
+   "fetch_from": "product_type.main_category",
    "fieldname": "product_category",
-   "fieldtype": "Link",
-   "label": "Product Category",
-   "options": "Gadget Category"
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Category"
   },
   {
+   "fetch_from": "product_type.sub_category",
    "fieldname": "product_subcategory",
-   "fieldtype": "Link",
-   "label": "Product Subcategory",
-   "options": "Gadget Subcategory"
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Subcategory"
   },
   {
    "fieldname": "company",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Company",
    "options": "Gadget Company"
   },
@@ -81,12 +86,12 @@
   },
   {
    "fieldname": "launch_detail",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Launch Detail"
   },
   {
    "fieldname": "product_description",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Product Description"
   },
   {
@@ -110,7 +115,7 @@
   },
   {
    "fieldname": "date_submitted",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Submitted"
   },
   {
@@ -144,9 +149,9 @@
   {
    "fieldname": "product_id",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Product ID",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "naming_series",
@@ -175,12 +180,12 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   }
  ],
  "has_web_view": 1,
- "links": [],
- "modified": "2021-04-07 22:32:28.558466",
+ "modified": "2021-04-08 19:08:55.483343",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",

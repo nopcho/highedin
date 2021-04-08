@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_guest_to_view": 1,
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:41:29.883938",
@@ -43,13 +42,14 @@
   {
    "fieldname": "collection_id",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Collection ID",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "product_id",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Product ID",
    "options": "Gadget Product"
   },
@@ -57,6 +57,7 @@
    "fetch_from": "product_id.product_name",
    "fieldname": "product_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Name"
   },
   {
@@ -69,18 +70,21 @@
    "fetch_from": "product_id.product_type",
    "fieldname": "product_type",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Type"
   },
   {
    "fetch_from": "product_id.product_category",
    "fieldname": "product_category",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Category"
   },
   {
    "fetch_from": "product_id.product_subcategory",
    "fieldname": "product_subcategory",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product Subcategory"
   },
   {
@@ -96,7 +100,7 @@
   },
   {
    "fieldname": "date_registered",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Registered"
   },
   {
@@ -142,7 +146,7 @@
   },
   {
    "fieldname": "date_submitted",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Date Submitted"
   },
   {
@@ -202,12 +206,12 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   }
  ],
  "has_web_view": 1,
- "links": [],
- "modified": "2021-04-07 22:40:23.767970",
+ "modified": "2021-04-08 19:12:31.388965",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
