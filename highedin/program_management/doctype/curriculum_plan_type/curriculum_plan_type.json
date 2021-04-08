@@ -9,34 +9,44 @@
   "plan_type",
   "description",
   "plan_type_code",
+  "plan_type_abbr",
   "naming_series"
  ],
  "fields": [
   {
    "fieldname": "plan_type",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "plan_type"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "description"
   },
   {
    "fieldname": "plan_type_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "plan_type_code"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
    "label": "Naming Series"
+  },
+  {
+   "fieldname": "plan_type_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "plan_type_abbr"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-24 16:39:20.845145",
+ "modified": "2021-04-08 18:28:31.185282",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Plan Type",

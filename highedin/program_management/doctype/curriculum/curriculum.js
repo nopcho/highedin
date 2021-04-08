@@ -13,3 +13,11 @@ frappe.ui.form.on('Curriculum Major', {
 	frm.refresh_field('major');
 	}
 });
+
+frappe.ui.form.on('Curriculum Plan Type', {
+	plan_type_abbr: function(frm, cdt, cdn) {
+        var cur_rec = locals[cdt][cdn];
+        cur_rec.plan_type_code = frm.doc.program_code + '-' + cur_rec.plan_type_abbr;
+        frm.refresh_field('plan_type');
+        }
+});
