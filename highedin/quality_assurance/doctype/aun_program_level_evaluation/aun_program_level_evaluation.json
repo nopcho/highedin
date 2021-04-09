@@ -1,11 +1,12 @@
 {
  "actions": [],
- "autoname": "HEI-APE-.####",
+ "autoname": "nameing_series:",
  "creation": "2021-04-08 19:22:46.064906",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "template",
   "aunqa_code",
   "aunqa_no",
   "aunqa_name",
@@ -21,16 +22,19 @@
   "version",
   "year_published",
   "is_template",
-  "amended_from"
+  "amended_from",
+  "nameing_series"
  ],
  "fields": [
   {
+   "fetch_from": "aunqaprogramleveltemplate.aunqa_code",
    "fieldname": "aunqa_code",
    "fieldtype": "Data",
    "label": "AUNQA Code",
    "read_only": 1
   },
   {
+   "fetch_from": "template.aunqa_no",
    "fieldname": "aunqa_no",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -38,6 +42,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "template.aunqa_name",
    "fieldname": "aunqa_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -45,12 +50,14 @@
    "reqd": 1
   },
   {
+   "fetch_from": "template.criterion",
    "fieldname": "criterion",
    "fieldtype": "Table",
    "label": "Criterion",
    "options": "AUNQA Program Level Criteria"
   },
   {
+   "fetch_from": "template.aunqa_criterion_checklist",
    "fieldname": "criterion_checklist",
    "fieldtype": "Table",
    "label": "Criterion Checklist",
@@ -103,6 +110,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "template.year_published",
    "fieldname": "year_published",
    "fieldtype": "Data",
    "label": "Year Published"
@@ -122,12 +130,24 @@
    "options": "AUN Program Level Evaluation",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Template",
+   "options": "AUNQA Program Level Template"
+  },
+  {
+   "fieldname": "nameing_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "HEI-APE-.####"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-08 19:22:46.064906",
+ "modified": "2021-04-09 16:38:48.500767",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUN Program Level Evaluation",

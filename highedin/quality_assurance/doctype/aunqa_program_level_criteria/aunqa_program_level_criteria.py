@@ -7,4 +7,5 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class AUNQAProgramLevelCriteria(Document):
-	pass
+	def setnumber(self):
+		self.criterion_no = self.name
