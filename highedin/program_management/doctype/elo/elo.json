@@ -29,55 +29,55 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "1",
-   "options": "m\ns\nn"
+   "options": "main\nsecond\nnone"
   },
   {
    "fieldname": "2",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "2",
-   "options": "m\ns\nn"
+   "options": "main\nsecond\nnone"
   },
   {
    "fieldname": "3",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "3",
-   "options": "m\ns\nn"
+   "options": "main\nsecond\nnone"
   },
   {
    "fieldname": "4",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "4",
-   "options": "m\ns\nn"
+   "options": "mmain\nsecond\nnone\ns\nn"
   },
   {
    "fieldname": "5",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "5",
-   "options": "m\ns\nn"
+   "options": "mmain\nsecond\nnone\ns\nn"
   },
   {
    "fieldname": "6",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "6",
-   "options": "m\ns\nn"
+   "options": "mmain\nsecond\nnone\ns\nn"
   },
   {
    "fieldname": "7",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "7",
-   "options": "m\ns\nn"
+   "options": "mmain\nsecond\nnone\ns\nn"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-15 22:40:10.635079",
+ "modified": "2021-04-15 22:47:31.371079",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "ELO",
