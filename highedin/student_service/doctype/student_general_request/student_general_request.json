@@ -1,0 +1,271 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-03-12 14:46:40.922509",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "request_id",
+  "title",
+  "column_break_4",
+  "to",
+  "authority_name",
+  "section_break_6",
+  "student_id",
+  "first_name",
+  "major",
+  "badge",
+  "column_break_9",
+  "salutation",
+  "last_name",
+  "program",
+  "study_year",
+  "section_break_16",
+  "request_detail",
+  "column_break_18",
+  "signature",
+  "date_submitted",
+  "section_break_20",
+  "opinion",
+  "final_decision",
+  "status",
+  "amended_from",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "label": "To",
+   "options": "Authority",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "to.authority_name",
+   "fieldname": "authority_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Authority Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_profile.student_id",
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student ID",
+   "options": "Student Profile",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student_id.salutation",
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "label": "Salutation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_id.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_id.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program",
+   "reqd": 1
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Data",
+   "label": "Major",
+   "reqd": 1
+  },
+  {
+   "fieldname": "study_year",
+   "fieldtype": "Int",
+   "label": "Study Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "badge",
+   "fieldtype": "Int",
+   "label": "Badge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "request_detail",
+   "fieldtype": "Text",
+   "label": "Request Detail",
+   "reqd": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "opinion",
+   "fieldtype": "Table",
+   "label": "Opinion",
+   "options": "Student General Request Opinion"
+  },
+  {
+   "fieldname": "final_decision",
+   "fieldtype": "Data",
+   "label": "Final Decision"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Edit\nSubmit\nPass\nIssue\nNot Pass\nCancel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student General Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HEI-SGR-.YYYY.-.######",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "title.request_type_name",
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Title",
+   "options": "Request Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-09 17:19:35.553162",
+ "modified_by": "Administrator",
+ "module": "Student Service",
+ "name": "Student General Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Chanceller",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "student-general-request",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "request_id",
+ "track_changes": 1
+}
