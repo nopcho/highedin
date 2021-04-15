@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:program_code",
  "creation": "2021-03-15 14:47:47.408289",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -90,7 +91,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Program Code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "version",
@@ -290,7 +292,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-07 23:30:53.965547",
+ "modified": "2021-04-09 17:06:48.261178",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",

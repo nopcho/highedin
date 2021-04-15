@@ -1,25 +1,167 @@
 {
  "actions": [],
+ "autoname": "field:course_name",
  "creation": "2021-04-08 18:02:58.347571",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "course_code"
+  "course_code",
+  "course_elo",
+  "section_break_15",
+  "course_name",
+  "course_name_en",
+  "section_break_10",
+  "program",
+  "course_abbr",
+  "credit",
+  "lecture_hour",
+  "practice_hour",
+  "self_study_hour",
+  "prerequisite",
+  "prerequisite_more",
+  "course_intro",
+  "course_description",
+  "course_description_en",
+  "section_break_18",
+  "update_date",
+  "column_break_21",
+  "version",
+  "prere_table"
  ],
  "fields": [
   {
    "fieldname": "course_code",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "course_code",
+   "label": "Course code",
    "options": "Curriculum",
    "reqd": 1
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course name",
+   "unique": 1
+  },
+  {
+   "fieldname": "course_name_en",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Name en"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Program",
+   "options": "Curriculum"
+  },
+  {
+   "fieldname": "course_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Abbreviation"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Credit"
+  },
+  {
+   "fieldname": "lecture_hour",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lecture Hour"
+  },
+  {
+   "fieldname": "practice_hour",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Practice Hour"
+  },
+  {
+   "fieldname": "self_study_hour",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Self Study Hour"
+  },
+  {
+   "fieldname": "prerequisite",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prerequisite"
+  },
+  {
+   "fieldname": "prerequisite_more",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prerequisite More"
+  },
+  {
+   "fieldname": "course_intro",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Course Intro"
+  },
+  {
+   "fieldname": "course_description",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Course Description"
+  },
+  {
+   "fieldname": "course_description_en",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Course Description en"
+  },
+  {
+   "fieldname": "course_elo",
+   "fieldtype": "Table",
+   "label": "Course ELO",
+   "options": "ELO"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Datetime",
+   "label": "Update date"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Version",
+   "options": "draft\ncomplete"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prere_table",
+   "fieldtype": "Table",
+   "label": "prerequired table",
+   "options": "ELO"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 18:02:58.347571",
+ "modified": "2021-04-15 19:49:54.811193",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Course",
@@ -34,6 +176,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Program Committee",
    "share": 1,
    "write": 1
   }
