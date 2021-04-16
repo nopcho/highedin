@@ -5,36 +5,32 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "category_name",
   "company_name",
   "country",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "category_name",
-   "fieldtype": "Data",
-   "label": "Category Name ",
-   "unique": 1
-  },
-  {
    "fieldname": "company_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Company Name",
    "unique": 1
   },
   {
    "fieldname": "country",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Country"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Description"
   }
  ],
- "modified": "2021-03-31 16:42:38.942512",
+ "modified": "2021-04-16 15:57:07.008195",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Company",
@@ -79,5 +75,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "company_name",
  "track_changes": 1
 }

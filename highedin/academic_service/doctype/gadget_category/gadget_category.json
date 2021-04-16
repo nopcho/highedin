@@ -16,7 +16,7 @@
    "unique": 1
   }
  ],
- "modified": "2021-04-08 19:20:47.445765",
+ "modified": "2021-04-16 15:54:05.447176",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Category",
@@ -79,5 +79,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "category_name",
  "track_changes": 1
 }

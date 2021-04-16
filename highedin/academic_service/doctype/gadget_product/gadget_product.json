@@ -28,7 +28,6 @@
   "section_break_16",
   "reference",
   "media",
-  "section_break_9",
   "opinion",
   "revision",
   "naming_series",
@@ -117,10 +116,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_9",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "section_break_12",
    "fieldtype": "Section Break"
   },
@@ -185,8 +180,12 @@
   }
  ],
  "has_web_view": 1,
+<<<<<<< HEAD
  "links": [],
  "modified": "2021-04-16 17:03:52.080131",
+=======
+ "modified": "2021-04-16 15:48:14.018570",
+>>>>>>> 64633e2e51f74baf85038f3c995dcca180471d8c
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",

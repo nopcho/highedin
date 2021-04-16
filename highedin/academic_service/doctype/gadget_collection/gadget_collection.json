@@ -1,5 +1,4 @@
 {
- "actions": [],
  "allow_guest_to_view": 1,
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:41:29.883938",
@@ -14,17 +13,17 @@
   "product_id",
   "product_name",
   "section_break_6",
-  "model",
   "product_type",
-  "company",
-  "column_break_10",
   "product_category",
   "product_subcategory",
+  "column_break_10",
+  "model",
+  "company",
   "section_break_13",
   "date_submitted",
-  "date_registered",
-  "column_break_15",
   "year_purchased",
+  "column_break_15",
+  "date_registered",
   "column_break_17",
   "functional_condition",
   "general_condition",
@@ -34,7 +33,6 @@
   "section_break_23",
   "donor_id",
   "media",
-  "column_break_26",
   "revision",
   "naming_series",
   "route"
@@ -65,6 +63,7 @@
    "fetch_from": "product_id.model",
    "fieldname": "model",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Model"
   },
   {
@@ -92,6 +91,7 @@
    "fetch_from": "product_id.company",
    "fieldname": "company",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Company"
   },
   {
@@ -183,10 +183,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_26",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
@@ -212,8 +208,7 @@
   }
  ],
  "has_web_view": 1,
- "links": [],
- "modified": "2021-04-15 23:10:35.312352",
+ "modified": "2021-04-16 15:57:42.896875",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
