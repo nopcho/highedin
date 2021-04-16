@@ -1,4 +1,27 @@
-<div>
-	<a href="{{ doc.name }}">{{ doc.title or doc.name }}</a>
+<div class="container">
+	<div class="row">
+		<div class="col card d-flex" style="width: 25rem;">
+  			<!-- <img class="card-img-top" src="{{upload}}" alt="Card image cap"> -->
+  			<div class="card-body">
+  				<h5 class="card-title"><a href="{{ doc.name }}">{{ doc.title or doc.name }}</a></h5>
+    			<p class="card-text">
+			    	<p>Product Name: {{product_name}}</p>
+			    	<p>Product Type: {{product_type}}</p>
+    				<p>roduct Category: {{product_category}}</p>
+    				<p>Product Subcategory: {{product_subcategory}}</p>
+    			</p>
+    			<a href="{{ doc.name }}" class="btn btn-primary">More</a>
+  			</div>
+		</div>
+		<div class="col card d-flex">
+  			<img class="card-img-top" src="{{upload}}" alt="Card image cap">
+		</div>
+	</div>
+
+	<!-- <a href="{{ doc.name }}">{{ doc.title or doc.name }}</a> -->
 </div>
+
+<script type="text/javascript">
+	
+</script>
 <!-- this is a sample default list template -->
