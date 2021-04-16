@@ -27,7 +27,6 @@
   "section_break_16",
   "reference",
   "media",
-  "section_break_9",
   "opinion",
   "revision",
   "naming_series",
@@ -123,10 +122,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_9",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "section_break_12",
    "fieldtype": "Section Break"
   },
@@ -185,7 +180,7 @@
   }
  ],
  "has_web_view": 1,
- "modified": "2021-04-08 19:08:55.483343",
+ "modified": "2021-04-16 15:48:14.018570",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
