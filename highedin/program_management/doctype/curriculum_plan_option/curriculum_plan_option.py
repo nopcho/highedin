@@ -3,8 +3,9 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-# import frappe
-from frappe.website.website_generator import WebsiteGenerator
+import frappe
+from frappe.model.document import Document
 
-class Curriculum(WebsiteGenerator):
-	pass
+class CurriculumPlanOption(Document):
+      def before_save(self):
+          self.request_id = self.name
