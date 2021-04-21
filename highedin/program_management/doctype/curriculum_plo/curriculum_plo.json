@@ -15,17 +15,17 @@
   {
    "fieldname": "description",
    "fieldtype": "Data",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "category",
    "fieldtype": "Data",
-   "label": "category"
+   "label": "Category"
   },
   {
    "fieldname": "plo_code",
    "fieldtype": "Data",
-   "label": "plo_code"
+   "label": "PLO code"
   },
   {
    "fieldname": "naming_series",
@@ -36,7 +36,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-24 16:42:45.952475",
+ "modified": "2021-04-21 22:57:41.435855",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum PLO",

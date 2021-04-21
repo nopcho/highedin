@@ -15,17 +15,17 @@
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "first_name"
+   "label": "First Name"
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "last_name"
+   "label": "Last Name"
   },
   {
    "fieldname": "instructor_id",
    "fieldtype": "Link",
-   "label": "instructor_id",
+   "label": "Instructor ID",
    "options": "Lecturer"
   },
   {
@@ -37,7 +37,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-24 16:37:41.589764",
+ "modified": "2021-04-21 23:02:27.750340",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Lecturer",
