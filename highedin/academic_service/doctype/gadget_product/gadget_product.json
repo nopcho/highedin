@@ -1,5 +1,4 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 21:28:16.960721",
  "doctype": "DocType",
@@ -35,16 +34,37 @@
  ],
  "fields": [
   {
+   "fetch_from": "upload",
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "upload"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Attach Image",
+   "label": "Upload"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
    "fieldname": "product_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Product Name"
   },
   {
-   "fieldname": "model",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Model"
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "product_type",
@@ -68,6 +88,16 @@
    "label": "Product Subcategory"
   },
   {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model"
+  },
+  {
    "fieldname": "company",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -75,9 +105,13 @@
    "options": "Gadget Company"
   },
   {
-   "fieldname": "month_launched",
-   "fieldtype": "Data",
-   "label": "Month Launched"
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "year_launched",
@@ -85,20 +119,27 @@
    "label": "Year Launched"
   },
   {
-   "fieldname": "launch_detail",
-   "fieldtype": "Text",
-   "label": "Launch Detail"
-  },
-  {
    "fieldname": "product_description",
    "fieldtype": "Text",
    "label": "Product Description"
   },
   {
-   "fieldname": "opinion",
-   "fieldtype": "Table",
-   "label": "Opinion",
-   "options": "Gadget Product Opinion"
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_launched",
+   "fieldtype": "Data",
+   "label": "Month Launched"
+  },
+  {
+   "fieldname": "launch_detail",
+   "fieldtype": "Text",
+   "label": "Launch Detail"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "reference",
@@ -107,40 +148,22 @@
    "options": "Gadget Product Reference"
   },
   {
-   "fieldname": "date_submitted",
-   "fieldtype": "Date",
-   "label": "Date Submitted"
+   "fieldname": "media",
+   "fieldtype": "Table",
+   "label": "Media",
+   "options": "Gadget Product Media"
   },
   {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
+   "fieldname": "opinion",
+   "fieldtype": "Table",
+   "label": "Opinion",
+   "options": "Gadget Product Opinion"
   },
   {
-   "fieldname": "section_break_12",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_14",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_16",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_9",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "product_id",
-   "fieldtype": "Data",
-   "label": "Product ID",
-   "read_only": 1,
-   "search_index": 1
+   "fieldname": "revision",
+   "fieldtype": "Table",
+   "label": "Revision",
+   "options": "Gadget Product Revision"
   },
   {
    "fieldname": "naming_series",
@@ -150,42 +173,14 @@
    "options": "HEI-GPR-.######"
   },
   {
-   "fieldname": "media",
-   "fieldtype": "Table",
-   "label": "Media",
-   "options": "Gadget Product Media"
-  },
-  {
-   "fieldname": "revision",
-   "fieldtype": "Table",
-   "label": "Revision",
-   "options": "Gadget Product Revision"
-  },
-  {
-   "fieldname": "upload",
-   "fieldtype": "Attach Image",
-   "label": "Upload"
-  },
-  {
    "fieldname": "route",
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Route"
-  },
-  {
-   "fetch_from": "upload",
-   "fieldname": "image",
-   "fieldtype": "Image",
-   "label": "Image"
   }
  ],
  "has_web_view": 1,
-<<<<<<< HEAD
- "links": [],
- "modified": "2021-04-16 17:03:52.080131",
-=======
- "modified": "2021-04-16 15:48:14.018570",
->>>>>>> 64633e2e51f74baf85038f3c995dcca180471d8c
+ "modified": "2021-04-22 01:07:08.905953",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",
@@ -250,5 +245,6 @@
  "route": "gadget_product",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "product_name",
  "track_changes": 1
 }
