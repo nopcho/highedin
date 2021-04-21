@@ -50,7 +50,9 @@
   "structure",
   "section_break_41",
   "learning_outcome",
+  "section_break_45",
   "plan_type",
+  "section_break_46",
   "plan_option",
   "section_break_47",
   "route"
@@ -107,6 +109,7 @@
   {
    "fieldname": "year",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Year"
   },
   {
@@ -148,6 +151,7 @@
   {
    "fieldname": "program_status",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Program Status"
   },
   {
@@ -287,12 +291,20 @@
   {
    "fieldname": "section_break_47",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_46",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-09 17:06:48.261178",
+ "modified": "2021-04-21 22:27:18.564914",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
@@ -339,5 +351,6 @@
  "route": "Curriculum",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "program_code",
  "track_changes": 1
 }

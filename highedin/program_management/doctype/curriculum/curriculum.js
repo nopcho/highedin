@@ -1,3 +1,4 @@
+
 // Copyright (c) 2021, Nopporn Chotikakamthorn and contributors
 // For license information, please see license.txt
 
@@ -6,6 +7,8 @@ frappe.ui.form.on('Curriculum', {
 
 	// }
 });
+
+
 frappe.ui.form.on('Curriculum Major', {
 	major_name_abbr: function(frm, cdt, cdn) {
 	var cur_rec = locals[cdt][cdn];
@@ -21,3 +24,5 @@ frappe.ui.form.on('Curriculum Plan Type', {
         frm.refresh_field('plan_type');
         }
 });
+
+
