@@ -9,7 +9,8 @@
   "description",
   "category",
   "plo_code",
-  "naming_series"
+  "naming_series",
+  "clo_name"
  ],
  "fields": [
   {
@@ -31,12 +32,18 @@
    "fieldname": "naming_series",
    "fieldtype": "Data",
    "label": "Naming Series"
+  },
+  {
+   "fieldname": "clo_name",
+   "fieldtype": "Link",
+   "label": "CLO name",
+   "options": "Curriculum CLO"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-21 22:57:41.435855",
+ "modified": "2021-04-22 21:27:22.531935",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum PLO",

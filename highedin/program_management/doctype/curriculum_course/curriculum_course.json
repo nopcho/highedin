@@ -89,15 +89,15 @@
   },
   {
    "fieldname": "prerequisite",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Prerequisite"
+   "fieldtype": "Table",
+   "label": "Prerequisite",
+   "options": "Curriculum PLO"
   },
   {
    "fieldname": "prerequisite_more",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Prerequisite More"
+   "fieldtype": "Table",
+   "label": "Prerequisite More",
+   "options": "Curriculum PLO"
   },
   {
    "fieldname": "course_intro",
@@ -154,7 +154,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-21 19:58:03.169165",
+ "modified": "2021-04-22 21:28:33.459774",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Course",
