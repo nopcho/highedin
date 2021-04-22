@@ -50,7 +50,7 @@
    "reqd": 1
   },
   {
-   "fetch_from": "template.criterion",
+   "fetch_from": "template.criterion.criterion_no",
    "fieldname": "criterion",
    "fieldtype": "Table",
    "label": "Criterion",
@@ -147,7 +147,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-09 16:38:48.500767",
+ "modified": "2021-04-13 02:37:24.175380",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUN Program Level Evaluation",

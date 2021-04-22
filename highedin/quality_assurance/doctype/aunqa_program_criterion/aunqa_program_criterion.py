@@ -6,5 +6,7 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class AUNQAProgramCriterion(Document):
-	pass
+class AUNQAProgramCriterion():
+	def number_running(self):
+		# self.criterion_no = self.name
+

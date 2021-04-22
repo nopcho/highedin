@@ -13,7 +13,7 @@
  "fields": [
   {
    "fieldname": "criterion_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "in_preview": 1,
    "label": "No.",
@@ -28,15 +28,16 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "in_list_view": 1,
+   "hidden": 1,
    "label": "Naming Series",
-   "options": "####"
+   "options": ".##",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-09 16:49:39.211595",
+ "modified": "2021-04-16 16:25:51.918791",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Criteria",

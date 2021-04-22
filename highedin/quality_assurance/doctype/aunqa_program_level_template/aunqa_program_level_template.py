@@ -11,4 +11,4 @@ class AUNQAProgramLevelTemplate(WebsiteGenerator):
 	def validate(self):
 		self.aunqa_code = self.name
 		self.route = 'aunqa-program-level-template/'+self.aunqa_code
-		
+		# self.criterion[0].criterion_no = self.criterion[0].name
