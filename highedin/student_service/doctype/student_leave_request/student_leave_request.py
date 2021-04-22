@@ -4,8 +4,17 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
-class StudentLeaveRequest(Document):
-	def before_save(self):
-		self.leave_request_id = self.name
+class StudentLeaveRequest(WebsiteGenerator):
+    def before_save(self):
+        self.leave_request_id = self.name
+        self.route = "student-leave-request/"+self.leave_request_id
+        self.date_submitted = frappe.utils.today()
+    
+    def before_submit(self):
+        self.date_submitted = frappe.utils.today()
+        
+    def autoname(self):
+        from frappe.model.naming import make_autoname
+        self.name = make_autoname(self.naming_series)

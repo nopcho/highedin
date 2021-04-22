@@ -4,7 +4,8 @@
 
 from __future__ import unicode_literals
 # import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
-class Rooms(Document):
-	pass
+class JobBoard(WebsiteGenerator):
+	def before_save(self):
+		self.job_id = self.name

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:request_type_name",
  "creation": "2021-03-12 14:47:22.347709",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -21,9 +22,8 @@
    "label": "Description"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-31 17:15:12.424413",
+ "modified": "2021-04-21 22:17:10.334640",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Request Type",
@@ -38,6 +38,51 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dean",
    "share": 1,
    "write": 1
   }

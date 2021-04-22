@@ -1,0 +1,105 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Leave Request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: 'Merriweather', serif;
+    
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: rgb(240, 42, 8);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 27px;
+  
+}
+.good{
+  margin-top : 25px ;
+    font-family: 'Sarabun', sans-serif;
+   
+      }
+      .good1{
+          margin-top : 20px ;
+      }
+      p{
+        font-size: 18px;
+      }
+      
+
+</style>
+<body>
+  <div class="topnav" style="color: white;">
+    <a>STUDENT CALENDER</a>
+  </div>
+  <div class="container good">
+    
+        <h1><center> ปฏิทินนักศึกษา </center></h1>
+        <p style="text-align: right;"><strong>วันที่จัดกิจกรรม:</strong> {{date_submitted}}</p>
+        <p style="text-align: right;"><strong>สถานะของกิจกรรม:</strong> {{status}}</p>
+        
+   
+    
+        <div  style="margin-top: 50px;" >
+          <p ><strong>กิจกรรม:&nbsp;&nbsp;&nbsp;</strong>{{project_name}}</p>
+        </div>
+
+        <div  style="margin-top: 15px;" >
+          <p ><strong>ผู้ดูแล:&nbsp;&nbsp;&nbsp;</strong>{{club_name}}</p>
+        </div>  
+
+        <div  style="margin-top: 15px;" >
+          <p ><strong>ผู้จัดงาน:&nbsp;&nbsp;&nbsp;</strong>{{project_manager}}</p>
+        </div>  
+            
+               
+           <div>
+            <p><strong>ชื่อผู้จัดงาน:&nbsp;&nbsp;&nbsp;</strong>{{manager_name}}</p>
+            <p><strong>วัตถุประสงค์ของการจัดกิจกรรม:&nbsp;&nbsp;&nbsp;</strong>{{objective}}</p>
+            <p><strong>รายละเอียดของกิจกรรม:&nbsp;&nbsp;&nbsp;</strong>{{description}}</p>
+            <p><strong>กิจกรรมแยกย่อย:&nbsp;&nbsp;&nbsp;</strong>{{activity}}</p>
+            <p><strong>ค่าใช้จ่ายทั้งหมดในกิจกรรม:&nbsp;&nbsp;&nbsp;</strong>{{expense}}</p>
+          
+
+           </div>     
+                
+                
+        
+
+
+        
+        
+        <p style="margin-top: 50px; text-align: right; "><strong>ลายเซ็นผู้จัดกิจกรรม</strong></p>
+        <p style="text-align: right;">{{applicant_signature}}</p>
+
+        <p style="margin-top: 50px; text-align: right; "><strong>ลายเซ็นของอาจารย์ที่ปรึกษา</strong></p>
+        <p style="text-align: right;">{{advisor_signature}}</p>
+      
+  </div>
+
+  
+</body>
+</html>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "naming_series:",
  "creation": "2021-04-15 16:34:13.373436",
  "doctype": "DocType",
@@ -10,7 +11,7 @@
   "project_id",
   "project_name",
   "column_break_4",
-  "project_owner",
+  "club_name",
   "project_manager",
   "manager_name",
   "section_break_8",
@@ -19,12 +20,13 @@
   "activity",
   "expense",
   "section_break_13",
-  "application_signature",
+  "applicant_signature",
   "attached_file",
   "status",
   "column_break_17",
   "advisor_signature",
-  "date_submitted"
+  "date_submitted",
+  "route"
  ],
  "fields": [
   {
@@ -45,22 +47,13 @@
    "fieldname": "project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Project Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "project_owner",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Project Owner",
-   "reqd": 1
+   "label": "Project Name"
   },
   {
    "fieldname": "project_manager",
    "fieldtype": "Link",
    "label": "Project Manager",
-   "options": "Student Profile",
-   "reqd": 1
+   "options": "Student Profile"
   },
   {
    "fetch_from": "project_manager.first_name",
@@ -73,14 +66,12 @@
   {
    "fieldname": "objective",
    "fieldtype": "Text",
-   "label": "Objective",
-   "reqd": 1
+   "label": "Objective"
   },
   {
    "fieldname": "description",
    "fieldtype": "Text",
-   "label": "Description",
-   "reqd": 1
+   "label": "Description"
   },
   {
    "fieldname": "activity",
@@ -99,11 +90,6 @@
    "fieldtype": "Date",
    "label": "Date Submitted",
    "read_only": 1
-  },
-  {
-   "fieldname": "application_signature",
-   "fieldtype": "Signature",
-   "label": "Application Signature"
   },
   {
    "fieldname": "advisor_signature",
@@ -138,11 +124,28 @@
   {
    "fieldname": "column_break_17",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "club_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Owner"
+  },
+  {
+   "fieldname": "applicant_signature",
+   "fieldtype": "Signature",
+   "label": "Applicant Signature"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-15 16:58:10.124560",
+ "modified": "2021-04-22 22:14:06.463964",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Calendar",
@@ -159,8 +162,42 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
   }
  ],
+ "route": "student-calendar",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

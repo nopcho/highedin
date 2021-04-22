@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:authority_title",
  "creation": "2021-03-12 14:48:44.640746",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,12 +14,14 @@
   {
    "fieldname": "authority_title",
    "fieldtype": "Data",
-   "label": "Authority Title"
+   "label": "Authority Title",
+   "unique": 1
   },
   {
    "fieldname": "authority_name",
    "fieldtype": "Data",
-   "label": "Authority Name"
+   "label": "Authority Name",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -28,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-18 14:58:14.023376",
+ "modified": "2021-04-21 18:58:08.546361",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Authority",
@@ -45,9 +48,55 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dean",
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
+ "search_fields": "authority_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

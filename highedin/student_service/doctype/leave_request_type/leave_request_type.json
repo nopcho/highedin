@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:request_type_name",
  "creation": "2021-03-25 23:43:24.495136",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,7 +13,8 @@
   {
    "fieldname": "request_type_name",
    "fieldtype": "Data",
-   "label": "Request Type Name"
+   "label": "Request Type Name",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -22,7 +24,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-25 23:43:24.495136",
+ "modified": "2021-04-21 22:36:56.723822",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Leave Request Type",
@@ -37,6 +39,51 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dean",
    "share": 1,
    "write": 1
   }

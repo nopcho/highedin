@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-04-22 21:16:29.928835",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "job_id",
+  "job_name",
+  "job_type",
+  "section_break_6",
+  "requirements",
+  "column_break_8",
+  "responsibilities",
+  "section_break_10",
+  "description",
+  "section_break_12",
+  "name_contact",
+  "company",
+  "company_name",
+  "tel",
+  "email",
+  "column_break_15",
+  "address",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_id",
+   "fieldtype": "Data",
+   "label": "Job ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_name",
+   "fieldtype": "Data",
+   "label": "Job Name"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "Full-Time\nPart-Time"
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Text",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "responsibilities",
+   "fieldtype": "Text",
+   "label": "Responsibilities"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "name_contact",
+   "fieldtype": "Data",
+   "label": "Name Contact"
+  },
+  {
+   "fetch_from": "company.address",
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.tel",
+   "fieldname": "tel",
+   "fieldtype": "Data",
+   "label": "Tel",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HEI-JBO-.YYYY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Job Company"
+  },
+  {
+   "fetch_from": "company.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-22 22:09:50.212037",
+ "modified_by": "Administrator",
+ "module": "Student Service",
+ "name": "Job Board",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "job-board",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

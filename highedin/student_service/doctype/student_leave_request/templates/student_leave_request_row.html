@@ -1,0 +1,16 @@
+<div class="list" style="margin-top: 50px;  background-color: rgb(255, 255, 255);
+    width: 1000px;
+    border: 7px solid rgb(104, 0, 99);
+    padding: 50px;
+    margin: 20px;
+    
+    font-family: 'Sarabun', sans-serif;">
+        <a href="{{ doc.route }}">{{doc.title}} </a>
+        <p><strong>จาก :&nbsp;&nbsp;&nbsp;</strong>{{doc.first_name}}{{doc.last_name}} &nbsp;&nbsp;&nbsp;<strong>รหัสนักศึกษา:&nbsp;&nbsp;&nbsp;</strong>{{doc.student_id}}&nbsp;&nbsp;&nbsp;</p>
+        <p><strong>สาขาวิชา:&nbsp;&nbsp;&nbsp;</strong> {{doc.major}} &nbsp;&nbsp;&nbsp;<strong>แขนงวิชา:&nbsp;&nbsp;&nbsp;</strong>{{doc.program}}</p>
+        <p><strong>สาเหตุการลา :&nbsp;&nbsp;&nbsp;</strong>{{doc.request_detail}} &nbsp;&nbsp;&nbsp; <strong>ลาตั้งแต่วันที่:&nbsp;&nbsp;&nbsp;</strong>{{doc.date_start}}&nbsp;&nbsp;&nbsp;<strong>ถึงวันที่:&nbsp;&nbsp;&nbsp;</strong>{{doc.date_end}}&nbsp;&nbsp;&nbsp; </p>
+        <p><strong>วันที่ส่งเอกสาร :&nbsp;&nbsp;&nbsp;</strong>{{doc.date_submitted}} &nbsp;&nbsp;&nbsp;</p>
+        
+
+</div>
+<!-- this is a sample default list template -->

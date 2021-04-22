@@ -1,0 +1,112 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Leave Request</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: 'Merriweather', serif;
+    background-color: rgb(245, 228, 135);
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: rgb(250, 95, 198);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 27px;
+  
+}
+.good{
+  margin-top : 25px ;
+    font-family: 'Sarabun', sans-serif;
+   
+      }
+      .good1{
+          margin-top : 20px ;
+      }
+      p{
+        font-size: 18px;
+      }
+      
+
+</style>
+<body>
+  <div class="topnav" style="color: white;">
+    <a>STUDENT LEAVE REQUEST</a>
+  </div>
+  <div class="container good">
+    
+        <h1><center> ใบลาเรียน </center></h1>
+        <p style="text-align: right;"><strong>สถานะของคำร้องขอ:</strong>{{status}}</p>
+   
+    
+        <div  style="margin-top: 50px;" >
+          <p ><strong>ทำการลาเรื่อง:&nbsp;&nbsp;&nbsp;</strong>{{title}}</p>
+        </div>
+
+        <div  style="margin-top: 15px;" >
+          <p ><strong>เรียนอาจารย์:&nbsp;&nbsp;&nbsp;</strong></p>
+        </div>  
+            
+               
+           <div>
+            <p><strong>ชื่อ-นามสกุล:&nbsp;&nbsp;&nbsp;</strong>{{first_name}} {{last_name}}</p>
+            <p><strong>รหัสนักศึกษา:&nbsp;&nbsp;&nbsp;</strong>{{student_id}}</p>
+            <p><strong>ภาคเรียนที่:&nbsp;&nbsp;&nbsp;</strong>{{semester}}</p>
+            <p><strong>ปีการศึกษา:&nbsp;&nbsp;&nbsp;</strong>{{year}}</p>
+            <p><strong>ปี:&nbsp;&nbsp;&nbsp;</strong>{{study_year}}</p>
+            <p><strong>สาขา:&nbsp;&nbsp;&nbsp;</strong>{{major}}</p>
+            <p><strong>แขนง:&nbsp;&nbsp;&nbsp;</strong>{{program}}</p>
+            <p><strong>ปริญญา:&nbsp;&nbsp;&nbsp;</strong>{{degree}}</p>
+
+           </div>     
+                
+                
+        <div class="row">
+          <div class="col-md-12 ">
+           <p><strong>สาเหตุการลา: &nbsp;</strong>{{request_detail}}</p>
+           <p><strong>เอกสารการลา: &nbsp;</strong>{{document}}</p>
+           <p><strong>ลาตั้งแต่วันที่: &nbsp;</strong>{{date_start}}&nbsp;&nbsp;<strong>ถึงวันที่: &nbsp;</strong>{{date_end}}&nbsp;&nbsp;<strong>เป็นเวลาทั้งหมด: &nbsp;</strong>{{day}}</p>
+
+          </div>
+        </div>
+
+
+        
+        <p style="margin-top: 50px;"><strong>ลายเซ็นยืนยันของผู้ปกครองเพื่อยืนยันการลา</strong></p>
+        <p>{{parent_name}}</p>
+        <p><strong>วันที่เซ็น</strong><img src="{{date_parent_sign}}"></p>
+        
+        <p style="margin-top: 50px; text-align: right; "><strong>ลายเซ็นของอาจารย์ที่ปรึกษา</strong></p>
+        <p style="text-align: right;">{{teacher_name}}</p>
+        <p style="text-align: right;"><strong>วันที่เซ็น</strong><img src="{date_parent_sign}}"></p>
+
+        <p style="text-align: right; margin-top: 65px;"><strong>วันที่ทำการร้องขอ</strong></p>
+        <p style="text-align: right;">{{date_submitted}}</p>
+      
+  </div>
+
+  
+</body>
+</html>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

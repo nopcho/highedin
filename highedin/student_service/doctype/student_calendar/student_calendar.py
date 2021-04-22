@@ -4,9 +4,9 @@
 
 from __future__ import unicode_literals
 import frappe
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
 
-class StudentCalendar(Document):
+class StudentCalendar(WebsiteGenerator):
 	def before_save(self):
 		self.project_id = self.name
 		self.date_submitted = frappe.utils.today()
