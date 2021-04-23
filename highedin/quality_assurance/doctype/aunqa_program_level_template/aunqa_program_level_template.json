@@ -83,7 +83,7 @@
   },
   {
    "fieldname": "list_of_table",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "List of Table",
    "options": "AUNQA Program Level Table"
   },
@@ -95,7 +95,7 @@
   },
   {
    "fieldname": "reference",
-   "fieldtype": "Link",
+   "fieldtype": "Table",
    "label": "Reference",
    "options": "AUNQA Program Level Reference"
   },
@@ -149,7 +149,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 22:40:13.905789",
+ "modified": "2021-04-23 21:45:39.080392",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",
