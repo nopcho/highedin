@@ -29,8 +29,8 @@
   "media",
   "opinion",
   "revision",
-  "naming_series",
-  "route"
+  "route",
+  "naming_series"
  ],
  "fields": [
   {
@@ -166,21 +166,21 @@
    "options": "Gadget Product Revision"
   },
   {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Series",
    "options": "HEI-GPR-.######"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Route"
   }
  ],
  "has_web_view": 1,
- "modified": "2021-04-22 01:07:08.905953",
+ "modified": "2021-04-23 16:46:27.742428",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Product",

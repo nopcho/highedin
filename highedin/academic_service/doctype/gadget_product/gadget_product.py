@@ -7,7 +7,10 @@ from __future__ import unicode_literals
 from frappe.website.website_generator import WebsiteGenerator
 
 from frappe.model.naming import getseries
+from frappe.model.naming import make_autoname
 
 class GadgetProduct(WebsiteGenerator):
-	pass
-		
+	def autoname(self):
+		temp = make_autoname('HEI-GPR-.######')
+		self.product_id = (temp[:8] + str('%06d' %(int(temp[8:])+1))) 
+	
