@@ -8,7 +8,8 @@
  "field_order": [
   "academic_year",
   "program_code",
-  "program_level"
+  "program_level",
+  "commitee_member"
  ],
  "fields": [
   {
@@ -26,11 +27,17 @@
    "fieldtype": "Select",
    "label": "Program Level",
    "options": "yes\nno"
+  },
+  {
+   "fieldname": "commitee_member",
+   "fieldtype": "Table",
+   "label": "Commitee Member",
+   "options": "QA Committee Member"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 18:59:01.534708",
+ "modified": "2021-04-23 15:12:43.657940",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "QA Committee",

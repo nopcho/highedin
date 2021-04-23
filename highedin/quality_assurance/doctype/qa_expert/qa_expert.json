@@ -15,12 +15,16 @@
  "fields": [
   {
    "fieldname": "first_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "First Name"
   },
   {
    "fieldname": "last_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Last Name"
   },
   {
@@ -31,6 +35,7 @@
   {
    "fieldname": "contact",
    "fieldtype": "Data",
+   "in_preview": 1,
    "label": "Contact"
   },
   {
@@ -41,7 +46,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 18:57:56.166337",
+ "modified": "2021-04-23 15:28:03.175859",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "QA Expert",
@@ -61,6 +66,7 @@
   }
  ],
  "quick_entry": 1,
+ "search_fields": "first_name, last_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
