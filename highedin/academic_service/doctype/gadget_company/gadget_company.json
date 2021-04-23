@@ -19,9 +19,10 @@
   },
   {
    "fieldname": "country",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Country"
+   "label": "Country",
+   "options": "Country"
   },
   {
    "fieldname": "description",
@@ -30,7 +31,7 @@
    "label": "Description"
   }
  ],
- "modified": "2021-04-16 15:57:07.008195",
+ "modified": "2021-04-23 14:14:53.439820",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Company",
