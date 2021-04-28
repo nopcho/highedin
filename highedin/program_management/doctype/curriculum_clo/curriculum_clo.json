@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:clo_name",
+ "autoname": "CLO.####",
  "creation": "2021-04-22 21:02:13.168353",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,14 +9,16 @@
   "clo_name",
   "clo_fullname",
   "description",
+  "update_date",
+  "published",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "clo_name",
    "fieldtype": "Data",
-   "label": "CLO name",
-   "unique": 1
+   "in_list_view": 1,
+   "label": "CLO name"
   },
   {
    "fieldname": "description",
@@ -28,7 +30,7 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Curriculum CLO",
+   "options": "Curriculum Clo",
    "print_hide": 1,
    "read_only": 1
   },
@@ -36,15 +38,26 @@
    "fieldname": "clo_fullname",
    "fieldtype": "Data",
    "label": "CLO fullname"
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Date",
+   "label": "Update Date"
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Select",
+   "label": "Published",
+   "options": "Yes\nNo"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-22 21:11:24.210092",
+ "modified": "2021-04-28 17:26:37.906023",
  "modified_by": "Administrator",
  "module": "Program Management",
- "name": "Curriculum CLO",
+ "name": "Curriculum Clo",
  "owner": "Administrator",
  "permissions": [
   {
@@ -88,5 +101,6 @@
  "search_fields": "clo_fullname",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "clo_name",
  "track_changes": 1
 }

@@ -91,13 +91,13 @@
    "fieldname": "prerequisite",
    "fieldtype": "Table",
    "label": "Prerequisite",
-   "options": "Curriculum PLO"
+   "options": "Curriculum Plo"
   },
   {
    "fieldname": "prerequisite_more",
    "fieldtype": "Table",
    "label": "Prerequisite More",
-   "options": "Curriculum PLO"
+   "options": "Curriculum Plo"
   },
   {
    "fieldname": "course_intro",
@@ -121,7 +121,7 @@
    "fieldname": "course_elo",
    "fieldtype": "Table",
    "label": "Course ELO",
-   "options": "ELO"
+   "options": "Elo"
   },
   {
    "fieldname": "section_break_15",
@@ -133,7 +133,7 @@
   },
   {
    "fieldname": "update_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "label": "Update date"
   },
   {
@@ -154,7 +154,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-22 21:28:33.459774",
+ "modified": "2021-04-28 17:25:37.273121",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Course",
@@ -169,18 +169,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Program Committee",
    "share": 1,
    "write": 1
   }

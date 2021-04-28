@@ -1,7 +1,7 @@
 // Copyright (c) 2021, Nopporn Chotikakamthorn and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('ELO category', {
+frappe.ui.form.on('Elo Category', {
 	// refresh: function(frm) {
 
 	// }

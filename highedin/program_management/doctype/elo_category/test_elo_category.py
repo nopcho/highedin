@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 import unittest
 
-class TestELOcategory(unittest.TestCase):
+class TestEloCategory(unittest.TestCase):
 	pass

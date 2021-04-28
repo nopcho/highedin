@@ -98,8 +98,9 @@
   },
   {
    "fieldname": "version",
-   "fieldtype": "Data",
-   "label": "Version"
+   "fieldtype": "Select",
+   "label": "Version",
+   "options": "draft\ncomplete"
   },
   {
    "fieldname": "updated_date",
@@ -201,7 +202,7 @@
    "fieldname": "learning_outcome",
    "fieldtype": "Table",
    "label": "Program Learning outcome",
-   "options": "Curriculum PLO"
+   "options": "Curriculum Plo"
   },
   {
    "fieldname": "plan_type",
@@ -304,7 +305,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-21 22:27:18.564914",
+ "modified": "2021-04-28 17:25:34.831189",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",

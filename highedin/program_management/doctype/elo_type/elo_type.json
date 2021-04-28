@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "type_name",
-  "description"
+  "description",
+  "elo_category"
  ],
  "fields": [
   {
@@ -22,14 +23,20 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Description"
+  },
+  {
+   "fieldname": "elo_category",
+   "fieldtype": "Link",
+   "label": "Elo Category",
+   "options": "Elo Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-21 18:46:22.277862",
+ "modified": "2021-04-28 17:24:13.102761",
  "modified_by": "Administrator",
  "module": "Program Management",
- "name": "ELO type",
+ "name": "Elo Type",
  "owner": "Administrator",
  "permissions": [
   {

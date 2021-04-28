@@ -1,34 +1,33 @@
 {
  "actions": [],
- "autoname": "field:elo_name",
- "creation": "2021-04-15 18:43:43.789959",
+ "autoname": "field:plo_name",
+ "creation": "2021-04-23 15:52:56.435202",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "elo_name",
-  "elo_description"
+  "plo_name",
+  "description"
  ],
  "fields": [
   {
-   "fieldname": "elo_name",
+   "fieldname": "plo_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Elo Name",
+   "label": "PLO name",
    "unique": 1
   },
   {
-   "fieldname": "elo_description",
+   "fieldname": "description",
    "fieldtype": "Data",
-   "label": "Elo description"
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-28 17:21:59.754680",
+ "modified": "2021-04-23 16:31:25.729778",
  "modified_by": "Administrator",
  "module": "Program Management",
- "name": "Elo Category",
+ "name": "Plo Category",
  "owner": "Administrator",
  "permissions": [
   {
@@ -45,8 +44,8 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "elo_description",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "plo_name",
  "track_changes": 1
 }
