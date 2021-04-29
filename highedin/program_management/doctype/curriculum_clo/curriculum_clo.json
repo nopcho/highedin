@@ -18,12 +18,12 @@
    "fieldname": "clo_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "CLO name"
+   "label": "Clo Name"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "amended_from",
@@ -37,7 +37,7 @@
   {
    "fieldname": "clo_fullname",
    "fieldtype": "Data",
-   "label": "CLO fullname"
+   "label": "Clo Fullname"
   },
   {
    "fieldname": "update_date",
@@ -54,7 +54,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-28 17:26:37.906023",
+ "modified": "2021-04-28 17:29:32.308981",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Clo",

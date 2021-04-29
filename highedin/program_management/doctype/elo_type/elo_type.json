@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:type_name",
+ "autoname": ".####",
  "creation": "2021-04-16 16:08:12.352372",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,8 +15,7 @@
    "fieldname": "type_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Type name",
-   "unique": 1
+   "label": "Type name"
   },
   {
    "fieldname": "description",
@@ -26,14 +25,14 @@
   },
   {
    "fieldname": "elo_category",
-   "fieldtype": "Link",
-   "label": "Elo Category",
-   "options": "Elo Category"
+   "fieldtype": "Select",
+   "label": "ELO category",
+   "options": "1\n2\n3\n4\n5"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-28 17:24:13.102761",
+ "modified": "2021-04-29 22:39:20.922229",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Elo Type",

@@ -14,21 +14,21 @@
    "fieldname": "elo_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "ELO name",
+   "label": "Elo name",
    "unique": 1
   },
   {
    "fieldname": "elo_description",
    "fieldtype": "Data",
-   "label": "ELO description"
+   "label": "Elo Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-15 22:24:50.320749",
+ "modified": "2021-04-28 17:30:20.139189",
  "modified_by": "Administrator",
  "module": "Program Management",
- "name": "Curriculum ELO",
+ "name": "Curriculum Elo",
  "owner": "Administrator",
  "permissions": [
   {
