@@ -1,4 +1,16 @@
-<div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
-</div>
+<div class="list" style="margin-top: 50px;  background-color: rgb(255, 255, 255);
+    width: 1000px;
+    border: 7px solid rgb(86, 59, 136);
+    padding: 50px;
+    margin: 20px;
+    
+    font-family: 'Sarabun', sans-serif;">
+        <a href="{{ doc.route }}">{{doc.company_name}} </a>
+        <p><strong>ชื่องาน:&nbsp;&nbsp;&nbsp;</strong>{{doc.job_name}}&nbsp;&nbsp;&nbsp;<strong>ประเภทงาน:&nbsp;&nbsp;&nbsp;</strong>{{doc.job_type}}&nbsp;&nbsp;&nbsp;</p>
+        <p><strong>คุณสมบัติ:&nbsp;&nbsp;&nbsp;</strong> {{doc.requirements}} &nbsp;&nbsp;&nbsp;<strong>รายละเอียดของงาน:&nbsp;&nbsp;&nbsp;</strong>{{doc.responsibilities}}&nbsp;&nbsp;&nbsp;<strong>รายละเอียดอื่นๆของงาน:&nbsp;&nbsp;&nbsp;</strong>{{doc.description}}</p>
+        <p><strong>ติดต่อได้ที่:&nbsp;&nbsp;&nbsp;</strong>{{doc.name_contact}} &nbsp;&nbsp;&nbsp; <strong>ที่อยู่บริษัท:&nbsp;&nbsp;&nbsp;</strong>{{doc.address}}&nbsp;&nbsp;&nbsp;<strong>เบอร์โทรบริษัท:&nbsp;&nbsp;&nbsp;</strong>{{doc.tel}}&nbsp;&nbsp;&nbsp; </p>
+        <p><strong>อีเมลบริษัท :&nbsp;&nbsp;&nbsp;</strong>{{doc.email}} &nbsp;&nbsp;&nbsp;</p>
+        
+
+  </div>
 <!-- this is a sample default list template -->

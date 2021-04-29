@@ -1,0 +1,278 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-04-29 09:40:22.583401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "sja_id",
+  "job_name",
+  "job_type",
+  "section_break_5",
+  "student_id",
+  "first_name",
+  "last_name",
+  "section_break_9",
+  "present_address",
+  "sub_district",
+  "post_code",
+  "column_break_13",
+  "moo",
+  "district",
+  "phone_number",
+  "column_break_17",
+  "road",
+  "province",
+  "email",
+  "section_break_21",
+  "living",
+  "dob",
+  "age",
+  "column_break_25",
+  "race",
+  "nationality",
+  "religion",
+  "section_break_29",
+  "id_card_no",
+  "expiration_date",
+  "column_break_32",
+  "military_status",
+  "marital_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HEI-SJA-.YYYY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sja_id",
+   "fieldtype": "Data",
+   "label": "Student Job ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_name",
+   "fieldtype": "Data",
+   "label": "Job Name"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "label": "Job Type",
+   "options": "Full Time\nPart Time"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "label": "Student ID",
+   "options": "Student Profile"
+  },
+  {
+   "fetch_from": "student_id.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_id.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "present_address",
+   "fieldtype": "Data",
+   "label": "Present Address"
+  },
+  {
+   "fieldname": "moo",
+   "fieldtype": "Int",
+   "label": "Moo"
+  },
+  {
+   "fieldname": "road",
+   "fieldtype": "Data",
+   "label": "Road"
+  },
+  {
+   "fieldname": "sub_district",
+   "fieldtype": "Data",
+   "label": "Sub District"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "Province"
+  },
+  {
+   "fieldname": "post_code",
+   "fieldtype": "Data",
+   "label": "Post Code"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "living",
+   "fieldtype": "Select",
+   "label": "Living",
+   "options": "Parent\nOwn Home\nHired House\nHostel"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "race",
+   "fieldtype": "Data",
+   "label": "Race"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "label": "Religion"
+  },
+  {
+   "fieldname": "id_card_no",
+   "fieldtype": "Int",
+   "label": "ID Card No"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date"
+  },
+  {
+   "fieldname": "military_status",
+   "fieldtype": "Select",
+   "label": "Military Status",
+   "options": "Exempted\nServed\nNot Yet Served"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "Single\nMarried\nWidowed\nSeparated"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-29 09:48:02.314955",
+ "modified_by": "Administrator",
+ "module": "Student Service",
+ "name": "Student Job Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staff",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

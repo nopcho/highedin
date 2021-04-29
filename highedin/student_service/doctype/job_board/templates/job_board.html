@@ -1,7 +1,95 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job board</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    font-family: 'Merriweather', serif;
+    
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: rgb(151, 187, 253);
+}
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 27px;
+  
+}
+.good{
+  margin-top : 35px ;
+    font-family: 'Sarabun', sans-serif;
+   
+      }
+      .good1{
+          margin-top : 20px ;
+      }
+      p{
+        font-size: 18px;
+      }
+      
+
+</style>
+<body>
+  <div class="topnav" style="color: white;">
+    <a>JOB BOARD</a>
+  </div>
+  <div class="container good">
+    
+        <h1><center> บอร์ดงาน </center></h1>
+        
+        
+   
+    
+        <div  style="margin-top: 85px;" >
+        <center>
+            <p ><strong>ชื่องาน:&nbsp;&nbsp;&nbsp;</strong>{{job_name}}&nbsp;&nbsp;&nbsp;<strong>ประเภทงาน:&nbsp;&nbsp;&nbsp;</strong>{{job_type}}</p>
+        </div> </center>
+
+        <div  style="margin-top: 25px;" >
+          <center>
+          <p ><strong>คุณสมบัติ:&nbsp;&nbsp;&nbsp;</strong>{{requirements}}&nbsp;&nbsp;&nbsp;<strong>รายละเอียดของงาน:&nbsp;&nbsp;&nbsp;</strong>{{responsibilities}}&nbsp;&nbsp;&nbsp;<strong>รายละเอียดอื่นๆของงาน:&nbsp;&nbsp;&nbsp;</strong>{{description}}</p>
+        </div>  </center>
+
+        <div  style="margin-top: 25px;" >
+          <center>
+          <p ><strong>ติดต่อได้ที่:&nbsp;&nbsp;&nbsp;</strong>{{name_contact}}&nbsp;&nbsp;&nbsp;<strong>ชื่อบริษัท:&nbsp;&nbsp;&nbsp;</strong>{{company_name}}&nbsp;&nbsp;&nbsp;<strong>ที่อยู่บริษัท:&nbsp;&nbsp;&nbsp;</strong>{{address}}</p>
+        </div>  </center>
+
+
+        <div  style="margin-top: 25px;" >
+          <center>
+          <p ><strong>เบอร์โทรบริษัท:&nbsp;&nbsp;&nbsp;</strong>{{tel}}&nbsp;&nbsp;&nbsp;<strong>อีเมลบริษัท:&nbsp;&nbsp;&nbsp;</strong>{{email}}&nbsp;&nbsp;&nbsp;<strong></p>
+        </div>  </center>
+               
+          
+      
+      
+  
+      
+  </div>
+
+  
+</body>
+</html>
 {% endblock %}
 
 <!-- this is a sample default web page template -->
