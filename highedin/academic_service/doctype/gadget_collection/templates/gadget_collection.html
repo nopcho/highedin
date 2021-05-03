@@ -1,7 +1,207 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>Hi{{ title }}</h1>
+<!-- <h1>Hi{{ title }}</h1> -->
+
+<section class="p-4">
+    <div class="row">
+        <div class="col-6">
+            <img src="{{upload}}" alt="Card image cap" width="100%"> 
+        </div>
+        <div class="col-6 pt-5">
+            <h1><span style="font-weight: bold; ">{{product_name}}</span>  </h1>
+            <div class="row">
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Type: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_type}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Category:</h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_category}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Subcategory: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_subcategory}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Model: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{model}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Company: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{company}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Submit Detail</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Date Submitted: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{date_submitted}}</h6>
+                </div>
+                
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Year Purchased: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{year_purchased}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Date Register: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{date_registered}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Functional Detail</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Functional Condition: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{functional_condition}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Condition Remark: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{condition_remark}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Genaral Condition: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{general_condition}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Source: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{source_by}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Donor ID</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Donation ID: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{donor_id[0].adonation_id}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Danation Date: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{donor_id[0].donor_date}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Donation Name: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{donor_id[0].dornor_name}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Remark: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{donor_id[0].remark}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Media</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Attach File: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{media[0].attached_file}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Description: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{media[0].description}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Title: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{media[0].title}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Reference: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{media[0].reference}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Revision</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Opinion: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{revision[0].revison_remark}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</section>
+
 {% endblock %}
 
 <!-- this is a sample default web page template -->
