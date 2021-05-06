@@ -1,3 +1,4 @@
+
 // Copyright (c) 2021, Nopporn Chotikakamthorn and contributors
 // For license information, please see license.txt
 
@@ -12,13 +13,15 @@ frappe.ui.form.on('Curriculum Course', 'onload', function (frm) {
 
     });
     frm.set_query("elo_type", "course_elo", function (doc, cdt, cdn) {
-	console.log(2)
-	let d = locals[cdt][cdn];
-	console.log(d)
+        console.log("please...");
+        console.log(doc.elo_catagory);
+        console.log(cdt)
+        console.log(cdn)
+        console.log(locals[cdt][cdn])
         return {
             "filters": {
-		"type_name" : d.elo_catagory
-		}
-        };
+                "type_name": frm.doc.elo_cate
+        	}
+	};
     });
 });

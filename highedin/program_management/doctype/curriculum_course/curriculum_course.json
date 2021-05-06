@@ -9,15 +9,11 @@
   "course_code",
   "course_elo",
   "section_break_3",
-  "elo_cate",
-  "column_break_5",
-  "num_type",
-  "section_break_15",
+  "course_abbr",
   "course_name",
   "course_name_en",
   "section_break_10",
   "program",
-  "course_abbr",
   "credit",
   "lecture_hour",
   "practice_hour",
@@ -128,10 +124,6 @@
    "options": "Elo"
   },
   {
-   "fieldname": "section_break_15",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "section_break_10",
    "fieldtype": "Section Break"
   },
@@ -156,29 +148,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "elo_cate",
-   "fieldtype": "Select",
-   "label": "ELO Category",
-   "options": "1\n2\n3\n4\n5"
-  },
-  {
-   "fieldname": "num_type",
-   "fieldtype": "Link",
-   "label": "ELO Type",
-   "options": "Elo Type"
-  },
-  {
    "fieldname": "section_break_3",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-29 22:43:09.671805",
+ "modified": "2021-05-06 16:23:52.205461",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Course",
