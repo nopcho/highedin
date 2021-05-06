@@ -44,7 +44,8 @@
   "date_submitted",
   "status",
   "amended_from",
-  "route"
+  "route",
+  "send_to"
  ],
  "fields": [
   {
@@ -247,13 +248,20 @@
    "hidden": 1,
    "label": "Route",
    "read_only": 1
+  },
+  {
+   "fieldname": "send_to",
+   "fieldtype": "Link",
+   "label": "Send To",
+   "options": "IT Role",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-22 21:26:28.373802",
+ "modified": "2021-05-06 20:23:03.655353",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Leave Request",

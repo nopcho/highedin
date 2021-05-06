@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "naming_series:",
  "creation": "2021-04-29 09:40:22.583401",
  "doctype": "DocType",
@@ -39,7 +40,8 @@
   "expiration_date",
   "column_break_32",
   "military_status",
-  "marital_status"
+  "marital_status",
+  "route"
  ],
  "fields": [
   {
@@ -216,11 +218,17 @@
   {
    "fieldname": "column_break_32",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-29 09:48:02.314955",
+ "modified": "2021-05-06 22:08:53.595143",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Job Application",
@@ -272,6 +280,7 @@
    "write": 1
   }
  ],
+ "route": "student-job-application",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

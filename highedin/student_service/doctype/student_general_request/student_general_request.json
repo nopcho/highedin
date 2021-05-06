@@ -33,7 +33,8 @@
   "final_decision",
   "status",
   "amended_from",
-  "route"
+  "route",
+  "send_to"
  ],
  "fields": [
   {
@@ -138,7 +139,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Edit\nSubmit\nPass\nIssue\nNot Pass\nCancel",
+   "options": "Incomplete\nApproved\nRejected",
    "read_only": 1
   },
   {
@@ -204,13 +205,20 @@
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_to",
+   "fieldtype": "Link",
+   "label": "Send to",
+   "options": "IT Role",
+   "read_only": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-22 21:26:03.308571",
+ "modified": "2021-05-06 19:42:09.096304",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request",
@@ -248,6 +256,7 @@
    "report": 1,
    "role": "Instructor",
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {

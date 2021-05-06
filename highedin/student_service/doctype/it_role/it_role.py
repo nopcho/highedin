@@ -4,8 +4,7 @@
 
 from __future__ import unicode_literals
 # import frappe
-from frappe.website.website_generator import WebsiteGenerator
+from frappe.model.document import Document
 
-class StudentJobApplication(WebsiteGenerator):
-	def before_save(self):
-		self.sja_id = self.name
+class ITRole(Document):
+	pass
