@@ -26,15 +26,6 @@
    "label": "Description"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Curriculum Clo",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "clo_fullname",
    "fieldtype": "Data",
    "label": "Clo Fullname"
@@ -49,12 +40,21 @@
    "fieldtype": "Select",
    "label": "Published",
    "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Curriculum Clo",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-04-28 17:29:32.308981",
+ "modified": "2021-05-06 19:56:55.846637",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Clo",
