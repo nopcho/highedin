@@ -32,9 +32,9 @@
   "degree_name_en_abbr",
   "section_break_24",
   "total_credit",
-  "status_detail",
-  "column_break_28",
   "program_status",
+  "column_break_28",
+  "status_detail",
   "readiness",
   "section_break_29",
   "philosophy",
@@ -55,7 +55,8 @@
   "section_break_46",
   "plan_option",
   "section_break_47",
-  "route"
+  "route",
+  "data_51"
  ],
  "fields": [
   {
@@ -151,18 +152,19 @@
   },
   {
    "fieldname": "program_status",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Program Status"
+   "label": "Program Status",
+   "options": "Draft\nUnder Revision\nActive\nInactive"
   },
   {
    "fieldname": "status_detail",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Status Detail"
   },
   {
    "fieldname": "readiness",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Readiness"
   },
   {
@@ -190,7 +192,7 @@
   },
   {
    "fieldname": "philosophy",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Philosophy"
   },
   {
@@ -283,7 +285,7 @@
   },
   {
    "fieldname": "column_break_28",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "section_break_37",
@@ -300,12 +302,16 @@
   {
    "fieldname": "section_break_45",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_51",
+   "fieldtype": "Data"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-28 17:25:34.831189",
+ "modified": "2021-05-06 20:28:33.874926",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
