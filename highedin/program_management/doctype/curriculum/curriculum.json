@@ -169,7 +169,7 @@
   },
   {
    "fieldname": "career_opportunity",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Carreer Opportunity"
   },
   {
@@ -197,7 +197,7 @@
   },
   {
    "fieldname": "objective",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "label": "Objective"
   },
   {
@@ -269,7 +269,7 @@
   },
   {
    "fieldname": "column_break_37",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "section_break_39",
@@ -311,7 +311,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-06 20:28:33.874926",
+ "modified": "2021-05-06 20:33:40.446993",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
