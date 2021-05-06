@@ -6,7 +6,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "plo_name",
   "elo_catagory",
   "elo_type",
   "level"
@@ -29,13 +28,6 @@
    "options": "main\nsecond\nnone"
   },
   {
-   "fieldname": "plo_name",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Plo Name",
-   "options": "Plo Category"
-  },
-  {
    "default": "1",
    "fieldname": "elo_catagory",
    "fieldtype": "Select",
@@ -47,7 +39,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-30 16:25:54.104727",
+ "modified": "2021-05-06 18:26:56.542678",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Elo",

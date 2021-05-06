@@ -1,13 +1,15 @@
 {
  "actions": [],
- "autoname": ".####",
+ "autoname": ".###",
  "creation": "2021-04-16 16:08:12.352372",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "type_name",
+  "number",
   "description",
+  "plo",
   "elo_category"
  ],
  "fields": [
@@ -28,11 +30,22 @@
    "fieldtype": "Select",
    "label": "ELO category",
    "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "plo",
+   "fieldtype": "Link",
+   "label": "Plo",
+   "options": "Plo Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-29 22:39:20.922229",
+ "modified": "2021-05-06 18:35:04.784524",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Elo Type",

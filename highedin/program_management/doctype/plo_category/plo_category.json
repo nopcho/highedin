@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "plo_name",
-  "description"
+  "description",
+  "list"
  ],
  "fields": [
   {
@@ -20,11 +21,17 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "fieldname": "list",
+   "fieldtype": "Table",
+   "label": "List elo",
+   "options": "Elo"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-23 16:31:25.729778",
+ "modified": "2021-05-06 18:39:22.602543",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Plo Category",
