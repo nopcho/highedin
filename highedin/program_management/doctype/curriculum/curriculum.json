@@ -100,6 +100,7 @@
   {
    "fieldname": "version",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Version",
    "options": "draft\ncomplete"
   },
@@ -311,7 +312,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-06 20:33:40.446993",
+ "modified": "2021-05-07 15:46:08.401394",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",

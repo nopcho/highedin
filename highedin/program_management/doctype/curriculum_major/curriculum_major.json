@@ -29,14 +29,14 @@
    "fieldname": "major_name_abbr",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "MAjoe Abbr",
+   "label": "Major Abbr",
    "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-21 22:35:53.424940",
+ "modified": "2021-05-07 15:04:30.059502",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Major",

@@ -20,12 +20,13 @@
   {
    "fieldname": "elo_description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Elo description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-28 17:21:59.754680",
+ "modified": "2021-05-07 15:15:49.300638",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Elo Category",

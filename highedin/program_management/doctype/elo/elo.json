@@ -30,16 +30,16 @@
   {
    "default": "1",
    "fieldname": "elo_catagory",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "ELO catagory",
-   "options": "1\n2\n3\n4\n5"
+   "options": "Elo Category"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-06 18:26:56.542678",
+ "modified": "2021-05-07 15:16:42.685848",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Elo",

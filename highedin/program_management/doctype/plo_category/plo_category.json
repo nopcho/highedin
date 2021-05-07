@@ -14,7 +14,7 @@
   {
    "fieldname": "plo_name",
    "fieldtype": "Data",
-   "label": "PLO name",
+   "label": "Plo Name",
    "unique": 1
   },
   {
@@ -25,13 +25,13 @@
   {
    "fieldname": "list",
    "fieldtype": "Table",
-   "label": "List elo",
+   "label": "Category Elo",
    "options": "Elo"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-06 18:39:22.602543",
+ "modified": "2021-05-07 16:48:18.067033",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Plo Category",

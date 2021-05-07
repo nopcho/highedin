@@ -11,13 +11,13 @@ frappe.ui.form.on('Curriculum Course', 'onload', function (frm) {
         };
 
     });
-    frm.set_query("elo_type", "course_elo", function (doc, cdt, cdn) {
+    frm.set_query("elo_catagory", "course_elo", function (doc, cdt, cdn) {
 	console.log(2)
 	let d = locals[cdt][cdn];
 	console.log(d)
         return {
             "filters": {
-		"type_name" : d.elo_catagory.elo_name
+		"elo_name" : d.elo_catagory
 		}
         };
     });
