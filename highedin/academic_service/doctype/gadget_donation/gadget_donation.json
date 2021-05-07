@@ -1,4 +1,5 @@
 {
+ "autoname": "#####",
  "creation": "2021-03-15 22:03:48.534101",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -35,14 +36,51 @@
    "label": "remark"
   }
  ],
- "istable": 1,
- "modified": "2021-04-23 15:09:24.870329",
+ "modified": "2021-05-07 15:58:28.086630",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Donation",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "dornor_name",
  "track_changes": 1
 }
