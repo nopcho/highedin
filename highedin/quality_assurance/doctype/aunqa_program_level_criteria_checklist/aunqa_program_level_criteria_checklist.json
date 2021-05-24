@@ -21,7 +21,7 @@
    "fieldname": "description",
    "fieldtype": "Text",
    "in_list_view": 1,
-   "label": "Expected Learning Outcomes"
+   "label": "Description"
   },
   {
    "fieldname": "ref_criterion",
@@ -40,7 +40,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-23 21:58:50.308882",
+ "modified": "2021-05-24 04:56:07.520856",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Criteria Checklist",

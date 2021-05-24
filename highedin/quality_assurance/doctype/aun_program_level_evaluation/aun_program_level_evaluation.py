@@ -7,4 +7,5 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class AUNProgramLevelEvaluation(Document):
-	pass
+		def validate(self):
+			self.aunqa_code = self.name
