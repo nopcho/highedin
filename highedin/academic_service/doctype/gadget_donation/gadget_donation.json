@@ -1,42 +1,72 @@
 {
- "autoname": "#####",
+ "actions": [],
+ "autoname": "naming_series:",
  "creation": "2021-03-15 22:03:48.534101",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "donation_id",
+  "image",
+  "upload",
   "dornor_name",
-  "donor_date",
-  "remark"
+  "product_description",
+  "remark",
+  "date_purchase",
+  "naming_series"
  ],
  "fields": [
   {
    "fieldname": "donation_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "donation_id"
+   "label": "Donation ID",
+   "read_only": 1
   },
   {
    "fieldname": "dornor_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "dornor_name"
-  },
-  {
-   "fieldname": "donor_date",
-   "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "donor_date"
+   "label": "Product Name"
   },
   {
    "fieldname": "remark",
-   "fieldtype": "Data",
+   "fieldtype": "Text",
    "in_list_view": 1,
-   "label": "remark"
+   "label": "Remark"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "DONATE-.######"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Text",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "date_purchase",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of purchase"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "upload"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Attach Image",
+   "label": "Upload"
   }
  ],
- "modified": "2021-05-07 15:58:28.086630",
+ "links": [],
+ "modified": "2021-05-26 01:58:20.345262",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Donation",
