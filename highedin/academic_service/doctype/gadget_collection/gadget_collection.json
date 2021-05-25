@@ -34,8 +34,8 @@
   "donor_id",
   "media",
   "revision",
-  "naming_series",
-  "route"
+  "route",
+  "naming_series"
  ],
  "fields": [
   {
@@ -177,13 +177,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "label": "Series",
-   "options": "HEI-GCO-.######"
-  },
-  {
    "fieldname": "upload",
    "fieldtype": "Attach Image",
    "label": "Upload"
@@ -204,11 +197,18 @@
    "fieldname": "source_by",
    "fieldtype": "Select",
    "label": "Source",
-   "options": "\"ITKMITL\"\n\"donor\"\n\"unknown\""
+   "options": "ITKMITL\ndonor\nunknown"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HEI-GCO-.######"
   }
  ],
  "has_web_view": 1,
- "modified": "2021-05-03 17:25:46.663909",
+ "modified": "2021-05-25 17:57:04.390142",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",

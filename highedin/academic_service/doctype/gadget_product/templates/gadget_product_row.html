@@ -1,20 +1,20 @@
 <div class="container">
 	<div class="row">
 		<div class="col card d-flex" style="width: 25rem;">
-  			<!-- <img class="card-img-top" src="{{upload}}" alt="Card image cap"> -->
   			<div class="card-body">
-  				<h5 class="card-title"><a href="{{ doc.name }}">{{ doc.title or doc.name }}</a></h5>
-    			<p class="card-text">
-			    	<p>Product Name: {{product_name}}</p>
-			    	<p>Product Type: {{product_type}}</p>
-    				<p>roduct Category: {{product_category}}</p>
-    				<p>Product Subcategory: {{product_subcategory}}</p>
-    			</p>
-    			<a href="{{ doc.name }}" class="btn btn-primary">More</a>
+				<div class="row">
+					  <div class="col-3">
+						  <img class="card-img-top" src="{{ upload }}" alt="{{ product_name }}" width="100%">
+					  </div>
+					<div class="col-9">
+						<p class="card-text">
+							<h3>{{product_name}}</h3>
+							<p>{{product_type}}, {{product_category}}, {{product_subcategory}}</p>
+						</p>				
+						<a href="{{route}}" class="btn btn-primary" style="position: absolute; right: 0; bottom: 0;">See more</a>
+					</div>
+				</div>
   			</div>
-		</div>
-		<div class="col card d-flex">
-  			<img class="card-img-top" src="{{upload}}" alt="Card image cap">
 		</div>
 	</div>
 
