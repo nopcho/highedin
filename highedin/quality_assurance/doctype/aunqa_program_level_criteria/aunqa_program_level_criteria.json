@@ -1,14 +1,12 @@
 {
  "actions": [],
- "autoname": "naming_series:",
  "creation": "2021-03-15 17:12:57.827423",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "criterion_no",
-  "description",
-  "naming_series"
+  "description"
  ],
  "fields": [
   {
@@ -24,20 +22,12 @@
    "fieldtype": "Text",
    "in_list_view": 1,
    "label": "Description"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "hidden": 1,
-   "label": "Naming Series",
-   "options": ".##",
-   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-16 16:25:51.918791",
+ "modified": "2021-05-26 02:22:49.144514",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Criteria",

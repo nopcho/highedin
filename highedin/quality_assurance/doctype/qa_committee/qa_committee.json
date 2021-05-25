@@ -14,15 +14,18 @@
  "fields": [
   {
    "fieldname": "academic_year",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_preview": 1,
-   "label": "Academic Year"
+   "label": "Academic Year",
+   "options": "Academic Years",
+   "reqd": 1
   },
   {
    "fieldname": "program_code",
-   "fieldtype": "Data",
-   "label": "Program Code"
+   "fieldtype": "Link",
+   "label": "Program Code",
+   "options": "Curriculum"
   },
   {
    "fieldname": "program_level",
@@ -39,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-24 04:59:28.339779",
+ "modified": "2021-05-26 03:11:34.102669",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "QA Committee",
@@ -61,5 +64,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "academic_year",
  "track_changes": 1
 }

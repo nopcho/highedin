@@ -28,7 +28,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Not Available,\nDraft,\nFinal"
+   "options": "Not Available\nDraft\nFinal"
   },
   {
    "fieldname": "upload_image",
@@ -39,7 +39,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-08 18:46:30.381592",
+ "modified": "2021-05-26 01:20:07.310566",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Figure",

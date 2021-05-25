@@ -10,7 +10,7 @@
   "doctypem",
   "doc_name",
   "status",
-  "select_6"
+  "select"
  ],
  "fields": [
   {
@@ -34,25 +34,25 @@
   {
    "fieldname": "doc_name",
    "fieldtype": "Data",
-   "label": "Doc Name"
+   "label": "DocName"
   },
   {
    "fieldname": "doctypem",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Doc Type"
+   "label": "DocType"
   },
   {
-   "fieldname": "select_6",
+   "fieldname": "select",
    "fieldtype": "Select",
    "in_list_view": 1,
-   "options": "Not Available,\nDraft,\nFinal"
+   "options": "Not Available\nDraft\nFinal"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-04-08 18:43:18.594343",
+ "modified": "2021-05-26 01:18:58.554495",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Table",
