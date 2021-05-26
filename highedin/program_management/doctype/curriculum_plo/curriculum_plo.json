@@ -19,6 +19,7 @@
    "label": "Description"
   },
   {
+   "fetch_from": "plo:plo_code",
    "fieldname": "plo_code",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -40,7 +41,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-26 10:56:59.114167",
+ "modified": "2021-05-26 13:54:53.756883",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Plo",

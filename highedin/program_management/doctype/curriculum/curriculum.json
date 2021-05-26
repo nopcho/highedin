@@ -55,8 +55,7 @@
   "section_break_46",
   "plan_option",
   "section_break_47",
-  "route",
-  "data_51"
+  "route"
  ],
  "fields": [
   {
@@ -303,16 +302,12 @@
   {
    "fieldname": "section_break_45",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "data_51",
-   "fieldtype": "Data"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-07 15:46:08.401394",
+ "modified": "2021-05-26 14:16:51.803644",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
