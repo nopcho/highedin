@@ -7,48 +7,73 @@
  "engine": "InnoDB",
  "field_order": [
   "plan_name",
+  "description",
   "major",
   "plan_type",
-  "description",
   "plan_option_code",
+  "plan_type_abbr",
+  "major_abbr",
   "naming_series"
  ],
  "fields": [
   {
    "fieldname": "plan_name",
    "fieldtype": "Data",
-   "label": "plan_name"
+   "in_list_view": 1,
+   "label": "Plan Name"
   },
   {
+   "fetch_from": "major.major_name",
    "fieldname": "major",
-   "fieldtype": "Data",
-   "label": "major"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Major",
+   "options": "Curriculum Major"
   },
   {
+   "fetch_from": "plan_type.plan_type",
    "fieldname": "plan_type",
-   "fieldtype": "Data",
-   "label": "plan_type"
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plan Type",
+   "options": "Curriculum Plan Type"
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
-   "label": "description"
+   "in_list_view": 1,
+   "label": "Description"
   },
   {
    "fieldname": "plan_option_code",
    "fieldtype": "Data",
-   "label": "plan_option_code"
+   "in_list_view": 1,
+   "label": "Plan Option Type"
   },
   {
    "fieldname": "naming_series",
    "fieldtype": "Data",
    "label": "Naming Series"
+  },
+  {
+   "fetch_from": "plan_type_abbr.plan_type",
+   "fieldname": "plan_type_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plan Type Abbr"
+  },
+  {
+   "fetch_from": "major_abbr.major",
+   "fieldname": "major_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Major Abbr"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-24 16:40:10.819528",
+ "modified": "2021-05-26 13:00:32.604498",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Plan Option",

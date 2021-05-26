@@ -1,4 +1,5 @@
 
+
 // Copyright (c) 2021, Nopporn Chotikakamthorn and contributors
 // For license information, please see license.txt
 
@@ -26,3 +27,10 @@ frappe.ui.form.on('Curriculum Plan Type', {
 });
 
 
+frappe.ui.form.on('Curriculum Plan Option', {
+        plan_option_code: function(frm, cdt, cdn) {
+        var cur_rec = locals[cdt][cdn];
+        cur_rec.plan_option_code = frm.doc.program_code + '-'+ cur_rec.major_abbr + '-' + cur_rec.plan_type_abbr;
+        frm.refresh_field('plan_name');
+        }
+});

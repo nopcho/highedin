@@ -1,22 +1,16 @@
 {
  "actions": [],
- "autoname": "field:plo_name",
+ "autoname": "field:plo_code",
  "creation": "2021-04-23 15:52:56.435202",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "plo_name",
+  "plo_code",
   "description",
   "list"
  ],
  "fields": [
-  {
-   "fieldname": "plo_name",
-   "fieldtype": "Data",
-   "label": "Plo Name",
-   "unique": 1
-  },
   {
    "fieldname": "description",
    "fieldtype": "Data",
@@ -27,11 +21,17 @@
    "fieldtype": "Table",
    "label": "Category Elo",
    "options": "Elo"
+  },
+  {
+   "fieldname": "plo_code",
+   "fieldtype": "Data",
+   "label": "Plo Code",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-07 16:48:18.067033",
+ "modified": "2021-05-26 11:07:22.370133",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Plo Category",
@@ -53,6 +53,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "plo_name",
+ "title_field": "plo_code",
  "track_changes": 1
 }

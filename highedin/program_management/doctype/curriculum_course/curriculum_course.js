@@ -17,7 +17,7 @@ frappe.ui.form.on('Curriculum Course', 'onload', function (frm) {
 	console.log(d)
         return {
             "filters": {
-		"type_name" : d.elo_catagory.elo_name
+		"type_name" : d.elo_catagory
 		}
         };
     });
