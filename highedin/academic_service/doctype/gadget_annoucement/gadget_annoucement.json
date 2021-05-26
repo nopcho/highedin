@@ -1,0 +1,218 @@
+{
+ "allow_guest_to_view": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-05-27 00:11:36.092387",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "image",
+  "upload",
+  "column_break_3",
+  "product_id",
+  "product_name",
+  "section_break_5",
+  "product_type",
+  "product_category",
+  "product_subcategory",
+  "column_break_9",
+  "model",
+  "company",
+  "date_submitted",
+  "section_break_12",
+  "year_launched",
+  "product_description",
+  "column_break_14",
+  "month_launched",
+  "launch_detail",
+  "route",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fetch_from": "upload",
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "upload"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Attach Image",
+   "label": "Upload"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product ID",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product Type",
+   "options": "Gadget Type"
+  },
+  {
+   "fetch_from": "product_type.main_category",
+   "fieldname": "product_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Category"
+  },
+  {
+   "fetch_from": "product_type.sub_category",
+   "fieldname": "product_subcategory",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Subcategory"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Gadget Company"
+  },
+  {
+   "fieldname": "date_submitted",
+   "fieldtype": "Date",
+   "label": "Date Submitted"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "year_launched",
+   "fieldtype": "Data",
+   "label": "Year Launched"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Text",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_launched",
+   "fieldtype": "Data",
+   "label": "Month Launched"
+  },
+  {
+   "fieldname": "launch_detail",
+   "fieldtype": "Text",
+   "label": "Launch Detail"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "HEI-ANC-.######"
+  }
+ ],
+ "has_web_view": 1,
+ "modified": "2021-05-27 00:12:10.566489",
+ "modified_by": "Administrator",
+ "module": "Academic Service",
+ "name": "Gadget Annoucement",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Non Profit Member",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "gadget_annoucement",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "product_name",
+ "track_changes": 1
+}

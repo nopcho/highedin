@@ -1,0 +1,100 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+<section class="p-4">
+    <div class="row">
+        <div class="col-6">
+            <img src="{{upload}}" alt="Card image cap" width="100%"> 
+        </div>
+        <div class="col-6 pt-5">
+            <h1>
+                <span style="font-weight: bold; ">{{product_name}}</span>
+                <a href="http://0.0.0.0:8000/gadget-donation">
+                    <button class="button btn btn-primary mb-2">Donate</button>
+                </a>  
+            </h1>
+            <div class="row">
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Type: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_type}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Category:</h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_category}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Product Subcategory: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{product_subcategory}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Model: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{model}}</h5>
+                </div>
+                <div class="col-5">
+                    <h5 style="font-weight: bold; ">Company: </h5>
+                </div>
+                <div class="col-7">
+                    <h5>{{company}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h5 class="mt-5 mb-2" style="font-weight: bold;">Submit Detail</h5>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Date Submitted: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{date_submitted}}</h6>
+                </div>
+                
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Year Launched: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{year_launched}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Month Launched: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{month_launched}}</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Description: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{product_description}}</h6>
+                </div>
+                <div class="col-4">
+                    <h6 style="font-weight: bold;">Launch Detail: </h6> 
+                </div>
+                <div class="col-8">
+                    <h6>{{launch_detail}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

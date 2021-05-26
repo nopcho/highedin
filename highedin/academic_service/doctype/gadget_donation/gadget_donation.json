@@ -1,19 +1,27 @@
 {
- "actions": [],
  "autoname": "naming_series:",
  "creation": "2021-03-15 22:03:48.534101",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "donation_id",
   "image",
   "upload",
+  "column_break_3",
+  "donation_id",
   "dornor_name",
+  "section_break_6",
   "product_description",
-  "remark",
   "date_purchase",
-  "naming_series"
+  "column_break_10",
+  "remark",
+  "naming_series",
+  "amended_from",
+  "section_break_13",
+  "user_name",
+  "phone",
+  "column_break_16",
+  "address"
  ],
  "fields": [
   {
@@ -63,52 +71,60 @@
    "fieldname": "upload",
    "fieldtype": "Attach Image",
    "label": "Upload"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gadget Donation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
   }
  ],
- "links": [],
- "modified": "2021-05-26 01:58:20.345262",
+ "is_submittable": 1,
+ "istable": 1,
+ "modified": "2021-05-27 00:37:02.624099",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Donation",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Non Profit Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Non Profit Member",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "dornor_name",
