@@ -27,11 +27,11 @@
   "column_break_17",
   "functional_condition",
   "general_condition",
+  "donor_id",
   "column_break_20",
   "condition_remark",
   "source_by",
   "section_break_23",
-  "donor_id",
   "media",
   "revision",
   "route",
@@ -135,7 +135,7 @@
   },
   {
    "fieldname": "donor_id",
-   "fieldtype": "Table",
+   "fieldtype": "Link",
    "label": "Donor ID",
    "options": "Gadget Donation"
   },
@@ -208,7 +208,7 @@
   }
  ],
  "has_web_view": 1,
- "modified": "2021-05-25 17:57:04.390142",
+ "modified": "2021-05-27 21:57:37.085236",
  "modified_by": "Administrator",
  "module": "Academic Service",
  "name": "Gadget Collection",
