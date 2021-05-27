@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:{major_name}-{####}",
+ "autoname": "format:{major_name_abbr}-{####}",
  "creation": "2021-03-15 15:08:40.720931",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -47,7 +47,7 @@
  "is_submittable": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-27 17:40:10.930605",
+ "modified": "2021-05-27 19:14:16.597968",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Major",
