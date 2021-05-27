@@ -105,7 +105,7 @@
   },
   {
    "fieldname": "updated_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Updated Date"
   },
   {
@@ -307,7 +307,7 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-27 18:21:34.447036",
+ "modified": "2021-05-27 23:04:44.407849",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum",
