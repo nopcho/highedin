@@ -7,4 +7,4 @@ from __future__ import unicode_literals
 from frappe.website.website_generator import WebsiteGenerator
 
 class Curriculum(WebsiteGenerator):
-	
+	pass	

@@ -28,7 +28,7 @@ frappe.ui.form.on('Curriculum Plan Type', {
 frappe.ui.form.on('Curriculum Plan Option', {
         plan_option_code: function(frm, cdt, cdn) {
         var cur_rec = locals[cdt][cdn];
-        cur_rec.plan_option_code = frm.doc.program_code + '-'+ cur_rec.major_abbr + '-' + cur_rec.plan_type_abbr;
-        frm.refresh_field('plan_name');
+        cur_rec.plan_option_code = frm.doc.program_code + '-' + cur_rec.major_abbr + '-' + cur.rec.plan_type_abbr;
+        frm.refresh_field('plan_option_code');
         }
 });
