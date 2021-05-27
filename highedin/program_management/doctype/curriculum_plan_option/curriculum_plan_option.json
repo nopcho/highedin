@@ -27,7 +27,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Major",
-   "options": "Curriculum Major"
+   "options": "Major"
   },
   {
    "fetch_from": "plan_type.plan_type",
@@ -43,6 +43,7 @@
    "label": "Description"
   },
   {
+   "fetch_from": "plan_type:plan_type_abbr",
    "fieldname": "plan_option_code",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -61,7 +62,7 @@
    "label": "Plan Type Abbr"
   },
   {
-   "fetch_from": "major:major",
+   "fetch_from": "major.major_name_abbr",
    "fieldname": "major_abbr",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -71,7 +72,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-05-26 13:49:11.865514",
+ "modified": "2021-05-27 13:56:46.993610",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Plan Option",

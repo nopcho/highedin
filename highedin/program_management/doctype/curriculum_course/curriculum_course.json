@@ -6,12 +6,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "program",
   "course_code",
-  "course_abbr",
+  "program",
   "course_name",
-  "column_break_5",
   "course_name_en",
+  "course_abbr",
   "section_break_10",
   "course_elo",
   "section_break_3",
@@ -47,7 +46,6 @@
   {
    "fieldname": "course_name_en",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Course Name en"
   },
   {
@@ -60,31 +58,26 @@
   {
    "fieldname": "course_abbr",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Course Abbreviation"
   },
   {
    "fieldname": "credit",
    "fieldtype": "Int",
-   "in_list_view": 1,
    "label": "Credit"
   },
   {
    "fieldname": "lecture_hour",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Lecture Hour"
   },
   {
    "fieldname": "practice_hour",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Practice Hour"
   },
   {
    "fieldname": "self_study_hour",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Self Study Hour"
   },
   {
@@ -100,19 +93,16 @@
   {
    "fieldname": "course_intro",
    "fieldtype": "Text",
-   "in_list_view": 1,
    "label": "Course Intro"
   },
   {
    "fieldname": "course_description",
    "fieldtype": "Text",
-   "in_list_view": 1,
    "label": "Course Description"
   },
   {
    "fieldname": "course_description_en",
    "fieldtype": "Text",
-   "in_list_view": 1,
    "label": "Course Description en"
   },
   {
@@ -128,6 +118,7 @@
   {
    "fieldname": "update_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Update date"
   },
   {
@@ -148,15 +139,11 @@
   {
    "fieldname": "section_break_3",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-26 18:14:27.636067",
+ "modified": "2021-05-27 15:10:19.495409",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Curriculum Course",

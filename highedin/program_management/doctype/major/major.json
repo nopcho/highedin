@@ -1,49 +1,50 @@
 {
  "actions": [],
- "autoname": "field:major_code",
- "creation": "2021-03-15 15:08:40.720931",
+ "autoname": "field:major_name",
+ "creation": "2021-05-27 13:28:35.149308",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "major_name",
-  "major_name_abbr",
-  "major_code"
+  "major_name_abbr"
  ],
  "fields": [
   {
    "fieldname": "major_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Major Name"
-  },
-  {
-   "fieldname": "major_code",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Major Code",
-   "read_only": 1,
+   "label": "Major Name",
    "unique": 1
   },
   {
-   "fetch_from": "major_name.major_name_abbr",
    "fieldname": "major_name_abbr",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Major Abbr",
-   "set_only_once": 1
+   "label": "Major Name Abbr"
   }
  ],
  "index_web_pages_for_search": 1,
- "istable": 1,
  "links": [],
- "modified": "2021-05-27 14:08:03.077370",
+ "modified": "2021-05-27 13:29:37.191874",
  "modified_by": "Administrator",
  "module": "Program Management",
- "name": "Curriculum Major",
+ "name": "Major",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "quick_entry": 1,
+ "search_fields": "major_name_abbr",
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

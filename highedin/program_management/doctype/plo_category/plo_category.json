@@ -8,7 +8,9 @@
  "field_order": [
   "plo_code",
   "description",
-  "category_elo"
+  "elo",
+  "update_date",
+  "version"
  ],
  "fields": [
   {
@@ -19,19 +21,31 @@
   {
    "fieldname": "plo_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Plo Code",
    "unique": 1
   },
   {
-   "fieldname": "category_elo",
+   "fieldname": "update_date",
+   "fieldtype": "Date",
+   "label": "Update Date"
+  },
+  {
+   "fieldname": "version",
+   "fieldtype": "Select",
+   "label": "Version",
+   "options": "draft\ncomplete"
+  },
+  {
+   "fieldname": "elo",
    "fieldtype": "Table",
-   "label": "Category Elo",
+   "label": "Elo category",
    "options": "Elo"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-05-26 21:35:19.084689",
+ "modified": "2021-05-27 12:36:24.522357",
  "modified_by": "Administrator",
  "module": "Program Management",
  "name": "Plo Category",
