@@ -6,17 +6,51 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "data_1"
+  "sar_no",
+  "officer",
+  "evaluation",
+  "detail",
+  "status",
+  "tracking_process"
  ],
  "fields": [
   {
-   "fieldname": "data_1",
-   "fieldtype": "Data"
+   "fieldname": "sar_no",
+   "fieldtype": "Data",
+   "label": "Number"
+  },
+  {
+   "fieldname": "officer",
+   "fieldtype": "Link",
+   "label": "officer",
+   "options": "User"
+  },
+  {
+   "fieldname": "tracking_process",
+   "fieldtype": "Button",
+   "label": "Tracking Process"
+  },
+  {
+   "fieldname": "evaluation",
+   "fieldtype": "Link",
+   "label": "Evaluation",
+   "options": "AUN Program Level Evaluation"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "incomplete\ncomplete"
+  },
+  {
+   "fieldname": "detail",
+   "fieldtype": "Small Text",
+   "label": "Detail"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-08 19:04:48.806944",
+ "modified": "2021-05-28 05:39:58.253433",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "SAR Report Main",

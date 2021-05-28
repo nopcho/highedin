@@ -7,4 +7,5 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class SARReportMain(Document):
-	pass
+	def validate(self):
+		self.sar_no = self.name

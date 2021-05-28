@@ -9,3 +9,7 @@ from frappe.model.document import Document
 class AUNProgramLevelEvaluation(Document):
 		def validate(self):
 			self.aunqa_code = self.name
+			n = 0
+			for i in range(len(self.criterion_checklist)):
+				n += int(self.criterion_checklist[i].opinion)
+			self.overall_opinion = n

@@ -61,7 +61,8 @@
   {
    "fieldname": "overall_opinion",
    "fieldtype": "Data",
-   "label": "Overall Opinion"
+   "label": "Overall Opinion",
+   "read_only": 1
   },
   {
    "bold": 1,
@@ -136,7 +137,7 @@
   }
  ],
  "links": [],
- "modified": "2021-05-26 00:54:24.322710",
+ "modified": "2021-05-28 05:11:08.923415",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUNQA Program Level Template",

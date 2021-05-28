@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "nameing_series:",
+ "autoname": "HEI-APE-.####",
  "creation": "2021-04-08 19:22:46.064906",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -65,7 +65,8 @@
   {
    "fieldname": "overall_opinion",
    "fieldtype": "Data",
-   "label": "Overall Opinion"
+   "label": "Overall Opinion",
+   "read_only": 1
   },
   {
    "fieldname": "explanation",
@@ -146,7 +147,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-05-26 01:24:18.905047",
+ "modified": "2021-05-28 05:10:25.141897",
  "modified_by": "Administrator",
  "module": "Quality Assurance",
  "name": "AUN Program Level Evaluation",

@@ -10,10 +10,7 @@ class AUNQAProgramLevelTemplate(Document):
 	def validate(self):
 		self.aunqa_code = self.name
 		# self.criterion_checklist = {}
-		# for i in range(len(self.criterion)):
-		# 	self.append('criterion_checklist',{
-		# 		'checklist_no': self.criterion[i].criterion_no ,
-		# 		'description': self.criterion[i].description ,
-		# 		'ref_criterion': self.aunqa_no ,
-		# 		'opinion': 1
-		# })
+		n = 0
+		for i in range(len(self.criterion_checklist)):
+			n += int(self.criterion_checklist[i].opinion)
+		self.overall_opinion = n
