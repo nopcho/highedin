@@ -9,7 +9,12 @@
   "student_id",
   "salutation",
   "first_name",
-  "last_name"
+  "last_name",
+  "program",
+  "major",
+  "study_year",
+  "badge",
+  "degree"
  ],
  "fields": [
   {
@@ -32,11 +37,40 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "label": "Last Name"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Select",
+   "label": "Program",
+   "options": "IT\nDSBA\nBIT"
+  },
+  {
+   "fieldname": "major",
+   "fieldtype": "Select",
+   "label": "Major",
+   "options": "-\nSoftware\nNetwork\nMultimedia"
+  },
+  {
+   "fieldname": "study_year",
+   "fieldtype": "Select",
+   "label": "Study Year",
+   "options": "1\n2\n3\n4"
+  },
+  {
+   "fieldname": "badge",
+   "fieldtype": "Int",
+   "label": "Badge"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Select",
+   "label": "Degree",
+   "options": "Bachelor's Degree\nMaster\u2019s Degree\nDoctoral Degree"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-21 18:18:17.692226",
+ "modified": "2021-05-27 20:07:28.844159",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Profile",

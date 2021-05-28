@@ -16,12 +16,12 @@
   "section_break_6",
   "student_id",
   "first_name",
-  "major",
+  "program",
   "badge",
   "column_break_9",
   "salutation",
   "last_name",
-  "program",
+  "major",
   "study_year",
   "section_break_16",
   "request_detail",
@@ -89,27 +89,35 @@
    "read_only": 1
   },
   {
+   "fetch_from": "student_id.program",
    "fieldname": "program",
    "fieldtype": "Data",
    "label": "Program",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "student_id.major",
    "fieldname": "major",
    "fieldtype": "Data",
    "label": "Major",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "student_id.study_year",
    "fieldname": "study_year",
    "fieldtype": "Int",
    "label": "Study Year",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "student_id.badge",
    "fieldname": "badge",
    "fieldtype": "Int",
    "label": "Badge",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -218,7 +226,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-05-06 19:42:09.096304",
+ "modified": "2021-05-27 20:11:48.621890",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student General Request",

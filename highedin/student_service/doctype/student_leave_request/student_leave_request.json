@@ -99,24 +99,32 @@
    "label": "Year"
   },
   {
+   "fetch_from": "student_id.program",
    "fieldname": "program",
    "fieldtype": "Data",
-   "label": "Program"
+   "label": "Program",
+   "read_only": 1
   },
   {
+   "fetch_from": "student_id.major",
    "fieldname": "major",
    "fieldtype": "Data",
-   "label": "Major"
+   "label": "Major",
+   "read_only": 1
   },
   {
+   "fetch_from": "student_id.study_year",
    "fieldname": "study_year",
    "fieldtype": "Int",
-   "label": "Study Year"
+   "label": "Study Year",
+   "read_only": 1
   },
   {
+   "fetch_from": "student_id.degree",
    "fieldname": "degree",
    "fieldtype": "Data",
-   "label": "Degree"
+   "label": "Degree",
+   "read_only": 1
   },
   {
    "fieldname": "request_detail",
@@ -261,7 +269,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-05-06 20:23:03.655353",
+ "modified": "2021-05-27 20:15:18.889416",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Student Leave Request",

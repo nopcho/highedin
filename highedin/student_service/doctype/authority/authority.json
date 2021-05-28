@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:authority_title",
+ "autoname": "field:authority_name",
  "creation": "2021-03-12 14:48:44.640746",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -14,8 +14,7 @@
   {
    "fieldname": "authority_title",
    "fieldtype": "Data",
-   "label": "Authority Title",
-   "unique": 1
+   "label": "Authority Title"
   },
   {
    "fieldname": "authority_name",
@@ -31,7 +30,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-21 18:58:08.546361",
+ "modified": "2021-05-27 15:02:49.894192",
  "modified_by": "Administrator",
  "module": "Student Service",
  "name": "Authority",
